@@ -26,13 +26,12 @@ export default function Home() {
   if (user && !user.is_first_login) return null;
 
   return (
-    <div className="fixed inset-0 bg-pink-50 text-slate-800 flex flex-col items-center justify-center overflow-hidden z-[100]">
+    <div className="fixed inset-0 bg-[#fdfdfd] text-slate-800 flex flex-col items-center justify-center overflow-hidden z-[100]">
       {/* Subtle ambient particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(6)].map((_, i) => (
           <div
-            key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-pink-400/20 rounded-full animate-pulse"
             style={{
               top: `${15 + i * 14}%`,
               left: `${10 + i * 15}%`,
@@ -43,8 +42,8 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-200/50 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-cyan-200/50 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-100/40 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-cyan-50/50 rounded-full blur-[100px] pointer-events-none"></div>
 
       {/* 3D Object — behind everything, subtle */}
       <Core3DObject className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] opacity-30 mix-blend-screen pointer-events-none" />
