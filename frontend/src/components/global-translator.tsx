@@ -3,6 +3,54 @@ import { useEffect, useState, useRef } from 'react';
 import { Translate, X, SpinnerGap } from '@phosphor-icons/react';
 import { apiClient } from '@/lib/api-client';
 
+const playPopSound = () => {
+  try {
+    const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(600, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(800, ctx.currentTime + 0.05);
+
+    gain.gain.setValueAtTime(0, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.03, ctx.currentTime + 0.02); // Very quiet because of bgm
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
+
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.15);
+  } catch (e) {}
+};
+
+const playChimeSound = () => {
+  try {
+    const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioContext) return;
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.exponentialRampToValueAtTime(1760, ctx.currentTime + 0.2);
+
+    gain.gain.setValueAtTime(0, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.05, ctx.currentTime + 0.05); // Gentle volume
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.8);
+  } catch (e) {}
+};
+
 export function GlobalTranslator() {
   const [selectedText, setSelectedText] = useState('');
   const [buttonPos, setButtonPos] = useState<{ x: number, y: number } | null>(null);
@@ -27,9 +75,12 @@ export function GlobalTranslator() {
           const range = selection?.getRangeAt(0);
           const rect = range?.getBoundingClientRect();
           if (rect) {
-            setButtonPos({
-              x: rect.left + rect.width / 2,
-              y: rect.top - 10,
+            setButtonPos(prev => {
+              if (!prev) playPopSound(); // Play sound only when button first appears
+              return {
+                x: rect.left + rect.width / 2,
+                y: rect.top - 10,
+              };
             });
             setSelectedText(text);
           }
@@ -63,6 +114,7 @@ export function GlobalTranslator() {
 
   const handleTranslate = async (e: React.MouseEvent) => {
     e.stopPropagation();
+    playChimeSound(); // Play magical chime when AI starts
     setShowPopup(true);
     setButtonPos(null); // Hide button
     setLoading(true);
