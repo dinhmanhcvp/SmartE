@@ -14,23 +14,9 @@ class TrackRequest(BaseModel):
 
 # Mock Database
 USERS_DB = {
-    "ngocanhdangiu@smarte.com": {
+    "ngocanhdangiu@ngocanh.com": {
         "id": "u_1",
         "username": "ngocanhdangiu",
-        "is_first_login": True,
-        "learning_track": None,
-        "account_status": "active"
-    },
-    "dinhmanh@smarte.com": {
-        "id": "u_2",
-        "username": "dinhmanh",
-        "is_first_login": True,
-        "learning_track": None,
-        "account_status": "active"
-    },
-    "omachi@smarte.com": {
-        "id": "u_3",
-        "username": "omachi",
         "is_first_login": True,
         "learning_track": None,
         "account_status": "active"
