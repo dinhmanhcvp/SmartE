@@ -24,9 +24,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   }, [user]);
 
   return (
-    <div className={`flex flex-col min-h-screen w-full relative overflow-hidden bg-[#0B1120] ${theme}`}>
-      {/* Background Ambience */}
-      <div className="fixed inset-0 z-0 pointer-events-none opacity-40 mix-blend-screen" style={{ backgroundImage: 'radial-gradient(circle at 50% -20%, #4c1d95 0%, transparent 50%), radial-gradient(circle at -20% 50%, #1e3a8a 0%, transparent 50%), radial-gradient(circle at 120% 120%, #064e3b 0%, transparent 50%)' }}></div>
+    <div className={`flex flex-col min-h-screen w-full relative overflow-hidden bg-background text-foreground transition-colors duration-500 ${theme}`}>
+      {/* Background Ambience (Pastel Light Mode) */}
+      <div className="fixed inset-0 z-0 pointer-events-none opacity-60 mix-blend-multiply" style={{ backgroundImage: 'radial-gradient(circle at 50% -20%, #fbcfe8 0%, transparent 60%), radial-gradient(circle at -20% 50%, #bae6fd 0%, transparent 60%), radial-gradient(circle at 120% 120%, #fef08a 0%, transparent 60%)' }}></div>
       
       {/* The floating ultra-minimal header */}
       <div className="relative z-50">

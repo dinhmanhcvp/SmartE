@@ -55,7 +55,7 @@ export function AIDock() {
       <div 
         ref={dockRef}
         className={`pointer-events-auto flex items-center gap-3 px-6 py-3 rounded-full premium-glass transition-all duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]
-          ${isDragging ? 'scale-[1.5] bg-primary/20 border-primary/50 shadow-[0_0_50px_rgba(var(--primary),0.5)] -translate-y-20' : 'scale-100 hover:scale-105 hover:bg-white/10'}
+          ${isDragging ? 'scale-[1.5] bg-pink-50 border-pink-200 shadow-[0_0_50px_rgba(236,72,153,0.3)] -translate-y-20' : 'scale-100 hover:scale-105 hover:bg-pink-50'}
           ${isProcessing ? 'animate-pulse scale-[1.2] shadow-[0_0_100px_rgba(var(--primary),0.8)]' : ''}
         `}
       >

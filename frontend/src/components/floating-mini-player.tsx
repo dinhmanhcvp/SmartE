@@ -44,7 +44,7 @@ export function FloatingMiniPlayer() {
     return (
       <button
         onClick={() => setMinimized(false)}
-        className="fixed bottom-8 right-8 z-[90] w-12 h-12 rounded-full bg-pink-500/20 backdrop-blur-xl border border-pink-500/30 flex items-center justify-center text-pink-300 shadow-[0_0_20px_rgba(236,72,153,0.2)] hover:scale-110 transition-all animate-in fade-in zoom-in duration-300"
+        className="fixed bottom-8 right-8 z-[90] w-12 h-12 rounded-full bg-white/90 backdrop-blur-xl border border-pink-200 flex items-center justify-center text-pink-500 shadow-[0_8px_30px_rgb(236,72,153,0.15)] hover:scale-110 transition-all animate-in fade-in zoom-in duration-300"
       >
         <MusicNote weight="fill" className={`w-5 h-5 ${isPlaying ? 'animate-pulse' : ''}`} />
       </button>
@@ -70,45 +70,45 @@ export function FloatingMiniPlayer() {
       <div className="fixed bottom-8 right-8 z-[90] animate-in slide-in-from-bottom-5 fade-in duration-500">
         {/* Volume Slider Popup */}
         {showVolume && (
-          <div className="absolute bottom-full right-0 mb-3 glass-panel p-3 rounded-2xl shadow-xl border-pink-500/20 animate-in fade-in slide-in-from-bottom-2 duration-200 w-[200px]">
+          <div className="absolute bottom-full right-0 mb-3 glass-panel p-3 rounded-2xl shadow-xl border-pink-100 animate-in fade-in slide-in-from-bottom-2 duration-200 w-[200px]">
             <div className="flex items-center gap-3">
-              <VolumeIcon weight="fill" className="w-4 h-4 text-pink-300 shrink-0" />
+              <VolumeIcon weight="fill" className="w-4 h-4 text-pink-500 shrink-0" />
               <input
                 type="range"
                 min="0"
                 max="100"
                 value={volume}
                 onChange={(e) => setVolume(Number(e.target.value))}
-                className="flex-1 h-1.5 rounded-full appearance-none bg-white/10 cursor-pointer accent-pink-400
-                  [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-pink-400 [&::-webkit-slider-thumb]:shadow-[0_0_8px_rgba(236,72,153,0.5)] [&::-webkit-slider-thumb]:cursor-pointer
-                  [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-pink-400 [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
+                className="flex-1 h-1.5 rounded-full appearance-none bg-slate-200 cursor-pointer accent-pink-500
+                  [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-pink-500 [&::-webkit-slider-thumb]:shadow-[0_2px_5px_rgba(236,72,153,0.3)] [&::-webkit-slider-thumb]:cursor-pointer
+                  [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-pink-500 [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:cursor-pointer"
               />
-              <span className="text-[11px] text-muted-foreground w-7 text-right">{volume}</span>
+              <span className="text-[11px] text-slate-500 w-7 text-right">{volume}</span>
             </div>
           </div>
         )}
 
-        <div className="glass-panel px-4 py-3 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)] border-pink-500/20 flex items-center gap-3 max-w-[360px]">
+        <div className="glass-panel px-4 py-3 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-pink-100 flex items-center gap-3 max-w-[360px]">
           {/* Album art placeholder */}
-          <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${isPlaying ? 'bg-pink-500/20' : 'bg-white/5'}`}>
-            <MusicNote weight="fill" className={`w-5 h-5 ${isPlaying ? 'text-pink-400 animate-pulse' : 'text-white/40'}`} />
+          <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${isPlaying ? 'bg-pink-100' : 'bg-slate-100'}`}>
+            <MusicNote weight="fill" className={`w-5 h-5 ${isPlaying ? 'text-pink-500 animate-pulse' : 'text-slate-400'}`} />
           </div>
 
           {/* Track info */}
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-white truncate">{track.title}</p>
-            <p className="text-[11px] text-muted-foreground truncate">{track.artist}</p>
+            <p className="text-sm font-medium text-slate-800 truncate">{track.title}</p>
+            <p className="text-[11px] text-slate-500 truncate">{track.artist}</p>
           </div>
 
           {/* Controls */}
           <div className="flex items-center gap-1 shrink-0">
-            <button onClick={prev} className="w-7 h-7 rounded-full flex items-center justify-center text-white/50 hover:text-white transition-colors">
+            <button onClick={prev} className="w-7 h-7 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-600 transition-colors">
               <SkipBack weight="fill" className="w-3.5 h-3.5" />
             </button>
-            <button onClick={toggle} className="w-9 h-9 rounded-full bg-pink-500/20 hover:bg-pink-500/40 flex items-center justify-center text-pink-300 transition-all">
+            <button onClick={toggle} className="w-9 h-9 rounded-full bg-pink-100 hover:bg-pink-200 flex items-center justify-center text-pink-600 transition-all">
               {isPlaying ? <Pause weight="fill" className="w-4 h-4" /> : <Play weight="fill" className="w-4 h-4" />}
             </button>
-            <button onClick={next} className="w-7 h-7 rounded-full flex items-center justify-center text-white/50 hover:text-white transition-colors">
+            <button onClick={next} className="w-7 h-7 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-600 transition-colors">
               <SkipForward weight="fill" className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -116,13 +116,13 @@ export function FloatingMiniPlayer() {
           {/* Volume button */}
           <button
             onClick={() => setShowVolume(!showVolume)}
-            className={`w-7 h-7 rounded-full flex items-center justify-center transition-colors ${showVolume ? 'text-pink-300 bg-pink-500/10' : 'text-white/40 hover:text-white/70'}`}
+            className={`w-7 h-7 rounded-full flex items-center justify-center transition-colors ${showVolume ? 'text-pink-600 bg-pink-100' : 'text-slate-400 hover:text-slate-600'}`}
           >
             <VolumeIcon weight="fill" className="w-4 h-4" />
           </button>
 
           {/* Minimize button */}
-          <button onClick={() => { setMinimized(true); setShowVolume(false); }} className="w-6 h-6 rounded-full flex items-center justify-center text-white/30 hover:text-white/70 transition-colors">
+          <button onClick={() => { setMinimized(true); setShowVolume(false); }} className="w-6 h-6 rounded-full flex items-center justify-center text-slate-300 hover:text-slate-500 transition-colors">
             <X weight="bold" className="w-3 h-3" />
           </button>
         </div>
