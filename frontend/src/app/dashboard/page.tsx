@@ -49,7 +49,7 @@ export default function DashboardPage() {
             {greeting}
           </p>
           
-          <h1 className="text-3xl md:text-4xl font-heading font-medium tracking-wide text-white/90 mb-3 animate-in fade-in slide-in-from-bottom-5 duration-1000">
+          <h1 className="text-3xl md:text-4xl font-heading font-medium tracking-wide text-slate-800 mb-3 animate-in fade-in slide-in-from-bottom-5 duration-1000">
             <>Nàng ơi, <span className="gradient-text italic">hôm nay tớ chuẩn bị bài rồi nè!</span></>
           </h1>
           
@@ -59,9 +59,9 @@ export default function DashboardPage() {
 
           {/* Trạng thái Crush */}
           {partnerStatus === 'online' && (
-            <div className="mt-4 inline-flex items-center gap-2 glass-panel px-4 py-2 rounded-full animate-in fade-in zoom-in duration-500">
-              <Heart weight="fill" className="w-4 h-4 text-pink-400 animate-pulse" />
-              <span className="text-sm text-pink-300">
+            <div className="mt-4 inline-flex items-center gap-2 bg-white/80 border border-pink-100 shadow-sm px-4 py-2 rounded-full animate-in fade-in zoom-in duration-500">
+              <Heart weight="fill" className="w-4 h-4 text-pink-500 animate-pulse" />
+              <span className="text-sm text-pink-600">
                 {isNgocAnh ? 'Có người đang chờ cậu kìa...' : 'Ngọc Anh đang online...'}
               </span>
             </div>
@@ -71,66 +71,64 @@ export default function DashboardPage() {
         {/* ===== CÁC KHÔNG GIAN CHÍNH ===== */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto w-full px-4">
 
-          {/* Card 1: Không gian Học tập */}
-          <Card className="premium-glass p-1 border-none shadow-[0_20px_60px_rgba(0,0,0,0.3)] group cursor-pointer hover:scale-[1.03] transition-all duration-700 ease-out col-span-1 md:col-span-2 lg:col-span-2"
+          <Card className="premium-glass p-1 border-none shadow-sm group cursor-pointer hover:scale-[1.03] transition-all duration-700 ease-out col-span-1 md:col-span-2 lg:col-span-2"
             onClick={() => router.push('/study-room')}
           >
-            <CardContent className="p-8 relative bg-black/40 backdrop-blur-3xl rounded-2xl border border-white/10 overflow-hidden">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur opacity-0 group-hover:opacity-60 transition duration-1000"></div>
-              <div className="absolute top-4 right-8 w-2 h-2 bg-cyan-400 rounded-full blur-[2px] animate-bounce" style={{ animationDuration: '3s' }}></div>
-              <div className="absolute bottom-6 left-10 w-1.5 h-1.5 bg-blue-400 rounded-full blur-[1px] animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
+            <CardContent className="p-8 relative bg-white/80 backdrop-blur-3xl rounded-2xl border border-pink-100 overflow-hidden">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-100/50 to-cyan-100/50 rounded-2xl blur opacity-0 group-hover:opacity-60 transition duration-1000"></div>
+              <div className="absolute top-4 right-8 w-2 h-2 bg-cyan-300 rounded-full blur-[2px] animate-bounce" style={{ animationDuration: '3s' }}></div>
+              <div className="absolute bottom-6 left-10 w-1.5 h-1.5 bg-blue-300 rounded-full blur-[1px] animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
               
               <div className="relative z-10 flex flex-col gap-4">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center shadow-[0_0_20px_rgba(6,182,212,0.2)]">
-                    <Chalkboard weight="duotone" className="w-7 h-7 text-cyan-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-cyan-50 flex items-center justify-center shadow-sm border border-cyan-100">
+                    <Chalkboard weight="duotone" className="w-7 h-7 text-cyan-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold font-heading text-white">Phòng Học Của Tớ Và Cậu</h3>
-                    <p className="text-sm text-muted-foreground">Whiteboard • Dịch thuật • Hỏi đáp AI</p>
+                    <h3 className="text-xl font-bold font-heading text-slate-800">Phòng Học Của Tớ Và Cậu</h3>
+                    <p className="text-sm text-slate-500">Whiteboard • Dịch thuật • Hỏi đáp AI</p>
                   </div>
                 </div>
 
-                <p className="text-muted-foreground text-sm">
+                <p className="text-slate-600 text-sm">
                   Tớ đã chuẩn bị giáo án cho từng buổi rồi nè. Cậu vào đây để mình cùng học, viết, dịch và trao đổi với trợ lý AI nhé!
                 </p>
                 
                 <div className="flex gap-3 flex-wrap">
-                  <span className="text-xs glass-panel px-3 py-1 rounded-full text-cyan-300">📝 Whiteboard</span>
-                  <span className="text-xs glass-panel px-3 py-1 rounded-full text-blue-300">🌐 Dịch thuật</span>
-                  <span className="text-xs glass-panel px-3 py-1 rounded-full text-purple-300">🤖 Hỏi AI</span>
-                  <span className="text-xs glass-panel px-3 py-1 rounded-full text-emerald-300">📖 Giáo án</span>
+                  <span className="text-xs bg-cyan-50 border border-cyan-100 px-3 py-1 rounded-full text-cyan-700">📝 Whiteboard</span>
+                  <span className="text-xs bg-blue-50 border border-blue-100 px-3 py-1 rounded-full text-blue-700">🌐 Dịch thuật</span>
+                  <span className="text-xs bg-purple-50 border border-purple-100 px-3 py-1 rounded-full text-purple-700">🤖 Hỏi AI</span>
+                  <span className="text-xs bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full text-emerald-700">📖 Giáo án</span>
                 </div>
 
-                <Button variant="ghost" className="w-full rounded-full border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500 hover:text-white transition-all duration-500 mt-2">
+                <Button variant="outline" className="w-full rounded-full border border-cyan-200 text-cyan-700 hover:bg-cyan-50 hover:text-cyan-800 transition-all duration-500 mt-2">
                   Vào phòng học
                 </Button>
               </div>
             </CardContent>
           </Card>
 
-          {/* Card 2: Vườn kiến thức / Studio */}
-          <Card className="premium-glass p-1 border-none shadow-[0_20px_60px_rgba(0,0,0,0.3)] group cursor-pointer hover:scale-[1.03] transition-all duration-700 ease-out"
+          <Card className="premium-glass p-1 border-none shadow-sm group cursor-pointer hover:scale-[1.03] transition-all duration-700 ease-out"
             onClick={() => router.push(isBeginner ? '/study' : '/upload')}
           >
-            <CardContent className="p-6 relative bg-black/40 backdrop-blur-3xl rounded-2xl border border-white/10 overflow-hidden h-full">
-              <div className={`absolute -inset-0.5 bg-gradient-to-r ${isBeginner ? 'from-emerald-500/20 to-teal-500/20' : 'from-purple-500/20 to-pink-500/20'} rounded-2xl blur opacity-0 group-hover:opacity-60 transition duration-1000`}></div>
+            <CardContent className="p-6 relative bg-white/80 backdrop-blur-3xl rounded-2xl border border-pink-100 overflow-hidden h-full">
+              <div className={`absolute -inset-0.5 bg-gradient-to-r ${isBeginner ? 'from-emerald-100/50 to-teal-100/50' : 'from-purple-100/50 to-pink-100/50'} rounded-2xl blur opacity-0 group-hover:opacity-60 transition duration-1000`}></div>
               
               <div className="relative z-10 flex flex-col items-center text-center gap-4 h-full justify-center">
-                <div className={`w-14 h-14 rounded-full flex items-center justify-center shadow-lg ${isBeginner ? 'bg-emerald-500/20' : 'bg-purple-500/20'}`}>
+                <div className={`w-14 h-14 rounded-full flex items-center justify-center shadow-sm border ${isBeginner ? 'bg-emerald-50 border-emerald-100' : 'bg-purple-50 border-purple-100'}`}>
                   {isBeginner 
-                    ? <Plant weight="duotone" className="w-7 h-7 text-emerald-400" /> 
-                    : <MagicWand weight="duotone" className="w-7 h-7 text-purple-400" />}
+                    ? <Plant weight="duotone" className="w-7 h-7 text-emerald-600" /> 
+                    : <MagicWand weight="duotone" className="w-7 h-7 text-purple-600" />}
                 </div>
-                <h3 className="text-lg font-bold font-heading text-white">
+                <h3 className="text-lg font-bold font-heading text-slate-800">
                   {isBeginner ? 'Vườn Kiến Thức' : 'Trạm Phân Tích'}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-slate-500 text-sm">
                   {isBeginner 
-                    ? <>Có <strong className="text-emerald-400">5 mầm cây</strong> đang đợi tưới nước.</>
+                    ? <>Có <strong className="text-emerald-600">5 mầm cây</strong> đang đợi tưới nước.</>
                     : 'Upload bài luận để AI hiệu đính.'}
                 </p>
-                <Button variant="ghost" className={`w-full rounded-full border transition-all duration-500 ${isBeginner ? 'border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-white' : 'border-purple-500/30 text-purple-400 hover:bg-purple-500 hover:text-white'}`}>
+                <Button variant="outline" className={`w-full rounded-full border transition-all duration-500 ${isBeginner ? 'border-emerald-200 text-emerald-700 hover:bg-emerald-50 hover:text-emerald-800' : 'border-purple-200 text-purple-700 hover:bg-purple-50 hover:text-purple-800'}`}>
                   {isBeginner ? 'Bắt đầu tưới nước' : 'Upload tài liệu'}
                 </Button>
               </div>
@@ -141,13 +139,13 @@ export default function DashboardPage() {
         {/* ===== PLAYLIST LÃNG MẠN ===== */}
         {(
         <div className="max-w-5xl mx-auto w-full px-4">
-          <Card className="premium-glass p-1 border-none shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
-            <CardContent className="p-6 relative bg-black/30 backdrop-blur-3xl rounded-2xl border border-white/10 overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-pink-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+          <Card className="premium-glass p-1 border-none shadow-sm">
+            <CardContent className="p-6 relative bg-white/80 backdrop-blur-3xl rounded-2xl border border-pink-100 overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-pink-100/40 rounded-full blur-[80px] pointer-events-none"></div>
 
               <div className="flex items-center gap-3 mb-5 relative z-10">
-                <MusicNote weight="fill" className="w-5 h-5 text-pink-400" />
-                <h3 className="font-heading font-bold text-white text-lg">Nhạc nền cho tớ và cậu</h3>
+                <MusicNote weight="fill" className="w-5 h-5 text-pink-500" />
+                <h3 className="font-heading font-bold text-slate-800 text-lg">Nhạc nền cho tớ và cậu</h3>
               </div>
 
               <div className="relative z-10 space-y-1 max-h-[320px] overflow-y-auto pr-2 scrollbar-thin">
@@ -163,24 +161,24 @@ export default function DashboardPage() {
                     }}
                     className={`w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-300 group text-left ${
                       currentTrack === i 
-                        ? 'bg-pink-500/10 border border-pink-500/20' 
-                        : 'hover:bg-white/5'
+                        ? 'bg-pink-50 border border-pink-200' 
+                        : 'hover:bg-slate-50'
                     }`}
                   >
-                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${
-                      currentTrack === i ? 'bg-pink-500/30 text-pink-300' : 'bg-white/5 text-white/40 group-hover:text-white/70'
+                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 shadow-sm ${
+                      currentTrack === i ? 'bg-pink-200 text-pink-700' : 'bg-slate-100 text-slate-400 group-hover:text-slate-600'
                     }`}>
                       {currentTrack === i && isPlaying 
                         ? <Pause weight="fill" className="w-3.5 h-3.5" />
                         : <Play weight="fill" className="w-3.5 h-3.5" />}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className={`text-sm font-medium truncate ${currentTrack === i ? 'text-pink-300' : 'text-white/80'}`}>
+                      <p className={`text-sm font-medium truncate ${currentTrack === i ? 'text-pink-600' : 'text-slate-700'}`}>
                         {i === 0 && '🌊 '}{track.title}
                       </p>
-                      <p className="text-xs text-muted-foreground truncate">{track.artist}</p>
+                      <p className="text-xs text-slate-500 truncate">{track.artist}</p>
                     </div>
-                    {i === 0 && <span className="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full shrink-0">♡ Bài hát của chúng mình</span>}
+                    {i === 0 && <span className="text-[10px] bg-pink-100 text-pink-600 px-2 py-0.5 rounded-full shrink-0">♡ Bài hát của chúng mình</span>}
                   </button>
                 ))}
               </div>

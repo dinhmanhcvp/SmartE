@@ -173,7 +173,6 @@ export default function StudyPage() {
                 <span className="text-blue-600 font-bold">{user?.username?.[0].toUpperCase()}</span>
               </div>
               <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border border-white"></div>
-              {/* Tooltip chọc ghẹo */}
               <div className="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-xs px-2 py-1 rounded text-white whitespace-nowrap pointer-events-none">
                 Nhấn để chọc ghẹo!
               </div>
