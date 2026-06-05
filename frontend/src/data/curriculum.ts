@@ -208,6 +208,24 @@ export const curriculumData: Lesson[] = [
   {
     id: "unit-3-writing-task-1",
     unit: 3,
+    title: "Academic Writing: Describing Trends",
+    titleVi: "Viết Học thuật: Mô tả Xu hướng (IELTS Task 1)",
+    objective: "Nắm vững các động từ và trạng từ học thuật để miêu tả sự tăng, giảm, biến động của dữ liệu. Cực kỳ quan trọng cho IELTS Writing Task 1.",
+    reading: {
+      title: "Global Smartphone Sales (2010 - 2020)",
+      content: "The chart illustrates the global sales of smartphones between 2010 and 2020. Overall, it is clear that smartphone sales experienced a dramatic upward trend. In 2010, the figure stood at just 300 million units. However, it surged significantly to reach a peak of 1.5 billion units in 2018. Following this, the sales witnessed a slight decline to 1.4 billion in 2020.",
+      translation: "Biểu đồ minh họa doanh số bán điện thoại thông minh toàn cầu từ năm 2010 đến 2020. Nhìn chung, rõ ràng là doanh số đã trải qua một xu hướng tăng mạnh mẽ. Vào năm 2010, con số này chỉ ở mức 300 triệu chiếc. Tuy nhiên, nó đã tăng vọt đáng kể để đạt đỉnh 1,5 tỷ chiếc vào năm 2018. Sau đó, doanh số chứng kiến một sự sụt giảm nhẹ xuống còn 1,4 tỷ chiếc vào năm 2020."
+    },
+    vocabulary: [
+      { word: 'Illustrate', ipa: '/ˈɪl.ə.streɪt/', meaning: 'Minh họa, chỉ ra', example: 'The graph illustrates the changes in population.' },
+      { word: 'Dramatic', ipa: '/drəˈmæt.ɪk/', meaning: 'Mạnh mẽ, đột ngột', example: 'There was a dramatic drop in temperature.' },
+      { word: 'Upward trend', ipa: '/ˈʌp.wəd trend/', meaning: 'Xu hướng tăng', example: 'The economy shows an upward trend.' },
+      { word: 'Surge', ipa: '/sɜːdʒ/', meaning: 'Tăng vọt (động từ/danh từ)', example: 'House prices surged last year.' },
+      { word: 'Peak', ipa: '/piːk/', meaning: 'Đỉnh điểm', example: 'The traffic reaches its peak at 5 PM.' },
+      { word: 'Decline', ipa: '/dɪˈklaɪn/', meaning: 'Giảm xuống, sự sụt giảm', example: 'The number of readers witnessed a decline.' },
+      { word: 'Fluctuate', ipa: '/ˈflʌk.tʃu.eɪt/', meaning: 'Biến động, dao động', example: 'Stock prices fluctuate daily.' }
+    ],
+    grammar: [
       {
         rule: 'Ngữ pháp mô tả sự thay đổi (Verb + Adverb vs. Adjective + Noun)',
         explanation: 'Trong Writing, cậu nên linh hoạt thay đổi giữa 2 cấu trúc này để ghi điểm Ngữ pháp.',
@@ -253,10 +271,18 @@ export const curriculumData: Lesson[] = [
         hint: "Bắt đầu bằng chữ 'f', dạng quá khứ."
       }
     ],
+    conversationPractice: {
+      situation: "Cùng tớ tập miêu tả biểu đồ chi tiêu của cậu tháng này nhé!",
+      dialogue: [
+        { speaker: "A", line: "Did your shopping expenses increase this month?", lineVi: "Chi phí mua sắm của cậu tháng này có tăng không?" },
+        { speaker: "B", line: "Yes. There was a dramatic increase.", lineVi: "Có. Đã có một sự tăng mạnh." },
+        { speaker: "A", line: "Oh! Did it reach a peak?", lineVi: "Ồ! Nó có chạm đỉnh không?" },
+        { speaker: "B", line: "Exactly. It reached a peak of 5 million VND.", lineVi: "Chính xác. Nó đạt đỉnh 5 triệu đồng." }
+      ]
+    },
     tips: [
-      "Khi viết đoạn Overview (Nhìn chung), luôn dùng từ 'Overall, it is clear that...'",
-      "Đừng liệt kê mọi con số! Hãy chọn lọc những điểm nổi bật như cao nhất, thấp nhất, hoặc thay đổi lớn nhất.",
-      "Cố gắng thuộc lòng các từ đồng nghĩa: Increase = Rise = Grow = Surge, Decrease = Fall = Drop = Decline."
+      "💡 Gia sư bật mí: Đừng bao giờ chép lại nguyên văn câu hỏi đề bài vào câu mở bài của cậu. Luôn dùng từ đồng nghĩa! (Ví dụ đề dùng 'show', cậu dùng 'illustrate').",
+      "💡 Để làm bài Task 1 điểm cao, Ngọc Anh nhớ phải có một câu 'Overall' (Nhìn chung) miêu tả xu hướng bao quát nhất của toàn bộ biểu đồ nhé!"
     ]
   }
 ];
