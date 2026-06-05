@@ -65,7 +65,7 @@ export const apiClient = {
     }
   },
 
-  async chatWithTutor(question: str, context: str) {
+  async chatWithTutor(question: string, context: string) {
     try {
       const response = await fetch(`${BASE_URL}/ai/chat`, {
         method: 'POST',
