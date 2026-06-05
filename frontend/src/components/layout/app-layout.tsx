@@ -2,6 +2,7 @@
 import { Header } from './header';
 import { TheCompass } from './the-compass';
 import { AIDock } from './ai-dock';
+import { GlobalTranslator } from '@/components/global-translator';
 import { FloatingMiniPlayer } from '@/components/floating-mini-player';
 import { useAuthStore } from '@/store/use-auth-store';
 import { useEffect, useState } from 'react';
@@ -36,10 +37,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
 
-      {/* Invisible Navigation Elements */}
+      {/* Invisible Navigation & Global Elements */}
       <TheCompass />
       <AIDock />
       <FloatingMiniPlayer />
+      <GlobalTranslator />
     </div>
   );
 }

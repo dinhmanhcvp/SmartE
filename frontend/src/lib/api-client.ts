@@ -46,5 +46,22 @@ export const apiClient = {
       console.error("Status check failed:", error);
       throw error;
     }
+  },
+
+  async analyzeTranslation(selected_text: string, full_sentence_context: string = "") {
+    try {
+      const response = await fetch(`${BASE_URL}/translation/analyze`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ selected_text, full_sentence_context }),
+      });
+      if (!response.ok) throw new Error('Translation API Error');
+      return await response.json();
+    } catch (error) {
+      console.error("Translation failed:", error);
+      throw error;
+    }
   }
 };

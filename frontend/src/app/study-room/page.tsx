@@ -167,7 +167,7 @@ export default function StudyRoomPage() {
         <div className="flex-1 flex gap-4 min-h-0">
           
           {/* ====== LEFT: Nội dung bài học ====== */}
-          <div className={`flex flex-col min-h-0 transition-all duration-300 ${toolExpanded ? 'w-0 overflow-hidden opacity-0' : 'flex-[3]'}`}>
+          <div className={`flex flex-col min-h-0 transition-all duration-300 ${toolExpanded ? 'w-0 overflow-hidden opacity-0' : 'flex-1'}`}>
             {/* Section tabs */}
             <div className="flex gap-1 mb-3 shrink-0 flex-wrap">
               {sections.map(s => (
@@ -219,9 +219,9 @@ export default function StudyRoomPage() {
 
                   {/* === VOCABULARY === */}
                   {activeSection === 'vocab' && (
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       <h3 className="text-lg font-heading font-bold text-white">📝 Từ vựng Unit {lesson.unit}</h3>
-                      <div className="grid gap-3">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         {lesson.vocabulary.map((v, i) => (
                           <div key={i} className="bg-white/5 rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all group">
                             <div className="flex items-start justify-between gap-4">
@@ -242,9 +242,10 @@ export default function StudyRoomPage() {
 
                   {/* === GRAMMAR === */}
                   {activeSection === 'grammar' && (
-                    <div className="space-y-6">
+                    <div className="space-y-4">
                       <h3 className="text-lg font-heading font-bold text-white">📐 Ngữ pháp Unit {lesson.unit}</h3>
-                      {lesson.grammar.map((g, i) => (
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        {lesson.grammar.map((g, i) => (
                         <div key={i} className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-3">
                           <h4 className="text-base font-bold text-cyan-300">{g.rule}</h4>
                           <p className="text-sm text-muted-foreground">{g.explanation}</p>
@@ -255,6 +256,7 @@ export default function StudyRoomPage() {
                           </div>
                         </div>
                       ))}
+                      </div>
                     </div>
                   )}
 
@@ -360,7 +362,7 @@ export default function StudyRoomPage() {
           </div>
 
           {/* ====== RIGHT: Công cụ học tập ====== */}
-          <div className={`flex flex-col min-h-0 transition-all duration-300 ${toolExpanded ? 'flex-1' : 'flex-[2]'}`}>
+          <div className={`flex flex-col min-h-0 transition-all duration-300 ${toolExpanded ? 'flex-1' : 'w-80 lg:w-96 shrink-0'}`}>
             {/* Tool tabs + expand */}
             <div className="flex items-center gap-1 mb-3 shrink-0">
               {[
