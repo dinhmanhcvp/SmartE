@@ -83,7 +83,7 @@ export const useSRSStore = create<SRSStoreState>()(
       }
     }),
     {
-      name: 'smarte-srs-database',
+      name: 'ngocanh-srs-database',
     }
   )
 );

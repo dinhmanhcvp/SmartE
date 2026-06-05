@@ -36,41 +36,6 @@ export default function DashboardPage() {
 
   const isBeginner = user.learning_track === 'beginner';
   const isNgocAnh = user.username === 'ngocanhdangiu';
-  const isOmachi = user.username === 'omachi';
-
-  // ===== OMACHI: Giao diện tối giản, chỉ học =====
-  if (isOmachi) {
-    return (
-      <AppLayout>
-        <div className="flex items-center justify-center h-[calc(100vh-120px)] animate-in fade-in duration-500">
-          <div className="max-w-lg w-full text-center relative">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[150px] pointer-events-none"></div>
-            
-            <div className="relative z-10 flex flex-col items-center gap-6">
-              <h2 className="text-3xl font-heading text-white font-medium">Sẵn sàng nâng band chưa?</h2>
-              
-              <div className="flex flex-col gap-4 w-full max-w-sm">
-                <Button 
-                  onClick={() => router.push('/upload')}
-                  className="w-full rounded-xl bg-purple-500/20 hover:bg-purple-500/40 text-purple-300 border border-purple-500/30 h-14 text-base"
-                >
-                  <UploadSimple weight="bold" className="w-5 h-5 mr-2" />
-                  Upload tài liệu
-                </Button>
-                <Button 
-                  onClick={() => router.push('/study')}
-                  variant="ghost"
-                  className="w-full rounded-xl border border-white/10 text-white/70 hover:text-white hover:bg-white/5 h-14 text-base"
-                >
-                  Vào học
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </AppLayout>
-    );
-  }
 
   return (
     <AppLayout>
@@ -80,30 +45,20 @@ export default function DashboardPage() {
         <div className="relative text-center pt-6 max-w-3xl mx-auto w-full">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-pink-500/5 rounded-full blur-[100px] pointer-events-none"></div>
           
-          <p className={`text-sm font-medium mb-2 tracking-widest uppercase animate-in fade-in slide-in-from-bottom-3 duration-700 ${isOmachi ? 'text-purple-400/70' : 'text-pink-400/70'}`}>
+          <p className="text-sm font-medium mb-2 tracking-widest uppercase animate-in fade-in slide-in-from-bottom-3 duration-700 text-pink-400/70">
             {greeting}
           </p>
           
           <h1 className="text-3xl md:text-4xl font-heading font-medium tracking-wide text-white/90 mb-3 animate-in fade-in slide-in-from-bottom-5 duration-1000">
-            {isOmachi ? (
-              <>Chào chị, <span className="gradient-text italic">sẵn sàng nâng band chưa?</span></>
-            ) : isNgocAnh ? (
-              <>Nàng ơi, <span className="gradient-text italic">hôm nay tớ chuẩn bị bài rồi nè!</span></>
-            ) : (
-              <>Chào {user.username}, <span className="gradient-text italic">sẵn sàng chưa nào?</span></>
-            )}
+            <>Nàng ơi, <span className="gradient-text italic">hôm nay tớ chuẩn bị bài rồi nè!</span></>
           </h1>
           
           <p className="text-muted-foreground text-sm max-w-md mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200 fill-mode-both">
-            {isOmachi
-              ? 'Nền tảng AI được thiết kế để giúp chị luyện thi và nâng band IELTS hiệu quả nhất.'
-              : isNgocAnh
-              ? 'Web này được tớ dành riêng cho cậu để trình độ tiếng Anh và mối quan hệ của hai đứa mình có thể phát triển cùng nhau ❤️'
-              : 'Nền tảng này được thiết kế riêng để chinh phục tiếng Anh.'}
+            Web này được tớ dành riêng cho cậu để trình độ tiếng Anh và mối quan hệ của hai đứa mình có thể phát triển cùng nhau ❤️
           </p>
 
-          {/* Trạng thái Crush - ẨN với omachi */}
-          {!isOmachi && partnerStatus === 'online' && (
+          {/* Trạng thái Crush */}
+          {partnerStatus === 'online' && (
             <div className="mt-4 inline-flex items-center gap-2 glass-panel px-4 py-2 rounded-full animate-in fade-in zoom-in duration-500">
               <Heart weight="fill" className="w-4 h-4 text-pink-400 animate-pulse" />
               <span className="text-sm text-pink-300">
@@ -183,8 +138,8 @@ export default function DashboardPage() {
           </Card>
         </div>
 
-        {/* ===== PLAYLIST LÃNG MẠN - ẨN với omachi ===== */}
-        {!isOmachi && (
+        {/* ===== PLAYLIST LÃNG MẠN ===== */}
+        {(
         <div className="max-w-5xl mx-auto w-full px-4">
           <Card className="premium-glass p-1 border-none shadow-[0_10px_40px_rgba(0,0,0,0.3)]">
             <CardContent className="p-6 relative bg-black/30 backdrop-blur-3xl rounded-2xl border border-white/10 overflow-hidden">
@@ -236,9 +191,7 @@ export default function DashboardPage() {
 
         {/* ===== QUOTE CUỐI ===== */}
         <p className="text-center text-sm text-muted-foreground/60 italic font-serif pb-8">
-          {isOmachi
-            ? '"The limits of my language mean the limits of my world." — Ludwig Wittgenstein'
-            : isNgocAnh 
+          {isNgocAnh 
             ? '"Every love story is beautiful, but ours is my favorite."' 
             : '"Ngôn từ chính xác là nghệ thuật vĩ đại nhất."'}
         </p>

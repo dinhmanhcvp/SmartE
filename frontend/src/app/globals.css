@@ -132,6 +132,7 @@
   }
   html {
     @apply font-sans;
+    font-size: 14px; /* Zoom out toàn bộ UI */
   }
 }
 

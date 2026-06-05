@@ -13,7 +13,7 @@ export const apiClient = {
       if (!response.ok) throw new Error('API Error');
       return await response.json();
     } catch (error) {
-      console.warn("[SmartE] Backend chưa chạy — bỏ qua lỗi generate-lesson");
+      console.warn("[ngocanhdangiu] Backend chưa chạy — bỏ qua lỗi generate-lesson");
       throw error;
     }
   },

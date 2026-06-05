@@ -19,8 +19,8 @@ export function ThemeColorSelector() {
 
   // Apply theme on load
   useEffect(() => {
-    const savedTheme = localStorage.getItem('smarte_theme_primary');
-    const savedFg = localStorage.getItem('smarte_theme_fg');
+    const savedTheme = localStorage.getItem('ngocanh_theme_primary');
+    const savedFg = localStorage.getItem('ngocanh_theme_fg');
     if (savedTheme) {
       document.documentElement.style.setProperty('--primary', savedTheme);
     }
@@ -32,8 +32,8 @@ export function ThemeColorSelector() {
   const applyTheme = (primary: string, fg: string) => {
     document.documentElement.style.setProperty('--primary', primary);
     document.documentElement.style.setProperty('--primary-foreground', fg);
-    localStorage.setItem('smarte_theme_primary', primary);
-    localStorage.setItem('smarte_theme_fg', fg);
+    localStorage.setItem('ngocanh_theme_primary', primary);
+    localStorage.setItem('ngocanh_theme_fg', fg);
     setOpen(false);
   };
 

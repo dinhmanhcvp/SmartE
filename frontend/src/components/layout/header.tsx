@@ -57,16 +57,12 @@ export function Header() {
           <span className="absolute top-1 right-1 flex h-2 w-2 rounded-full bg-red-600"></span>
           <span className="sr-only">Toggle notifications</span>
         </Button>
-        <Button 
-          variant="secondary" 
-          size="icon" 
-          className="rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-          onClick={handleSwitchUser}
-          title="Đổi người dùng"
+        <div 
+          className="rounded-full bg-pink-500/10 text-pink-300 w-9 h-9 flex items-center justify-center text-xs font-medium"
+          title={user?.username || 'Ngọc Anh'}
         >
-          <User weight="duotone" className="h-5 w-5" />
-          <span className="sr-only">Đổi người dùng</span>
-        </Button>
+          NA
+        </div>
       </div>
     </header>
   );

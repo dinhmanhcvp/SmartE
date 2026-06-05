@@ -75,7 +75,7 @@ export function AIDock() {
         
         <div className="flex flex-col">
           <span className={`text-sm font-semibold transition-colors duration-300 ${isDragging ? 'text-primary gradient-text' : 'text-foreground/90'}`}>
-            {isProcessing ? 'Đang hấp thụ dữ liệu...' : isDragging ? 'Thả File vào đây!' : 'SmartE AI'}
+            {isProcessing ? 'Đang hấp thụ dữ liệu...' : isDragging ? 'Thả File vào đây!' : 'Trợ lý AI'}
           </span>
           <span className="text-[10px] text-muted-foreground">Kéo thả tài liệu để phân tích</span>
         </div>

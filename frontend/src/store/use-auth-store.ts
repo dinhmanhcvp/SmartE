@@ -26,13 +26,6 @@ export const MOCK_USERS: Record<string, User> = {
     is_first_login: true,
     learning_track: null,
     account_status: 'active',
-  },
-  'omachi': {
-    id: 'u_3',
-    username: 'omachi',
-    is_first_login: true,
-    learning_track: null,
-    account_status: 'active',
   }
 };
 
@@ -78,7 +71,7 @@ export const useAuthStore = create<AuthState>()(
       }
     }),
     {
-      name: 'smarte-auth-storage',
+      name: 'ngocanh-auth-storage',
     }
   )
 );

@@ -13,7 +13,7 @@ export const useAudioStore = create<AudioStore>()(
       toggleMute: () => set((state) => ({ isMuted: !state.isMuted })),
     }),
     {
-      name: 'smarte-audio-storage',
+      name: 'ngocanh-audio-storage',
     }
   )
 );

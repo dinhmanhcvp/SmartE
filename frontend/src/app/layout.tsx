@@ -23,8 +23,8 @@ const beVietnam = Be_Vietnam_Pro({
 import { AuthProvider } from '@/components/providers/auth-provider';
 
 export const metadata: Metadata = {
-  title: "SmartE - AI English Learning Platform",
-  description: "Hệ thống học tiếng Anh cá nhân hóa toàn diện 4 kỹ năng tích hợp AI dành cho người mất gốc và nâng band.",
+  title: "ngocanhdangiu - Học tiếng Anh cùng nhau",
+  description: "Nền tảng học tiếng Anh được dành riêng cho Ngọc Anh.",
 };
 
 export default function RootLayout({

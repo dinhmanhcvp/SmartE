@@ -164,8 +164,8 @@ export default function StudyPage() {
           </div>
         </div>
 
-        {/* --- KHÔNG GIAN TỰ HỌC ĐỒNG BỘ - ẨN với omachi --- */}
-        {user?.username !== 'omachi' && (
+        {/* --- KHÔNG GIAN TỰ HỌC ĐỒNG BỘ --- */}
+        {(
         <div className="flex items-center gap-4 mb-4">
           <div className="glass-panel px-4 py-2 rounded-2xl flex items-center gap-3">
             <div className="relative group cursor-pointer" onClick={() => sendPoke()}>
@@ -223,7 +223,7 @@ export default function StudyPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2 mb-1.5">
-                        <span className="font-semibold text-[15px]">{msg.role === 'user' ? 'Bạn' : 'SmartE AI Tutor'}</span>
+                        <span className="font-semibold text-[15px]">{msg.role === 'user' ? 'Cậu' : 'Trợ lý AI'}</span>
                       </div>
                       
                       <div className={`text-[16px] leading-relaxed text-foreground/90 whitespace-pre-wrap ${msg.role === 'user' ? 'font-medium' : ''}`}>

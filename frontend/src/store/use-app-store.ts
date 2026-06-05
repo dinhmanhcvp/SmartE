@@ -37,7 +37,7 @@ export const useAppStore = create<AppState>()(
       getRandomLoadingText: () => romanticLoadingTexts[Math.floor(Math.random() * romanticLoadingTexts.length)]
     }),
     {
-      name: 'smarte-app-storage',
+      name: 'ngocanh-app-storage',
     }
   )
 );

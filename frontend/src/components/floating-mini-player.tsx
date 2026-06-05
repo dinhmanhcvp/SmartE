@@ -12,8 +12,7 @@ export function FloatingMiniPlayer() {
   const [showVolume, setShowVolume] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  // Ẩn hoàn toàn với omachi
-  if (!user || user.username === 'omachi') return null;
+  if (!user) return null;
   // Chưa bật nhạc và đã thu nhỏ thì ẩn
   if (!isPlaying && minimized) return null;
 
