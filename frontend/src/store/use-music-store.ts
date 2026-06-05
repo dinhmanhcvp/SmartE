@@ -9,17 +9,17 @@ export type Track = {
 
 const playlist: Track[] = [
   { title: 'Biển, Đảo Và Em', artist: 'Mã Dã (Crabbit)', ytId: 'z3ghXHs7qGI', ytQuery: 'Biển Đảo Và Em Mã Dã Crabbit' },
-  { title: 'Người Im Lặng Gặp Người Hay Nói', artist: 'HIEUTHUHAI', ytQuery: 'Người Im Lặng Gặp Người Hay Nói HIEUTHUHAI' },
-  { title: 'em ơi anh phải làm sao', artist: '↗ Hđ Quân', ytQuery: 'em ơi anh phải làm sao Hđ Quân' },
-  { title: 'i know u wanna kiss me', artist: 'LuckyMuzzic, shubham', ytQuery: 'i know u wanna kiss me LuckyMuzzic' },
-  { title: 'Thành Đô x Anh Vui (BB Remix)', artist: 'MeMe Media', ytQuery: 'Thành Đô x Anh Vui BB Remix' },
-  { title: "Can't Believe It Could Be", artist: 'Nadira Ayuningrum', ytQuery: "Can't Believe It Could Be Nadira Ayuningrum" },
-  { title: 'từng là của nhau', artist: 'Đức Minh', ytQuery: 'từng là của nhau Đức Minh' },
-  { title: 'Chang Con Nguoi Luon Canh Ben', artist: 'Đào Duy Khánh', ytQuery: 'Chẳng Còn Người Luôn Cạnh Bên Đào Duy Khánh' },
-  { title: 'có nước mắt em giấu đi làm gì', artist: 'dminh', ytQuery: 'có nước mắt em giấu đi làm gì dminh' },
-  { title: 'Cuộc Đời Được Mấy Khi Yêu Nhau', artist: 'Lê Huỳnh Phước Sang', ytQuery: 'Cuộc Đời Được Mấy Khi Yêu Nhau Lê Huỳnh Phước Sang' },
-  { title: 'Hero (Instrumental)', artist: 'Meego', ytQuery: 'Hero Instrumental Meego' },
-  { title: 'Good For You X One Of The Girls', artist: 'Remix', ytQuery: 'Good For You X One Of The Girls remix tiktok' },
+  { title: 'Người Im Lặng Gặp Người Hay Nói', artist: 'HIEUTHUHAI', ytId: '8sVtL0o-v7U', ytQuery: 'Người Im Lặng Gặp Người Hay Nói HIEUTHUHAI' },
+  { title: 'em ơi anh phải làm sao', artist: '↗ Hđ Quân', ytId: 'CMIrBSZTrhw', ytQuery: 'em ơi anh phải làm sao Hđ Quân' },
+  { title: 'i know u wanna kiss me', artist: 'LuckyMuzzic, shubham', ytId: 'vMPWcG02wG0', ytQuery: 'i know u wanna kiss me LuckyMuzzic' },
+  { title: 'Thành Đô x Anh Vui (BB Remix)', artist: 'MeMe Media', ytId: 'D6e9lOW9aTA', ytQuery: 'Thành Đô x Anh Vui BB Remix' },
+  { title: "Can't Believe It Could Be", artist: 'Nadira Ayuningrum', ytId: 'pWx-_7V24Yc', ytQuery: "Can't Believe It Could Be Nadira Ayuningrum" },
+  { title: 'từng là của nhau', artist: 'Đức Minh', ytId: 'TIJrDhA8nh0', ytQuery: 'từng là của nhau Đức Minh' },
+  { title: 'Chang Con Nguoi Luon Canh Ben', artist: 'Đào Duy Khánh', ytId: '9bEqy9SHd1E', ytQuery: 'Chẳng Còn Người Luôn Cạnh Bên Đào Duy Khánh' },
+  { title: 'có nước mắt em giấu đi làm gì', artist: 'dminh', ytId: 'UczyKIVjuNo', ytQuery: 'có nước mắt em giấu đi làm gì dminh' },
+  { title: 'Cuộc Đời Được Mấy Khi Yêu Nhau', artist: 'Lê Huỳnh Phước Sang', ytId: 'oLEhNVryFhY', ytQuery: 'Cuộc Đời Được Mấy Khi Yêu Nhau Lê Huỳnh Phước Sang' },
+  { title: 'Hero (Instrumental)', artist: 'Meego', ytId: 'o2OD9viHZaY', ytQuery: 'Hero Instrumental Meego' },
+  { title: 'Good For You X One Of The Girls', artist: 'Remix', ytId: 'zCeF3heB8V8', ytQuery: 'Good For You X One Of The Girls remix tiktok' },
 ];
 
 interface MusicState {
