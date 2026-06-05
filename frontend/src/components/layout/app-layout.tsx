@@ -24,12 +24,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   }, [user]);
 
   return (
-    <div className={`flex flex-col min-h-screen w-full relative overflow-hidden bg-background text-foreground transition-colors duration-500 ${theme}`}>
-      {/* Background Ambience (Pure White / Soft) */}
-      <div className="fixed inset-0 z-0 pointer-events-none bg-white">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-pink-100/40 rounded-full blur-[120px] mix-blend-multiply"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-50/50 rounded-full blur-[120px] mix-blend-multiply"></div>
-      </div>
+    <div className={`flex flex-col min-h-screen w-full relative overflow-hidden bg-[#0B1120] ${theme}`}>
+      {/* Background Ambience */}
+      <div className="fixed inset-0 z-0 pointer-events-none opacity-40 mix-blend-screen" style={{ backgroundImage: 'radial-gradient(circle at 50% -20%, #4c1d95 0%, transparent 50%), radial-gradient(circle at -20% 50%, #1e3a8a 0%, transparent 50%), radial-gradient(circle at 120% 120%, #064e3b 0%, transparent 50%)' }}></div>
       
       {/* The floating ultra-minimal header */}
       <div className="relative z-50">

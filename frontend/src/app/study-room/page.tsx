@@ -155,10 +155,10 @@ export default function StudyRoomPage() {
           </Button>
           
           <div className="flex-1 flex items-center gap-3">
-            <div className="bg-white/80 backdrop-blur-md border border-pink-100 shadow-sm px-4 py-2 rounded-2xl flex-1">
-              <p className="text-xs text-slate-500">Unit {lesson.unit}</p>
-              <h2 className="text-lg font-heading font-bold text-slate-800">{lesson.title}</h2>
-              <p className="text-sm text-slate-500">{lesson.titleVi}</p>
+            <div className="glass-panel px-4 py-2 rounded-2xl flex-1">
+              <p className="text-xs text-muted-foreground">Unit {lesson.unit}</p>
+              <h2 className="text-lg font-heading font-bold text-white">{lesson.title}</h2>
+              <p className="text-sm text-muted-foreground">{lesson.titleVi}</p>
             </div>
           </div>
 
@@ -168,7 +168,7 @@ export default function StudyRoomPage() {
         </div>
 
         {/* Mục tiêu bài học */}
-        <div className="bg-white/80 backdrop-blur-md border border-pink-100 shadow-sm px-4 py-2 rounded-xl text-sm text-slate-600 shrink-0">
+        <div className="glass-panel px-4 py-2 rounded-xl text-sm text-muted-foreground shrink-0">
           🎯 {lesson.objective}
         </div>
 
@@ -185,8 +185,8 @@ export default function StudyRoomPage() {
                   onClick={() => setActiveSection(s.key)}
                   className={`text-xs px-3 py-1.5 rounded-full transition-all ${
                     activeSection === s.key 
-                      ? 'bg-pink-100 text-pink-600 border border-pink-200 font-medium' 
-                      : 'text-slate-500 hover:text-slate-800 hover:bg-white/60'
+                      ? 'bg-pink-500/20 text-pink-300 border border-pink-500/30' 
+                      : 'text-muted-foreground hover:text-white hover:bg-white/5'
                   }`}
                 >
                   {s.label}
@@ -202,24 +202,24 @@ export default function StudyRoomPage() {
                   {activeSection === 'reading' && (
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-heading font-bold text-slate-800">{lesson.reading.title}</h3>
-                        <Button variant="outline" size="sm" className="text-xs bg-white text-slate-700 border-pink-100 hover:bg-pink-50" onClick={() => setShowTranslation(!showTranslation)}>
+                        <h3 className="text-lg font-heading font-bold text-white">{lesson.reading.title}</h3>
+                        <Button variant="ghost" size="sm" className="text-xs" onClick={() => setShowTranslation(!showTranslation)}>
                           {showTranslation ? 'Ẩn bản dịch' : 'Hiện bản dịch'}
                         </Button>
                       </div>
-                      <div className="bg-white rounded-xl p-5 border border-pink-100 shadow-sm">
-                        <pre className="whitespace-pre-wrap text-sm text-slate-700 font-sans leading-7">{lesson.reading.content}</pre>
+                      <div className="bg-white/5 rounded-xl p-5 border border-white/10">
+                        <pre className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-7">{lesson.reading.content}</pre>
                       </div>
                       {showTranslation && lesson.reading.translation && (
-                        <div className="bg-blue-50/50 rounded-xl p-5 border border-blue-100 animate-in fade-in slide-in-from-top-3 duration-300">
-                          <p className="text-xs text-blue-600 font-medium mb-2">🇻🇳 Bản dịch tiếng Việt</p>
-                          <pre className="whitespace-pre-wrap text-sm text-slate-600 font-sans leading-7">{lesson.reading.translation}</pre>
+                        <div className="bg-blue-500/5 rounded-xl p-5 border border-blue-500/20 animate-in fade-in slide-in-from-top-3 duration-300">
+                          <p className="text-xs text-blue-300 font-medium mb-2">🇻🇳 Bản dịch tiếng Việt</p>
+                          <pre className="whitespace-pre-wrap text-sm text-white/70 font-sans leading-7">{lesson.reading.translation}</pre>
                         </div>
                       )}
                       {lesson.tips && (
                         <div className="space-y-2 pt-2">
                           {lesson.tips.map((tip, i) => (
-                            <p key={i} className="text-sm text-amber-700 bg-amber-50 px-4 py-2 rounded-xl border border-amber-200">{tip}</p>
+                            <p key={i} className="text-sm text-amber-300/80 bg-amber-500/5 px-4 py-2 rounded-xl border border-amber-500/10">{tip}</p>
                           ))}
                         </div>
                       )}
@@ -229,20 +229,20 @@ export default function StudyRoomPage() {
                   {/* === VOCABULARY === */}
                   {activeSection === 'vocab' && (
                     <div className="space-y-4">
-                      <h3 className="text-lg font-heading font-bold text-slate-800">📝 Từ vựng Unit {lesson.unit}</h3>
+                      <h3 className="text-lg font-heading font-bold text-white">📝 Từ vựng Unit {lesson.unit}</h3>
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         {lesson.vocabulary.map((v, i) => (
-                          <div key={i} className="bg-white rounded-xl p-4 border border-pink-100 shadow-sm hover:shadow-md transition-all group">
+                          <div key={i} className="bg-white/5 rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all group">
                             <div className="flex items-start justify-between gap-4">
                               <div className="flex-1">
                                 <div className="flex items-baseline gap-2 flex-wrap">
-                                  <span className="text-base font-semibold text-slate-800">{v.word}</span>
-                                  <span className="text-xs text-purple-600 font-mono">{v.ipa}</span>
+                                  <span className="text-base font-semibold text-white">{v.word}</span>
+                                  <span className="text-xs text-purple-300 font-mono">{v.ipa}</span>
                                 </div>
-                                <p className="text-sm text-pink-600 mt-1 font-medium">{v.meaning}</p>
+                                <p className="text-sm text-pink-300 mt-1">{v.meaning}</p>
                               </div>
                             </div>
-                            <p className="text-sm text-slate-500 mt-2 italic">"{v.example}"</p>
+                            <p className="text-sm text-muted-foreground mt-2 italic">"{v.example}"</p>
                           </div>
                         ))}
                       </div>
@@ -252,15 +252,15 @@ export default function StudyRoomPage() {
                   {/* === GRAMMAR === */}
                   {activeSection === 'grammar' && (
                     <div className="space-y-4">
-                      <h3 className="text-lg font-heading font-bold text-slate-800">📐 Ngữ pháp Unit {lesson.unit}</h3>
+                      <h3 className="text-lg font-heading font-bold text-white">📐 Ngữ pháp Unit {lesson.unit}</h3>
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         {lesson.grammar.map((g, i) => (
-                        <div key={i} className="bg-white rounded-xl p-5 border border-pink-100 shadow-sm space-y-3">
-                          <h4 className="text-base font-bold text-cyan-700">{g.rule}</h4>
-                          <p className="text-sm text-slate-600">{g.explanation}</p>
-                          <div className="bg-pink-50/50 rounded-lg p-4 border border-pink-50 space-y-1">
+                        <div key={i} className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-3">
+                          <h4 className="text-base font-bold text-cyan-300">{g.rule}</h4>
+                          <p className="text-sm text-muted-foreground">{g.explanation}</p>
+                          <div className="bg-black/30 rounded-lg p-4 space-y-1">
                             {g.examples.map((ex, j) => (
-                              <p key={j} className="text-sm text-slate-700">• {ex}</p>
+                              <p key={j} className="text-sm text-white/80">• {ex}</p>
                             ))}
                           </div>
                         </div>
@@ -272,18 +272,18 @@ export default function StudyRoomPage() {
                   {/* === EXERCISES === */}
                   {activeSection === 'exercises' && (
                     <div className="space-y-5">
-                      <h3 className="text-lg font-heading font-bold text-slate-800">✏️ Bài tập Unit {lesson.unit}</h3>
+                      <h3 className="text-lg font-heading font-bold text-white">✏️ Bài tập Unit {lesson.unit}</h3>
                       {lesson.exercises.map((ex, i) => (
-                        <div key={ex.id} className={`bg-white rounded-xl p-5 border shadow-sm space-y-3 transition-all ${
-                          checked[ex.id] === true ? 'border-emerald-300 bg-emerald-50' 
-                          : checked[ex.id] === false ? 'border-red-300 bg-red-50' 
-                          : 'border-pink-100'
+                        <div key={ex.id} className={`bg-white/5 rounded-xl p-5 border space-y-3 transition-all ${
+                          checked[ex.id] === true ? 'border-emerald-500/30 bg-emerald-500/5' 
+                          : checked[ex.id] === false ? 'border-red-500/30 bg-red-500/5' 
+                          : 'border-white/10'
                         }`}>
                           <div className="flex items-start gap-3">
-                            <span className="text-xs bg-slate-100 text-slate-500 w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
+                            <span className="text-xs bg-white/10 text-white/60 w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
                             <div className="flex-1">
-                              <p className="text-xs text-purple-600 mb-1 font-medium">{ex.instruction}</p>
-                              <p className="text-sm text-slate-800 font-medium">{ex.question}</p>
+                              <p className="text-xs text-purple-300 mb-1">{ex.instruction}</p>
+                              <p className="text-sm text-white font-medium">{ex.question}</p>
                               
                               {ex.type === 'choose' && ex.options ? (
                                 <div className="grid grid-cols-2 gap-2 mt-3">
@@ -293,8 +293,8 @@ export default function StudyRoomPage() {
                                       onClick={() => setAnswers({ ...answers, [ex.id]: opt })}
                                       className={`text-sm px-4 py-2 rounded-xl border transition-all text-left ${
                                         answers[ex.id] === opt 
-                                          ? 'bg-pink-100 border-pink-200 text-pink-700 font-medium' 
-                                          : 'bg-white border-pink-100 text-slate-600 hover:bg-pink-50'
+                                          ? 'bg-pink-500/20 border-pink-500/30 text-pink-300' 
+                                          : 'bg-white/5 border-white/10 text-white/70 hover:bg-white/10'
                                       }`}
                                     >
                                       {opt}
@@ -308,23 +308,23 @@ export default function StudyRoomPage() {
                                   onChange={(e) => setAnswers({ ...answers, [ex.id]: e.target.value })}
                                   onKeyDown={(e) => e.key === 'Enter' && checkAnswer(ex)}
                                   placeholder="Nhập câu trả lời..."
-                                  className="w-full mt-3 bg-white border border-pink-100 rounded-xl px-4 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-pink-300 shadow-inner"
+                                  className="w-full mt-3 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-pink-500/50"
                                 />
                               )}
 
                               <div className="flex items-center gap-2 mt-3">
-                                <Button size="sm" className="text-xs rounded-lg bg-pink-100 text-pink-600 hover:bg-pink-200 border-none shadow-sm" onClick={() => checkAnswer(ex)}>
+                                <Button size="sm" className="text-xs rounded-lg bg-pink-500/20 text-pink-300 hover:bg-pink-500/30 border-none" onClick={() => checkAnswer(ex)}>
                                   Kiểm tra
                                 </Button>
-                                <Button size="sm" variant="ghost" className="text-xs rounded-lg text-slate-500 hover:text-slate-800" onClick={() => setShowHint({ ...showHint, [ex.id]: !showHint[ex.id] })}>
+                                <Button size="sm" variant="ghost" className="text-xs rounded-lg" onClick={() => setShowHint({ ...showHint, [ex.id]: !showHint[ex.id] })}>
                                   <Lightbulb className="w-3.5 h-3.5 mr-1" /> Gợi ý
                                 </Button>
-                                {checked[ex.id] === true && <CheckCircle weight="fill" className="w-5 h-5 text-emerald-500" />}
-                                {checked[ex.id] === false && <XCircle weight="fill" className="w-5 h-5 text-red-500" />}
-                                {checked[ex.id] === false && <span className="text-xs text-red-600">Đáp án: {ex.answer}</span>}
+                                {checked[ex.id] === true && <CheckCircle weight="fill" className="w-5 h-5 text-emerald-400" />}
+                                {checked[ex.id] === false && <XCircle weight="fill" className="w-5 h-5 text-red-400" />}
+                                {checked[ex.id] === false && <span className="text-xs text-red-300">Đáp án: {ex.answer}</span>}
                               </div>
                               {showHint[ex.id] && ex.hint && (
-                                <p className="text-xs text-amber-700 mt-2 bg-amber-50 px-3 py-2 rounded-lg border border-amber-200 animate-in fade-in duration-200">💡 {ex.hint}</p>
+                                <p className="text-xs text-amber-300/80 mt-2 bg-amber-500/5 px-3 py-2 rounded-lg border border-amber-500/10 animate-in fade-in duration-200">💡 {ex.hint}</p>
                               )}
                             </div>
                           </div>
@@ -336,30 +336,30 @@ export default function StudyRoomPage() {
                   {/* === DIALOGUE PRACTICE === */}
                   {activeSection === 'dialogue' && lesson.conversationPractice && (
                     <div className="space-y-4">
-                      <h3 className="text-lg font-heading font-bold text-slate-800">💬 Luyện hội thoại</h3>
-                      <p className="text-sm text-slate-600 bg-pink-50 px-4 py-3 rounded-xl border border-pink-100">
+                      <h3 className="text-lg font-heading font-bold text-white">💬 Luyện hội thoại</h3>
+                      <p className="text-sm text-muted-foreground bg-pink-500/5 px-4 py-3 rounded-xl border border-pink-500/10">
                         🎭 {lesson.conversationPractice.situation}
                       </p>
                       <div className="space-y-3">
                         {lesson.conversationPractice.dialogue.map((d, i) => (
                           <div key={i} className={`flex gap-3 ${d.speaker === 'B' || d.speaker === 'Customer' ? 'flex-row-reverse' : ''}`}>
                             <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 text-xs font-bold ${
-                              d.speaker === 'A' || d.speaker === 'Waiter' ? 'bg-blue-100 text-blue-600' : 'bg-pink-100 text-pink-600'
+                              d.speaker === 'A' || d.speaker === 'Waiter' ? 'bg-blue-500/20 text-blue-300' : 'bg-pink-500/20 text-pink-300'
                             }`}>
                               {d.speaker[0]}
                             </div>
                             <div className={`flex-1 max-w-[80%] ${d.speaker === 'B' || d.speaker === 'Customer' ? 'text-right' : ''}`}>
-                              <div className={`inline-block rounded-2xl px-4 py-3 shadow-sm ${
-                                d.speaker === 'A' || d.speaker === 'Waiter' ? 'bg-blue-50 border border-blue-100' : 'bg-pink-50 border border-pink-100'
+                              <div className={`inline-block rounded-2xl px-4 py-3 ${
+                                d.speaker === 'A' || d.speaker === 'Waiter' ? 'bg-blue-500/10 border border-blue-500/20' : 'bg-pink-500/10 border border-pink-500/20'
                               }`}>
-                                <p className="text-sm text-slate-800">{d.line}</p>
-                                <p className="text-xs text-slate-500 mt-1">{d.lineVi}</p>
+                                <p className="text-sm text-white">{d.line}</p>
+                                <p className="text-xs text-muted-foreground mt-1">{d.lineVi}</p>
                               </div>
                             </div>
                           </div>
                         ))}
                       </div>
-                      <p className="text-xs text-slate-500 italic text-center pt-2">
+                      <p className="text-xs text-muted-foreground italic text-center pt-2">
                         ✨ Dùng Whiteboard bên phải để ghi chú, hoặc hỏi AI nếu chưa hiểu nhé!
                       </p>
                     </div>
@@ -384,15 +384,15 @@ export default function StudyRoomPage() {
                   onClick={() => setActiveTool(t.key)}
                   className={`text-xs px-3 py-1.5 rounded-full transition-all ${
                     activeTool === t.key 
-                      ? 'bg-cyan-50 text-cyan-600 border border-cyan-200 font-medium' 
-                      : 'text-slate-500 hover:text-slate-800 hover:bg-white/60'
+                      ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30' 
+                      : 'text-muted-foreground hover:text-white hover:bg-white/5'
                   }`}
                 >
                   {t.label}
                 </button>
               ))}
               <div className="flex-1" />
-              <button onClick={() => setToolExpanded(!toolExpanded)} className="text-slate-500 hover:text-slate-800 p-1 rounded-lg transition-colors">
+              <button onClick={() => setToolExpanded(!toolExpanded)} className="text-muted-foreground hover:text-white p-1 rounded-lg transition-colors">
                 {toolExpanded ? <ArrowsInSimple className="w-4 h-4" /> : <ArrowsOutSimple className="w-4 h-4" />}
               </button>
             </div>
@@ -406,14 +406,14 @@ export default function StudyRoomPage() {
                     {['#ec4899', '#3b82f6', '#10b981', '#f59e0b', '#ffffff'].map(c => (
                       <button key={c} onClick={() => setBrushColor(c)} className={`w-6 h-6 rounded-full border-2 transition-all ${brushColor === c ? 'border-white scale-125' : 'border-transparent'}`} style={{ backgroundColor: c }} />
                     ))}
-                    <div className="w-px h-5 bg-pink-100 mx-1" />
+                    <div className="w-px h-5 bg-white/10 mx-1" />
                     {[2, 4, 6].map(s => (
-                      <button key={s} onClick={() => setBrushSize(s)} className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs transition-all ${brushSize === s ? 'bg-pink-100 text-pink-600' : 'text-slate-500 hover:bg-pink-50'}`}>{s}</button>
+                      <button key={s} onClick={() => setBrushSize(s)} className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs transition-all ${brushSize === s ? 'bg-white/20 text-white' : 'text-muted-foreground hover:bg-white/10'}`}>{s}</button>
                     ))}
                     <div className="flex-1" />
-                    <Button variant="outline" size="sm" className="text-xs text-slate-500 hover:text-slate-800" onClick={clearCanvas}><Eraser className="w-3.5 h-3.5 mr-1" /> Xóa</Button>
+                    <Button variant="ghost" size="sm" className="text-xs" onClick={clearCanvas}><Eraser className="w-3.5 h-3.5 mr-1" /> Xóa</Button>
                   </div>
-                  <div className="flex-1 min-h-0 rounded-xl overflow-hidden border border-pink-100 bg-white shadow-inner">
+                  <div className="flex-1 min-h-0 rounded-xl overflow-hidden border border-white/10 bg-black/30">
                     <canvas
                       ref={canvasRef}
                       width={800}
@@ -431,20 +431,20 @@ export default function StudyRoomPage() {
               {/* === TRANSLATE === */}
               {activeTool === 'translate' && (
                 <CardContent className="flex-1 p-4 flex flex-col min-h-0">
-                  <div className="flex items-center gap-2 mb-3 text-xs text-slate-500 shrink-0">
-                    <span className="bg-pink-50 text-pink-600 px-2 py-1 rounded-lg">Tiếng Anh</span>
+                  <div className="flex items-center gap-2 mb-3 text-xs text-muted-foreground shrink-0">
+                    <span className="bg-white/10 px-2 py-1 rounded-lg">Tiếng Anh</span>
                     <span>↔</span>
-                    <span className="bg-cyan-50 text-cyan-600 px-2 py-1 rounded-lg">Tiếng Việt</span>
+                    <span className="bg-white/10 px-2 py-1 rounded-lg">Tiếng Việt</span>
                   </div>
                   <textarea
                     value={translateInput}
                     onChange={(e) => setTranslateInput(e.target.value)}
                     placeholder="Nhập từ hoặc câu cần dịch..."
-                    className="w-full bg-white border border-pink-100 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-cyan-300 resize-none shrink-0 shadow-inner"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-cyan-500/50 resize-none shrink-0"
                     rows={3}
                   />
                   <Button 
-                    className="mt-3 rounded-xl bg-cyan-100 text-cyan-700 hover:bg-cyan-200 border-none shrink-0 shadow-sm"
+                    className="mt-3 rounded-xl bg-cyan-500/20 text-cyan-300 hover:bg-cyan-500/30 border-none shrink-0"
                     onClick={handleTranslate}
                     disabled={isTranslating}
                   >
@@ -453,7 +453,7 @@ export default function StudyRoomPage() {
                   {translateResult && (
                     <div className="mt-3 flex-1 min-h-0">
                       <ScrollArea className="h-full">
-                        <div className="bg-cyan-50 rounded-xl p-4 border border-cyan-100 text-sm text-slate-700 whitespace-pre-wrap">
+                        <div className="bg-cyan-500/5 rounded-xl p-4 border border-cyan-500/20 text-sm text-white/80 whitespace-pre-wrap">
                           {translateResult}
                         </div>
                       </ScrollArea>
@@ -469,13 +469,13 @@ export default function StudyRoomPage() {
                     <div className="space-y-3">
                       {chatMessages.map((msg, i) => (
                         <div key={i} className={`flex gap-2 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
-                          <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs shadow-sm ${
-                            msg.role === 'ai' ? 'bg-purple-100 text-purple-600' : 'bg-pink-100 text-pink-600'
+                          <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-xs ${
+                            msg.role === 'ai' ? 'bg-purple-500/20 text-purple-300' : 'bg-pink-500/20 text-pink-300'
                           }`}>
                             {msg.role === 'ai' ? '🤖' : '💬'}
                           </div>
-                          <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm shadow-sm ${
-                            msg.role === 'ai' ? 'bg-white border border-purple-100 text-slate-800' : 'bg-pink-50 border border-pink-100 text-slate-800'
+                          <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-sm ${
+                            msg.role === 'ai' ? 'bg-purple-500/10 border border-purple-500/20 text-white/90' : 'bg-pink-500/10 border border-pink-500/20 text-white'
                           }`}>
                             <p className="whitespace-pre-wrap">{msg.text}</p>
                           </div>
@@ -483,8 +483,8 @@ export default function StudyRoomPage() {
                       ))}
                       {isAiThinking && (
                         <div className="flex gap-2">
-                          <div className="w-7 h-7 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-xs shadow-sm">🤖</div>
-                          <div className="bg-white border border-purple-100 shadow-sm rounded-2xl px-4 py-2.5">
+                          <div className="w-7 h-7 rounded-full bg-purple-500/20 flex items-center justify-center text-xs">🤖</div>
+                          <div className="bg-purple-500/10 border border-purple-500/20 rounded-2xl px-4 py-2.5">
                             <div className="flex gap-1">
                               <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                               <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
@@ -499,7 +499,7 @@ export default function StudyRoomPage() {
                   {/* Quick questions */}
                   <div className="flex gap-1.5 mb-2 flex-wrap shrink-0">
                     {[`"${lesson.grammar[0]?.rule}" nghĩa là gì?`, 'Giải thích bài tập', 'Cho thêm ví dụ'].map(q => (
-                      <button key={q} onClick={() => setChatInput(q)} className="text-[11px] px-2.5 py-1 rounded-full bg-white border border-pink-100 shadow-sm text-slate-500 hover:bg-pink-50 hover:text-slate-800 transition-all truncate max-w-[140px]">
+                      <button key={q} onClick={() => setChatInput(q)} className="text-[11px] px-2.5 py-1 rounded-full bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white transition-all truncate max-w-[140px]">
                         {q}
                       </button>
                     ))}
@@ -512,9 +512,9 @@ export default function StudyRoomPage() {
                       onChange={(e) => setChatInput(e.target.value)}
                       onKeyDown={(e) => e.key === 'Enter' && handleAskAI()}
                       placeholder="Hỏi AI về bài học..."
-                      className="flex-1 bg-white border border-pink-100 rounded-xl px-4 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-purple-300 shadow-inner"
+                      className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-purple-500/50"
                     />
-                    <Button size="icon" className="rounded-xl bg-purple-100 text-purple-600 hover:bg-purple-200 border-none shrink-0 shadow-sm" onClick={handleAskAI} disabled={isAiThinking}>
+                    <Button size="icon" className="rounded-xl bg-purple-500/20 text-purple-300 hover:bg-purple-500/30 border-none shrink-0" onClick={handleAskAI} disabled={isAiThinking}>
                       <PaperPlaneTilt weight="fill" className="w-4 h-4" />
                     </Button>
                   </div>

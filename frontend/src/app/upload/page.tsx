@@ -109,7 +109,7 @@ export default function UploadPage() {
                       <Label htmlFor="text-input" className="text-base font-semibold text-primary">Nội dung bài viết (Essay/Article)</Label>
                       <textarea 
                         id="text-input" 
-                        className="flex min-h-[280px] w-full rounded-xl border border-pink-100 bg-white/60 px-4 py-3 text-base shadow-inner placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary transition-colors resize-none leading-relaxed relative z-10"
+                        className="flex min-h-[280px] w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-base shadow-inner placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary transition-colors resize-none leading-relaxed relative z-10"
                         placeholder="Dán bài viết tiếng Anh của bạn vào đây để AI phân tích chi tiết..."
                       ></textarea>
                       {/* Laser Scan Effect */}
@@ -130,8 +130,8 @@ export default function UploadPage() {
 
           {/* Results Section */}
           <Card className={`premium-glass transition-all duration-700 ease-in-out border-none ${result ? 'opacity-100 translate-y-0' : 'opacity-60 translate-y-4 blur-[2px] pointer-events-none'}`}>
-            <CardHeader className="bg-emerald-50 border-b border-emerald-100">
-              <CardTitle className="flex items-center gap-2 text-emerald-700 text-xl font-heading">
+            <CardHeader className="bg-emerald-500/10 dark:bg-emerald-900/20 border-b border-emerald-500/20">
+              <CardTitle className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 text-xl font-heading">
                 <CheckCircle weight="fill" className="w-6 h-6 text-emerald-500 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]" /> Kết quả Phân Tích AI
               </CardTitle>
               <CardDescription>Báo cáo năng lực từ AI Engine dựa trên dữ liệu đầu vào.</CardDescription>
@@ -150,16 +150,16 @@ export default function UploadPage() {
                     </div>
                   </div>
                   
-                  <div className="bg-red-50 rounded-2xl p-5 border border-red-100 shadow-inner">
-                    <h4 className="font-bold flex items-center gap-2 mb-4 text-red-600 font-heading text-lg">
+                  <div className="bg-red-50 dark:bg-red-950/20 rounded-2xl p-5 border border-red-200 dark:border-red-900 shadow-inner">
+                    <h4 className="font-bold flex items-center gap-2 mb-4 text-red-700 dark:text-red-400 font-heading text-lg">
                       <WarningCircle weight="duotone" className="w-6 h-6" /> Lỗi ngữ pháp phát hiện ({result.grammarErrors.length})
                     </h4>
                     <div className="space-y-4">
                       {result.grammarErrors.map((err: any, i: number) => (
-                        <div key={i} className="p-4 bg-white border border-red-100 rounded-xl shadow-sm">
-                          <p className="line-through text-red-500 text-base">{err.error}</p>
-                          <p className="text-emerald-600 font-bold mt-2 text-base">→ {err.correction}</p>
-                          <p className="text-sm font-medium text-slate-500 mt-3 bg-slate-50 w-fit px-2 py-1 rounded-md border border-slate-100">Lỗi: {err.type}</p>
+                        <div key={i} className="p-4 bg-white dark:bg-black/40 border border-red-100 dark:border-red-900/50 rounded-xl shadow-sm">
+                          <p className="line-through text-red-600/70 dark:text-red-400/70 text-base">{err.error}</p>
+                          <p className="text-emerald-600 dark:text-emerald-400 font-bold mt-2 text-base">→ {err.correction}</p>
+                          <p className="text-sm font-medium text-muted-foreground mt-3 bg-muted w-fit px-2 py-1 rounded-md">Lỗi: {err.type}</p>
                         </div>
                       ))}
                     </div>
@@ -176,7 +176,7 @@ export default function UploadPage() {
                         <Badge 
                           key={i} 
                           variant="default" 
-                          className="px-4 py-2 text-sm bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100 cursor-pointer shadow-sm transform hover:-translate-y-1 transition-all"
+                          className="px-4 py-2 text-sm bg-blue-600/20 text-blue-400 border border-blue-500/30 hover:bg-blue-500 hover:text-white cursor-pointer backdrop-blur-md shadow-lg transform hover:-translate-y-1 transition-all"
                           onClick={() => setSelectedAtom(v)}
                         >
                           {v}
@@ -207,31 +207,31 @@ export default function UploadPage() {
 
       {/* Atomic Learning Pane (Sliding Dialog) */}
       <Dialog open={!!selectedAtom} onOpenChange={(open) => !open && setSelectedAtom(null)}>
-        <DialogContent className="sm:max-w-md border-pink-100 bg-white/95 backdrop-blur-2xl shadow-xl">
+        <DialogContent className="sm:max-w-md border-white/10 premium-glass bg-black/60 backdrop-blur-2xl">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-heading text-blue-600 flex items-center gap-2">
+            <DialogTitle className="text-2xl font-heading text-blue-400 flex items-center gap-2">
               <Sparkle weight="duotone" /> Nguyên tử: {selectedAtom}
             </DialogTitle>
-            <DialogDescription className="text-base text-slate-600 mt-2">
+            <DialogDescription className="text-base text-foreground/80 mt-2">
               Từ vựng này đã được phân rã khỏi bài viết. Hệ thống tìm thấy <strong>2 liên kết chéo (Backlinks)</strong> trong trí nhớ của bạn.
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:bg-slate-100 transition-colors cursor-default">
-              <div className="text-xs text-slate-500 mb-1 flex justify-between">
+            <div className="bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors cursor-default">
+              <div className="text-xs text-muted-foreground mb-1 flex justify-between">
                 <span>Trích từ Bài viết hôm nay</span>
                 <span>Vừa xong</span>
               </div>
-              <p className="text-sm italic text-slate-700">"The <strong className="text-blue-600">{selectedAtom}</strong> nature of technology has reshaped our lives."</p>
+              <p className="text-sm italic text-slate-300">"The <strong className="text-blue-400">{selectedAtom}</strong> nature of technology has reshaped our lives."</p>
             </div>
             
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 hover:bg-slate-100 transition-colors cursor-default relative overflow-hidden">
+            <div className="bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors cursor-default relative overflow-hidden">
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-emerald-500"></div>
-              <div className="text-xs text-emerald-600 mb-1 flex justify-between">
+              <div className="text-xs text-emerald-400 mb-1 flex justify-between">
                 <span>Từ cuốn The Great Gatsby</span>
                 <span>2 tháng trước</span>
               </div>
-              <p className="text-sm italic text-slate-700">"...its <strong className="text-emerald-600">{selectedAtom}</strong> glow fading into the night."</p>
+              <p className="text-sm italic text-slate-300">"...its <strong className="text-emerald-400">{selectedAtom}</strong> glow fading into the night."</p>
             </div>
           </div>
         </DialogContent>

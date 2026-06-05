@@ -158,7 +158,7 @@ export default function StudyPage() {
             <h1 className="text-3xl font-bold tracking-tight text-primary w-fit drop-shadow-sm font-heading">Kiểm Tra Chẩn Đoán</h1>
             <p className="text-muted-foreground mt-1 text-sm">AI phân tích ngôn ngữ tự nhiên cấp độ chuyên gia.</p>
           </div>
-          <div className="flex items-center gap-2 text-xs font-medium text-emerald-600 bg-white/60 border border-pink-100 px-4 py-1.5 rounded-full shadow-sm">
+          <div className="flex items-center gap-2 text-xs font-medium text-emerald-600 dark:text-emerald-400 glass-panel px-4 py-1.5 rounded-full shadow-sm">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10B981]"></span>
             Hệ thống Sẵn sàng
           </div>
@@ -167,32 +167,33 @@ export default function StudyPage() {
         {/* --- KHÔNG GIAN TỰ HỌC ĐỒNG BỘ --- */}
         {(
         <div className="flex items-center gap-4 mb-4">
-          <div className="bg-white/80 backdrop-blur-md border border-pink-100 shadow-sm px-4 py-2 rounded-2xl flex items-center gap-3">
+          <div className="glass-panel px-4 py-2 rounded-2xl flex items-center gap-3">
             <div className="relative group cursor-pointer" onClick={() => sendPoke()}>
-              <div className="w-10 h-10 rounded-full bg-blue-50 border-2 border-blue-200 flex items-center justify-center relative z-10 hover:scale-110 transition-transform">
-                <span className="text-blue-600 font-bold">{user?.username?.[0].toUpperCase()}</span>
+              <div className="w-10 h-10 rounded-full bg-blue-500/20 border-2 border-blue-500 flex items-center justify-center relative z-10 hover:scale-110 transition-transform">
+                <span className="text-blue-300 font-bold">{user?.username?.[0].toUpperCase()}</span>
               </div>
-              <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border border-white"></div>
-              <div className="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-xs px-2 py-1 rounded text-white whitespace-nowrap pointer-events-none">
+              <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border border-background"></div>
+              {/* Tooltip chọc ghẹo */}
+              <div className="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-black/80 text-xs px-2 py-1 rounded text-white whitespace-nowrap pointer-events-none">
                 Nhấn để chọc ghẹo!
               </div>
             </div>
 
-            <div className="w-8 h-px bg-pink-200 relative">
-              <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full flex items-center justify-center ${partnerStatus === 'online' ? 'animate-pulse text-pink-500' : 'text-slate-300'}`}>
+            <div className="w-8 h-px bg-white/20 relative">
+              <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full flex items-center justify-center ${partnerStatus === 'online' ? 'animate-pulse text-pink-400' : 'text-white/20'}`}>
                 ❤️
               </div>
             </div>
 
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center relative transition-all ${partnerStatus === 'online' ? 'bg-pink-50 border-2 border-pink-200' : 'bg-slate-50 border border-slate-200 opacity-50'}`}>
-              <span className={partnerStatus === 'online' ? 'text-pink-600 font-bold' : 'text-slate-400'}>
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center relative transition-all ${partnerStatus === 'online' ? 'bg-pink-500/20 border-2 border-pink-500' : 'bg-white/5 border border-white/10 opacity-50'}`}>
+              <span className={partnerStatus === 'online' ? 'text-pink-300 font-bold' : 'text-white/30'}>
                 N
               </span>
-              <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border border-white ${partnerStatus === 'online' ? 'bg-emerald-500' : 'bg-slate-400'}`}></div>
+              <div className={`absolute -bottom-1 -right-1 w-3 h-3 rounded-full border border-background ${partnerStatus === 'online' ? 'bg-emerald-500' : 'bg-gray-500'}`}></div>
             </div>
           </div>
           {partnerStatus === 'online' && (
-            <div className="text-sm font-medium text-pink-500 animate-in fade-in duration-500">
+            <div className="text-sm font-medium text-pink-300 animate-in fade-in duration-500">
               Ngọc Anh đang học cùng bạn...
             </div>
           )}
