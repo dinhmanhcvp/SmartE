@@ -38,10 +38,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${beVietnam.variable} ${playfair.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0B1120] text-white">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem={false}
             disableTransitionOnChange
         >
