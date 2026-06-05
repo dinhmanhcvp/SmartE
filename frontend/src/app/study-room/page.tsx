@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useAuthStore } from '@/store/use-auth-store';
-import { curriculum, type Lesson, type Exercise } from '@/data/curriculum';
+import { curriculumData as curriculum, type Lesson, type Exercise } from '@/data/curriculum';
 import { 
   BookOpenText, Chalkboard, Translate, Robot, 
   CaretLeft, CaretRight, CheckCircle, XCircle, 
