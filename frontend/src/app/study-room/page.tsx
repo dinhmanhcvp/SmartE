@@ -13,6 +13,7 @@ import {
   Star, ArrowsOutSimple, ArrowsInSimple
 } from '@phosphor-icons/react';
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { apiClient } from '@/lib/api-client';
 
 type ToolTab = 'whiteboard' | 'translate' | 'ai';
 
@@ -100,17 +101,21 @@ export default function StudyRoomPage() {
     setChecked({ ...checked, [ex.id]: userAnswer === correct });
   };
 
-  // Translation handler (mock — sẽ kết nối API sau)
+  // Translation handler
   const handleTranslate = async () => {
     if (!translateInput.trim()) return;
     setIsTranslating(true);
-    setTimeout(() => {
-      setTranslateResult(`[AI sẽ dịch] "${translateInput}"\n\n💡 Tính năng dịch sẽ kết nối Gemini AI khi backend hoạt động. Hiện tại bạn có thể sử dụng phần từ vựng trong bài học.`);
+    try {
+      const data = await apiClient.analyzeTranslation(translateInput, lesson.title);
+      setTranslateResult(data.contextual_translation_vi + "\n\n💡 " + data.teaching_note_vi);
+    } catch (error) {
+      setTranslateResult("Xin lỗi, tớ không thể kết nối tới não bộ (API) lúc này. Cậu thử lại sau nhé!");
+    } finally {
       setIsTranslating(false);
-    }, 800);
+    }
   };
 
-  // AI Chat handler (mock)
+  // AI Chat handler
   const handleAskAI = async () => {
     if (!chatInput.trim()) return;
     const question = chatInput;
@@ -118,11 +123,15 @@ export default function StudyRoomPage() {
     setChatMessages(prev => [...prev, { role: 'user', text: question }]);
     setIsAiThinking(true);
 
-    setTimeout(() => {
-      const aiResponse = generateAIResponse(question, lesson);
-      setChatMessages(prev => [...prev, { role: 'ai', text: aiResponse }]);
+    try {
+      const context = JSON.stringify(lesson);
+      const data = await apiClient.chatWithTutor(question, context);
+      setChatMessages(prev => [...prev, { role: 'ai', text: data.response }]);
+    } catch (error) {
+      setChatMessages(prev => [...prev, { role: 'ai', text: "Tớ đang buồn ngủ xíu nên không trả lời được, thông cảm cho tớ nha! 🥺" }]);
+    } finally {
       setIsAiThinking(false);
-    }, 1200);
+    }
   };
 
   if (!user) return null;
@@ -520,21 +529,3 @@ export default function StudyRoomPage() {
   );
 }
 
-// Mock AI response generator (sẽ thay bằng Gemini API)
-function generateAIResponse(question: string, lesson: Lesson): string {
-  const q = question.toLowerCase();
-  
-  if (q.includes('nghĩa là gì') || q.includes('meaning')) {
-    return `📚 Trong bài "${lesson.title}":\n\n${lesson.grammar.map(g => `**${g.rule}**: ${g.explanation}`).join('\n\n')}\n\nCậu muốn tớ giải thích thêm phần nào không?`;
-  }
-  
-  if (q.includes('bài tập') || q.includes('exercise')) {
-    return `✏️ Bài tập Unit ${lesson.unit} có ${lesson.exercises.length} câu nè:\n\n${lesson.exercises.map((ex, i) => `${i + 1}. ${ex.instruction}: "${ex.question}"`).join('\n')}\n\n💡 Cậu đọc lại phần Ngữ pháp trước khi làm bài tập nha!`;
-  }
-  
-  if (q.includes('ví dụ') || q.includes('example')) {
-    return `📝 Đây là một số ví dụ thêm cho Unit ${lesson.unit} nè:\n\n${lesson.vocabulary.slice(0, 4).map(v => `• **${v.word}**: "${v.example}"`).join('\n')}\n\nCậu có thể luyện tập bằng cách tự đặt câu với các từ này nha!`;
-  }
-
-  return `Tớ hiểu câu hỏi của cậu rồi! 🌟\n\nVới bài "${lesson.title}", điểm quan trọng nhất là:\n\n${lesson.grammar[0] ? `📐 **${lesson.grammar[0].rule}**: ${lesson.grammar[0].explanation}` : ''}\n\nCậu có muốn tớ:\n• Giải thích thêm ngữ pháp?\n• Cho thêm ví dụ?\n• Giúp kiểm tra bài tập?`;
-}

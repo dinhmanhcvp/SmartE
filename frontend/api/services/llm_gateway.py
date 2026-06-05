@@ -29,6 +29,9 @@ class LessonOutput(BaseModel):
     lesson_context: str
     questions: list[dict]
 
+class ChatOutput(BaseModel):
+    response: str
+
 # ================= LLM GATEWAY =================
 
 # Initialize Google GenAI client (tự động lấy key từ os.environ["GOOGLE_API_KEY"] hoặc có thể truyền tường minh)
@@ -121,3 +124,40 @@ async def generate_atomic_lesson(weak_words: list[str]) -> LessonOutput:
             }
         ]
     )
+
+async def chat_with_tutor(question: str, context: str) -> ChatOutput:
+    """
+    Tutor mode using Gemini 2.5 Flash.
+    """
+    logger.info("ROUTING: Sending to Gemini 1.5 Flash for Chat...")
+    
+    if not gemini_client:
+        await asyncio.sleep(0.5)
+        return ChatOutput(response="[Mock AI] Xin lỗi cậu, nhưng tớ chưa kết nối được với não bộ của tớ (chưa có API Key). Cậu kiểm tra lại nhé!")
+
+    prompt = f"""
+    Bạn là gia sư tiếng Anh riêng của Ngọc Anh, một người rất tâm lý, ấm áp và lãng mạn. 
+    Bạn luôn gọi người dùng là "cậu" hoặc "Nàng", xưng là "tớ".
+    Dưới đây là nội dung bài học mà Ngọc Anh đang học:
+    ---
+    {context}
+    ---
+    Câu hỏi của Ngọc Anh: {question}
+    
+    Hãy trả lời thật súc tích, dễ hiểu, như một người bạn thân đang giảng bài. Có thể dùng emoji dễ thương.
+    Tuyệt đối không sử dụng markdown in đậm/in nghiêng quá phức tạp gây rối mắt.
+    """
+
+    try:
+        response = await gemini_client.aio.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema=ChatOutput,
+            ),
+        )
+        return ChatOutput.model_validate_json(response.text)
+    except Exception as e:
+        logger.warning(f"Gemini Chat failed: {e}")
+        return ChatOutput(response="[AI Đang buồn ngủ] Tớ đang gặp chút sự cố đường truyền, cậu hỏi lại tớ sau nhé! 🥺")

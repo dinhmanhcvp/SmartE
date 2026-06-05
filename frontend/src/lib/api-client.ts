@@ -63,5 +63,22 @@ export const apiClient = {
       console.error("Translation failed:", error);
       throw error;
     }
+  },
+
+  async chatWithTutor(question: str, context: str) {
+    try {
+      const response = await fetch(`${BASE_URL}/ai/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ question, context }),
+      });
+      if (!response.ok) throw new Error('Chat API Error');
+      return await response.json();
+    } catch (error) {
+      console.error("Chat failed:", error);
+      throw error;
+    }
   }
 };
