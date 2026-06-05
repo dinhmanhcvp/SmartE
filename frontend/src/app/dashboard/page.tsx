@@ -43,17 +43,17 @@ export default function DashboardPage() {
         
         {/* ===== LỜI CHÀO LÃNG MẠN ===== */}
         <div className="relative text-center pt-6 max-w-3xl mx-auto w-full">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-pink-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-pink-100/50 rounded-full blur-[100px] pointer-events-none"></div>
           
-          <p className="text-sm font-medium mb-2 tracking-widest uppercase animate-in fade-in slide-in-from-bottom-3 duration-700 text-pink-400/70">
+          <p className="text-sm font-semibold mb-2 tracking-widest uppercase animate-in fade-in slide-in-from-bottom-3 duration-700 text-pink-500">
             {greeting}
           </p>
           
-          <h1 className="text-3xl md:text-4xl font-heading font-medium tracking-wide text-slate-800 mb-3 animate-in fade-in slide-in-from-bottom-5 duration-1000">
+          <h1 className="text-3xl md:text-4xl font-heading font-bold tracking-wide text-slate-900 mb-3 animate-in fade-in slide-in-from-bottom-5 duration-1000 drop-shadow-sm">
             <>Nàng ơi, <span className="gradient-text italic">hôm nay tớ chuẩn bị bài rồi nè!</span></>
           </h1>
           
-          <p className="text-muted-foreground text-sm max-w-md mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200 fill-mode-both">
+          <p className="text-slate-600 text-sm max-w-md mx-auto animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200 fill-mode-both">
             Web này được tớ dành riêng cho cậu để trình độ tiếng Anh và mối quan hệ của hai đứa mình có thể phát triển cùng nhau ❤️
           </p>
 

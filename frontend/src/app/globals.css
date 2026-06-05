@@ -159,7 +159,7 @@
     opacity: 0.75;
   }
   .gradient-text {
-    @apply bg-gradient-to-tr from-pink-400 to-purple-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-tr from-pink-500 to-purple-600 bg-clip-text text-transparent font-bold;
   }
   .glow-text {
     text-shadow: 0 0 20px var(--primary);
