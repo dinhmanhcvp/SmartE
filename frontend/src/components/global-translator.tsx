@@ -132,7 +132,10 @@ export function GlobalTranslator() {
     <>
       {buttonPos && !showPopup && (
         <button
-          onClick={handleTranslate}
+          onMouseDown={(e) => {
+            e.stopPropagation();
+            handleTranslate(e as unknown as React.MouseEvent);
+          }}
           className="fixed z-[100] -translate-x-1/2 -translate-y-full bg-pink-500 hover:bg-pink-400 text-white shadow-xl rounded-full px-3 py-1.5 flex items-center gap-1.5 text-xs font-medium animate-in fade-in slide-in-from-bottom-2 duration-200"
           style={{ left: buttonPos.x, top: buttonPos.y }}
         >
@@ -184,6 +187,13 @@ export function GlobalTranslator() {
                     <p className="text-xs text-amber-300/80 mb-1">💡 Tips từ tớ:</p>
                     <p className="text-sm text-white/90">{result.teaching_note_vi}</p>
                   </div>
+
+                  {result.grammar_theory_vi && (
+                    <div className="bg-blue-500/10 rounded-xl p-3 border border-blue-500/20">
+                      <p className="text-xs text-blue-300/80 mb-1">📚 Lý thuyết Ngữ pháp:</p>
+                      <p className="text-sm text-blue-50/90 leading-relaxed">{result.grammar_theory_vi}</p>
+                    </div>
+                  )}
 
                   <div>
                     <p className="text-xs text-muted-foreground mb-1">Ví dụ:</p>

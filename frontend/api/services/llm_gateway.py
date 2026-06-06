@@ -18,6 +18,7 @@ class TranslationOutput(BaseModel):
     ipa_pronunciation: str
     part_of_speech: str
     teaching_note_vi: str
+    grammar_theory_vi: str
     example_sentence_en: str
     example_sentence_vi: str
 
@@ -53,6 +54,7 @@ async def generate_translation_tutor(prompt: str) -> TranslationOutput:
             ipa_pronunciation="/rʌn aʊt əv/",
             part_of_speech="Phrasal Verb",
             teaching_note_vi="[Mock] 'Run out of' luôn đi kèm với thứ bạn vừa dùng hết.",
+            grammar_theory_vi="Đây là một Cụm động từ (Phrasal Verb) không thể tách rời.",
             example_sentence_en="We have run out of milk, so I need to go to the store.",
             example_sentence_vi="Chúng ta hết sữa rồi, nên tôi cần ra cửa hàng."
         )
@@ -80,6 +82,7 @@ async def generate_translation_tutor(prompt: str) -> TranslationOutput:
             ipa_pronunciation="/rʌn aʊt əv/",
             part_of_speech="Phrasal Verb",
             teaching_note_vi="[Fallback Mock] Dùng khi tiêu thụ hết một thứ gì đó.",
+            grammar_theory_vi="Đây là một cấu trúc động từ cơ bản.",
             example_sentence_en="I ran out of ideas.",
             example_sentence_vi="Tôi cạn ý tưởng rồi."
         )
