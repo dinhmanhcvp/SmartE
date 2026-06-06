@@ -146,9 +146,8 @@ export default function StudyRoomPage() {
   if (!user) return null;
 
   const sections = [
-    { key: 'reading' as const, label: '📖 Đọc hiểu', icon: BookOpenText },
+    { key: 'reading' as const, label: '📚 Lý thuyết & Đọc', icon: BookOpenText },
     { key: 'vocab' as const, label: '📝 Từ vựng', icon: BookOpenText },
-    { key: 'grammar' as const, label: '📐 Ngữ pháp', icon: BookOpenText },
     { key: 'exercises' as const, label: '✏️ Bài tập', icon: BookOpenText },
     { key: 'dialogue' as const, label: '💬 Hội thoại', icon: ChatDots },
   ];
@@ -207,31 +206,54 @@ export default function StudyRoomPage() {
               <ScrollArea className="h-full">
                 <CardContent className="p-6 space-y-6">
                   
-                  {/* === READING === */}
+                  {/* === LÝ THUYẾT & READING === */}
                   {activeSection === 'reading' && (
-                    <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-lg font-heading font-bold text-white">{lesson.reading.title}</h3>
-                        <Button variant="ghost" size="sm" className="text-xs" onClick={() => setShowTranslation(!showTranslation)}>
-                          {showTranslation ? 'Ẩn bản dịch' : 'Hiện bản dịch'}
-                        </Button>
-                      </div>
-                      <div className="bg-white/5 rounded-xl p-5 border border-white/10">
-                        <div className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.content) }} />
-                      </div>
-                      {showTranslation && lesson.reading.translation && (
-                        <div className="bg-blue-500/5 rounded-xl p-5 border border-blue-500/20 animate-in fade-in slide-in-from-top-3 duration-300">
-                          <p className="text-xs text-blue-300 font-medium mb-2">🇻🇳 Bản dịch tiếng Việt</p>
-                          <div className="whitespace-pre-wrap text-sm text-white/70 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.translation) }} />
+                    <div className="space-y-8">
+                      {/* LÝ THUYẾT (GRAMMAR) */}
+                      {lesson.grammar && lesson.grammar.length > 0 && (
+                        <div className="space-y-4">
+                          <h3 className="text-lg font-heading font-bold text-blue-300">📚 Lý thuyết & Ngữ pháp</h3>
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            {lesson.grammar.map((g, i) => (
+                              <div key={i} className="bg-blue-500/10 rounded-xl p-5 border border-blue-500/20 space-y-3">
+                                <h4 className="text-base font-bold text-cyan-300">{g.rule}</h4>
+                                <div className="text-sm text-blue-50/90 leading-relaxed" dangerouslySetInnerHTML={{ __html: renderMarkdown(g.explanation) }} />
+                                <div className="bg-black/30 rounded-lg p-4 space-y-1">
+                                  {g.examples.map((ex, j) => (
+                                    <div key={j} className="text-sm text-white/80" dangerouslySetInnerHTML={{ __html: '• ' + renderMarkdown(ex) }} />
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       )}
-                      {lesson.tips && (
-                        <div className="space-y-2 pt-2">
-                          {lesson.tips.map((tip, i) => (
-                            <div key={i} className="text-sm text-amber-300/80 bg-amber-500/5 px-4 py-2 rounded-xl border border-amber-500/10" dangerouslySetInnerHTML={{ __html: renderMarkdown(tip) }} />
-                          ))}
+
+                      {/* BÀI ĐỌC (READING) */}
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-lg font-heading font-bold text-white">📖 Bài đọc ứng dụng: {lesson.reading.title}</h3>
+                          <Button variant="ghost" size="sm" className="text-xs" onClick={() => setShowTranslation(!showTranslation)}>
+                            {showTranslation ? 'Ẩn bản dịch' : 'Hiện bản dịch'}
+                          </Button>
                         </div>
-                      )}
+                        <div className="bg-white/5 rounded-xl p-5 border border-white/10">
+                          <div className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.content) }} />
+                        </div>
+                        {showTranslation && lesson.reading.translation && (
+                          <div className="bg-pink-500/10 rounded-xl p-5 border border-pink-500/20 animate-in fade-in slide-in-from-top-3 duration-300">
+                            <p className="text-xs text-pink-300 font-medium mb-2">🇻🇳 Bản dịch tiếng Việt</p>
+                            <div className="whitespace-pre-wrap text-sm text-white/70 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.translation) }} />
+                          </div>
+                        )}
+                        {lesson.tips && (
+                          <div className="space-y-2 pt-2">
+                            {lesson.tips.map((tip, i) => (
+                              <div key={i} className="text-sm text-amber-300/80 bg-amber-500/5 px-4 py-3 rounded-xl border border-amber-500/10" dangerouslySetInnerHTML={{ __html: renderMarkdown(tip) }} />
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   )}
 
@@ -258,25 +280,7 @@ export default function StudyRoomPage() {
                     </div>
                   )}
 
-                  {/* === GRAMMAR === */}
-                  {activeSection === 'grammar' && (
-                    <div className="space-y-4">
-                      <h3 className="text-lg font-heading font-bold text-white">📐 Ngữ pháp Unit {lesson.unit}</h3>
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        {lesson.grammar.map((g, i) => (
-                        <div key={i} className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-3">
-                          <h4 className="text-base font-bold text-cyan-300">{g.rule}</h4>
-                          <div className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: renderMarkdown(g.explanation) }} />
-                          <div className="bg-black/30 rounded-lg p-4 space-y-1">
-                            {g.examples.map((ex, j) => (
-                              <div key={j} className="text-sm text-white/80" dangerouslySetInnerHTML={{ __html: '• ' + renderMarkdown(ex) }} />
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                      </div>
-                    </div>
-                  )}
+
 
                   {/* === EXERCISES === */}
                   {activeSection === 'exercises' && (
