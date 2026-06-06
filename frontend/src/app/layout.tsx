@@ -21,6 +21,7 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 import { AuthProvider } from '@/components/providers/auth-provider';
+import { GlobalTranslator } from '@/components/global-translator';
 
 export const metadata: Metadata = {
   title: "ngocanhdangiu - Học tiếng Anh cùng nhau",
@@ -47,6 +48,7 @@ export default function RootLayout({
         >
           <AuthProvider>
             {children}
+            <GlobalTranslator />
           </AuthProvider>
         </ThemeProvider>
       </body>
