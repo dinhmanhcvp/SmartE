@@ -36,9 +36,9 @@ class ChatOutput(BaseModel):
 class SentenceCorrectionOutput(BaseModel):
     is_correct: bool
     response: str
-    original: str | None = None
-    corrected: str | None = None
-    explanation: str | None = None
+    original: str
+    corrected: str
+    explanation: str
 
 # ================= LLM GATEWAY =================
 
@@ -198,4 +198,4 @@ async def check_sentence_tutor(sentence: str) -> SentenceCorrectionOutput:
         return SentenceCorrectionOutput.model_validate_json(response.text)
     except Exception as e:
         logger.warning(f"Gemini Sentence Check failed: {e}")
-        return SentenceCorrectionOutput(is_correct=True, response="Tớ đang hơi mệt, không phân tích được bây giờ.", original=None, corrected=None, explanation=None)
+        return SentenceCorrectionOutput(is_correct=True, response=f"Lỗi hệ thống: {str(e)}", original=None, corrected=None, explanation=None)
