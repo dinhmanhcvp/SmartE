@@ -15,6 +15,15 @@ import {
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { apiClient } from '@/lib/api-client';
 
+// Simple markdown renderer for curriculum content
+function renderMarkdown(text: string): string {
+  return text
+    .replace(/\\n\\n/g, '<br/><br/>')
+    .replace(/\\n/g, '<br/>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em class="text-purple-300">$1</em>');
+}
+
 type ToolTab = 'whiteboard' | 'translate' | 'ai';
 
 export default function StudyRoomPage() {
@@ -208,18 +217,18 @@ export default function StudyRoomPage() {
                         </Button>
                       </div>
                       <div className="bg-white/5 rounded-xl p-5 border border-white/10">
-                        <pre className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-7">{lesson.reading.content}</pre>
+                        <div className="whitespace-pre-wrap text-sm text-white/90 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.content) }} />
                       </div>
                       {showTranslation && lesson.reading.translation && (
                         <div className="bg-blue-500/5 rounded-xl p-5 border border-blue-500/20 animate-in fade-in slide-in-from-top-3 duration-300">
                           <p className="text-xs text-blue-300 font-medium mb-2">🇻🇳 Bản dịch tiếng Việt</p>
-                          <pre className="whitespace-pre-wrap text-sm text-white/70 font-sans leading-7">{lesson.reading.translation}</pre>
+                          <div className="whitespace-pre-wrap text-sm text-white/70 font-sans leading-7" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.reading.translation) }} />
                         </div>
                       )}
                       {lesson.tips && (
                         <div className="space-y-2 pt-2">
                           {lesson.tips.map((tip, i) => (
-                            <p key={i} className="text-sm text-amber-300/80 bg-amber-500/5 px-4 py-2 rounded-xl border border-amber-500/10">{tip}</p>
+                            <div key={i} className="text-sm text-amber-300/80 bg-amber-500/5 px-4 py-2 rounded-xl border border-amber-500/10" dangerouslySetInnerHTML={{ __html: renderMarkdown(tip) }} />
                           ))}
                         </div>
                       )}
@@ -239,7 +248,7 @@ export default function StudyRoomPage() {
                                   <span className="text-base font-semibold text-white">{v.word}</span>
                                   <span className="text-xs text-purple-300 font-mono">{v.ipa}</span>
                                 </div>
-                                <p className="text-sm text-pink-300 mt-1">{v.meaning}</p>
+                                <div className="text-sm text-pink-300/90 mt-2 leading-relaxed" dangerouslySetInnerHTML={{ __html: renderMarkdown(v.meaning) }} />
                               </div>
                             </div>
                             <p className="text-sm text-muted-foreground mt-2 italic">"{v.example}"</p>
@@ -257,10 +266,10 @@ export default function StudyRoomPage() {
                         {lesson.grammar.map((g, i) => (
                         <div key={i} className="bg-white/5 rounded-xl p-5 border border-white/10 space-y-3">
                           <h4 className="text-base font-bold text-cyan-300">{g.rule}</h4>
-                          <p className="text-sm text-muted-foreground">{g.explanation}</p>
+                          <div className="text-sm text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: renderMarkdown(g.explanation) }} />
                           <div className="bg-black/30 rounded-lg p-4 space-y-1">
                             {g.examples.map((ex, j) => (
-                              <p key={j} className="text-sm text-white/80">• {ex}</p>
+                              <div key={j} className="text-sm text-white/80" dangerouslySetInnerHTML={{ __html: '• ' + renderMarkdown(ex) }} />
                             ))}
                           </div>
                         </div>
