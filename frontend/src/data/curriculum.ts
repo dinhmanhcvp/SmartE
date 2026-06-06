@@ -73,17 +73,17 @@ export const curriculumData: Lesson[] = [
     grammar: [
       {
         rule: 'Thì Hiện tại đơn (Present Simple) — Thói quen & Sự thật',
-        explanation: 'Nàng dùng thì này khi nói về:\\n• Thói quen hàng ngày: *I wake up at 6:30.*\\n• Sự thật hiển nhiên: *Water boils at 100°C.*\\n\\n💡 **Công thức thần thánh:**\\n• Khẳng định: **S + V(s/es)** → She study → ⚠️ SAI! Phải là **She studies** (thêm -es vì chủ ngữ ngôi 3 số ít).\\n• Phủ định: **S + do/does + not + V** → I **do not** (don\\'t) like fish.\\n• Câu hỏi: **Do/Does + S + V?** → **Does** she speak English?\\n\\n⚠️ **Lỗi sai #1 của người Việt:** Quên thêm **-s/-es** khi chủ ngữ là He/She/It.',
+        explanation: 'Nàng dùng thì này khi nói về:\\n• Thói quen hàng ngày: *I wake up at 6:30.*\\n• Sự thật hiển nhiên: *Water boils at 100°C.*\\n\\n💡 **Công thức thần thánh:**\\n• Khẳng định: **S + V(s/es)** → She study → ⚠️ SAI! Phải là **She studies** (thêm -es vì chủ ngữ ngôi 3 số ít).\\n• Phủ định: **S + do/does + not + V** → I **do not** like fish.\\n• Câu hỏi: **Do/Does + S + V?** → **Does** she speak English?\\n\\n⚠️ **Lỗi sai #1 của người Việt:** Quên thêm **-s/-es** khi chủ ngữ là He/She/It.',
         examples: [
           '✅ She **studies** English every day. (Cô ấy học tiếng Anh mỗi ngày)',
           '❌ She study English every day. → Sai vì thiếu -es cho ngôi thứ 3.',
-          '✅ I **do not** eat meat. = I **don\\'t** eat meat. (Tớ không ăn thịt)',
+          '✅ I **do not** eat meat. (Tớ không ăn thịt)',
           '✅ **Does** he **like** coffee? — Yes, he **does**. (Anh ấy có thích cà phê không?)'
         ]
       },
       {
         rule: 'Thì Quá khứ đơn (Past Simple) — Hành động đã xong',
-        explanation: 'Dùng khi nói về hành động đã XẢY RA VÀ KẾT THÚC trong quá khứ. Dấu hiệu nhận biết: *yesterday, last week, in 2020, ago*.\\n\\n💡 **Công thức:**\\n• Khẳng định: **S + V-ed** (quy tắc) hoặc **S + V2** (bất quy tắc).\\n• Phủ định: **S + did not (didn\\'t) + V nguyên mẫu**.\\n• Câu hỏi: **Did + S + V nguyên mẫu?**\\n\\n⚠️ **Bẫy lớn nhất:** Khi dùng **did/didn\\'t**, động từ chính phải trở về **NGUYÊN MẪU**: *Did you **went**?* → SAI! Phải là *Did you **go**?*',
+        explanation: 'Dùng khi nói về hành động đã XẢY RA VÀ KẾT THÚC trong quá khứ. Dấu hiệu nhận biết: *yesterday, last week, in 2020, ago*.\\n\\n💡 **Công thức:**\\n• Khẳng định: **S + V-ed** (quy tắc) hoặc **S + V2** (bất quy tắc).\\n• Phủ định: **S + did not + V nguyên mẫu**.\\n• Câu hỏi: **Did + S + V nguyên mẫu?**\\n\\n⚠️ **Bẫy lớn nhất:** Khi dùng **did/did not**, động từ chính phải trở về **NGUYÊN MẪU**: *Did you **went**?* → SAI! Phải là *Did you **go**?*',
         examples: [
           '✅ I **visited** my grandmother yesterday. (Tớ đã thăm bà hôm qua) — Quy tắc: visit + ed.',
           '✅ She **cooked** a delicious meal. (Bà ấy đã nấu bữa ăn ngon) — Quy tắc: cook + ed.',
@@ -171,7 +171,7 @@ export const curriculumData: Lesson[] = [
         examples: [
           '**Quy tắc:** I **visited** (visit+ed) the museum. She **cooked** (cook+ed) dinner.',
           '**Bất quy tắc:** I **went** (go) to school. She **spoke** (speak) quickly. We **understood** (understand) everything.',
-          '⚠️ **Bẫy Quá khứ:** Khi dùng **did/didn\\'t**, động từ về nguyên mẫu: *She **didn\\'t go*** (không phải *didn\\'t went*).'
+          '⚠️ **Bẫy Quá khứ:** Khi dùng **did/did not**, động từ về nguyên mẫu: *She **did not go*** (không phải *did not went*).'
         ]
       },
       {
