@@ -52,28 +52,28 @@ export const curriculumData: Lesson[] = [
     unit: 0,
     title: "Pre-Academic: Master the Tenses",
     titleVi: "Bổ trợ Cơ bản: Làm Chủ Các Thì",
-    objective: "Mục tiêu 45 Phút: Hiểu bản chất và phân biệt 4 thì nền tảng trong tiếng Anh (Hiện tại đơn, Quá khứ đơn, Tương lai đơn, Hiện tại tiếp diễn). Đây là bước KHÔNG THỂ BỎ QUA trước khi bước vào phần Academic. Nàng yên tâm, tớ sẽ giải thích cực kỳ dễ hiểu!",
+    objective: "Mục tiêu 45 Phút: Hiểu bản chất và phân biệt 4 thì nền tảng trong tiếng Anh (Hiện tại đơn, Quá khứ đơn, Tương lai đơn, Hiện tại tiếp diễn). Đây là bước KHÔNG THỂ BỎ QUA trước khi bước vào phần Academic. Cậu yên tâm, tớ sẽ giải thích chi tiết và dễ hiểu!",
     reading: {
       title: "A Day in My Life (Một ngày trong cuộc sống của tớ)",
       content: "Every morning, I wake up at 6:30 and drink a glass of warm water. I usually study English for one hour before school. Today, I am sitting at my desk and writing this essay. Right now, my cat is sleeping on the sofa.\\n\\nYesterday, I visited my grandmother. She cooked a delicious meal for the whole family. We talked about my future plans. I told her that I wanted to study abroad.\\n\\nNext year, I will take the IELTS exam. I will study harder every day. My teacher said that I will achieve a good score if I practice consistently. I believe that my dream will come true.",
       translation: "Mỗi buổi sáng, tớ thức dậy lúc 6:30 và uống một cốc nước ấm. Tớ thường học tiếng Anh một tiếng trước khi đến trường. Hôm nay, tớ đang ngồi ở bàn và viết bài luận này. Ngay lúc này, con mèo của tớ đang ngủ trên sofa.\\n\\nHôm qua, tớ đã đến thăm bà ngoại. Bà đã nấu một bữa ăn ngon cho cả gia đình. Chúng tớ đã nói về kế hoạch tương lai của tớ. Tớ nói với bà rằng tớ muốn đi du học.\\n\\nNăm tới, tớ sẽ thi IELTS. Tớ sẽ học chăm hơn mỗi ngày. Cô giáo nói rằng tớ sẽ đạt điểm tốt nếu tớ luyện tập đều đặn. Tớ tin rằng giấc mơ của tớ sẽ trở thành hiện thực."
     },
     vocabulary: [
-      { word: 'Wake up', ipa: '/weɪk ʌp/', meaning: '**Nghĩa:** Thức dậy.\\n\\n💡 **Gia sư bật mí:** Đây là Phrasal Verb (Cụm động từ). Quá khứ của nó là **woke up** (BẤT QUY TẮC nhé, không phải *waked up*).\\n\\n🔗 **Ví dụ:** I usually wake up early. / Yesterday I woke up late.', example: 'I wake up at 7 AM every day.' },
-      { word: 'Usually', ipa: '/ˈjuː.ʒu.ə.li/', meaning: '**Nghĩa:** Thường xuyên (khoảng 80% thời gian).\\n\\n💡 **Gia sư bật mí:** Đây là trạng từ chỉ tần suất - dấu hiệu nhận biết thì **Hiện tại đơn**! Các trạng từ khác cùng nhóm: *always, often, sometimes, rarely, never*.\\n\\n⚠️ **Vị trí:** Đứng TRƯỚC động từ thường, SAU động từ to be.', example: 'She usually drinks coffee in the morning.' },
-      { word: 'Visit', ipa: '/ˈvɪz.ɪt/', meaning: '**Nghĩa:** Thăm, ghé thăm.\\n\\n💡 **Gia sư bật mí:** Đây là động từ QUY TẮC (Regular Verb). Quá khứ chỉ cần thêm **-ed**: visited. Phát âm là /ˈvɪz.ɪ.tɪd/ (thêm âm /ɪd/ vì tận cùng bằng chữ t).', example: 'I visited the museum last weekend.' },
-      { word: 'Cook', ipa: '/kʊk/', meaning: '**Nghĩa:** Nấu ăn (Động từ) / Đầu bếp (Danh từ).\\n\\n💡 **Gia sư bật mí:** Quá khứ: **cooked** /kʊkt/. Lưu ý phát âm đuôi -ed là /t/ vì chữ k là âm vô thanh.\\n\\n🔗 **Word Family:** Cook (V/N) → Cooker (Bếp nấu) → Cooking (Việc nấu ăn).', example: 'My mom cooked dinner yesterday.' },
-      { word: 'Achieve', ipa: '/əˈtʃiːv/', meaning: '**Nghĩa:** Đạt được (sau nỗ lực).\\n\\n💡 **Gia sư bật mí:** Động từ QUY TẮC. Quá khứ: **achieved**. Tương lai: **will achieve**. Nàng sẽ gặp lại từ này rất nhiều ở phần Academic nhé!', example: 'She will achieve her goals next year.' },
-      { word: 'Practice', ipa: '/ˈpræk.tɪs/', meaning: '**Nghĩa:** Luyện tập, thực hành.\\n\\n💡 **Gia sư bật mí:** Trong tiếng Anh Mỹ, *practice* vừa là Danh từ vừa là Động từ. Trong tiếng Anh Anh, Động từ viết là *practise* (s). IELTS chấp nhận cả hai.', example: 'I practice speaking English every evening.' },
-      { word: 'Believe', ipa: '/bɪˈliːv/', meaning: '**Nghĩa:** Tin tưởng, tin rằng.\\n\\n💡 **Gia sư bật mí:** Đây là Stative Verb (Động từ trạng thái) - KHÔNG ĐƯỢC chia ở thì tiếp diễn! Không nói *I am believing* mà nói **I believe**.\\n\\n⚠️ **Các từ tương tự:** know, want, need, love, hate.', example: 'I believe that dreams can come true.' },
-      { word: 'Consistently', ipa: '/kənˈsɪs.tənt.li/', meaning: '**Nghĩa:** Một cách đều đặn, nhất quán.\\n\\n💡 **Gia sư bật mí:** Trạng từ này rất hay dùng trong IELTS. *Practice consistently* = Luyện tập đều đặn.\\n\\n🔗 **Word Family:** Consistent (Tính từ) → Consistently (Trạng từ) → Consistency (Danh từ).', example: 'If you study consistently, you will improve.' },
-      { word: 'Delicious', ipa: '/dɪˈlɪʃ.əs/', meaning: '**Nghĩa:** Ngon, thơm ngon.\\n\\n💡 **Gia sư bật mí:** Nâng cấp hơn *very good* khi miêu tả đồ ăn. Nàng có thể nói *absolutely delicious* (ngon tuyệt cú mèo).\\n\\n⚠️ **Lỗi sai:** Không nói *very delicious* vì delicious đã mang nghĩa rất ngon rồi.', example: 'The cake was absolutely delicious!' },
-      { word: 'Abroad', ipa: '/əˈbrɔːd/', meaning: '**Nghĩa:** Ở nước ngoài, ra nước ngoài.\\n\\n💡 **Gia sư bật mí:** KHÔNG CÓ giới từ *to* đằng trước! Nói **go abroad** chứ KHÔNG nói *go to abroad*. Đây là lỗi sai kinh điển của người Việt.\\n\\n🔗 **Collocations:** study abroad (du học), travel abroad (đi du lịch nước ngoài).', example: 'I want to study abroad next year.' }
+      { word: 'Wake up', ipa: '/weɪk ʌp/', meaning: '**Nghĩa:** Thức dậy.\\n\\n💡 **Lưu ý:** Đây là Phrasal Verb (Cụm động từ). Quá khứ của nó là **woke up** (BẤT QUY TẮC nhé, không phải *waked up*).\\n\\n🔗 **Ví dụ:** I usually wake up early. / Yesterday I woke up late.', example: 'I wake up at 7 AM every day.' },
+      { word: 'Usually', ipa: '/ˈjuː.ʒu.ə.li/', meaning: '**Nghĩa:** Thường xuyên (khoảng 80% thời gian).\\n\\n💡 **Lưu ý:** Đây là trạng từ chỉ tần suất - dấu hiệu nhận biết thì **Hiện tại đơn**! Các trạng từ khác cùng nhóm: *always, often, sometimes, rarely, never*.\\n\\n⚠️ **Vị trí:** Đứng TRƯỚC động từ thường, SAU động từ to be.', example: 'She usually drinks coffee in the morning.' },
+      { word: 'Visit', ipa: '/ˈvɪz.ɪt/', meaning: '**Nghĩa:** Thăm, ghé thăm.\\n\\n💡 **Lưu ý:** Đây là động từ QUY TẮC (Regular Verb). Quá khứ chỉ cần thêm **-ed**: visited. Phát âm là /ˈvɪz.ɪ.tɪd/ (thêm âm /ɪd/ vì tận cùng bằng chữ t).', example: 'I visited the museum last weekend.' },
+      { word: 'Cook', ipa: '/kʊk/', meaning: '**Nghĩa:** Nấu ăn (Động từ) / Đầu bếp (Danh từ).\\n\\n💡 **Lưu ý:** Quá khứ: **cooked** /kʊkt/. Lưu ý phát âm đuôi -ed là /t/ vì chữ k là âm vô thanh.\\n\\n🔗 **Word Family:** Cook (V/N) → Cooker (Bếp nấu) → Cooking (Việc nấu ăn).', example: 'My mom cooked dinner yesterday.' },
+      { word: 'Achieve', ipa: '/əˈtʃiːv/', meaning: '**Nghĩa:** Đạt được (sau nỗ lực).\\n\\n💡 **Lưu ý:** Động từ QUY TẮC. Quá khứ: **achieved**. Tương lai: **will achieve**. cậu sẽ gặp lại từ này rất nhiều ở phần Academic nhé!', example: 'She will achieve her goals next year.' },
+      { word: 'Practice', ipa: '/ˈpræk.tɪs/', meaning: '**Nghĩa:** Luyện tập, thực hành.\\n\\n💡 **Lưu ý:** Trong tiếng Anh Mỹ, *practice* vừa là Danh từ vừa là Động từ. Trong tiếng Anh Anh, Động từ viết là *practise* (s). IELTS chấp nhận cả hai.', example: 'I practice speaking English every evening.' },
+      { word: 'Believe', ipa: '/bɪˈliːv/', meaning: '**Nghĩa:** Tin tưởng, tin rằng.\\n\\n💡 **Lưu ý:** Đây là Stative Verb (Động từ trạng thái) - KHÔNG ĐƯỢC chia ở thì tiếp diễn! Không nói *I am believing* mà nói **I believe**.\\n\\n⚠️ **Các từ tương tự:** know, want, need, love, hate.', example: 'I believe that dreams can come true.' },
+      { word: 'Consistently', ipa: '/kənˈsɪs.tənt.li/', meaning: '**Nghĩa:** Một cách đều đặn, nhất quán.\\n\\n💡 **Lưu ý:** Trạng từ này rất hay dùng trong IELTS. *Practice consistently* = Luyện tập đều đặn.\\n\\n🔗 **Word Family:** Consistent (Tính từ) → Consistently (Trạng từ) → Consistency (Danh từ).', example: 'If you study consistently, you will improve.' },
+      { word: 'Delicious', ipa: '/dɪˈlɪʃ.əs/', meaning: '**Nghĩa:** Ngon, thơm ngon.\\n\\n💡 **Lưu ý:** Nâng cấp hơn *very good* khi miêu tả đồ ăn. cậu có thể nói *absolutely delicious* (ngon tuyệt cú mèo).\\n\\n⚠️ **Lỗi sai:** Không nói *very delicious* vì delicious đã mang nghĩa rất ngon rồi.', example: 'The cake was absolutely delicious!' },
+      { word: 'Abroad', ipa: '/əˈbrɔːd/', meaning: '**Nghĩa:** Ở nước ngoài, ra nước ngoài.\\n\\n💡 **Lưu ý:** KHÔNG CÓ giới từ *to* đằng trước! Nói **go abroad** chứ KHÔNG nói *go to abroad*. Đây là lỗi sai  của người Việt.\\n\\n🔗 **Collocations:** study abroad (du học), travel abroad (đi du lịch nước ngoài).', example: 'I want to study abroad next year.' }
     ],
     grammar: [
       {
         rule: 'Thì Hiện tại đơn (Present Simple) — Thói quen & Sự thật',
-        explanation: 'Nàng dùng thì này khi nói về:\\n• Thói quen hàng ngày: *I wake up at 6:30.*\\n• Sự thật hiển nhiên: *Water boils at 100°C.*\\n\\n💡 **Công thức thần thánh:**\\n• Khẳng định: **S + V(s/es)** → She study → ⚠️ SAI! Phải là **She studies** (thêm -es vì chủ ngữ ngôi 3 số ít).\\n• Phủ định: **S + do/does + not + V** → I **do not** like fish.\\n• Câu hỏi: **Do/Does + S + V?** → **Does** she speak English?\\n\\n⚠️ **Lỗi sai #1 của người Việt:** Quên thêm **-s/-es** khi chủ ngữ là He/She/It.',
+        explanation: 'Cậu dùng thì này khi nói về:\\n• Thói quen hàng ngày: *I wake up at 6:30.*\\n• Sự thật hiển nhiên: *Water boils at 100°C.*\\n\\n📌 **Công thức:****\\n• Khẳng định: **S + V(s/es)** → She study → ⚠️ SAI! Phải là **She studies** (thêm -es vì chủ ngữ ngôi 3 số ít).\\n• Phủ định: **S + do/does + not + V** → I **do not** like fish.\\n• Câu hỏi: **Do/Does + S + V?** → **Does** she speak English?\\n\\n⚠️ **Lỗi sai #1 của người Việt:** Quên thêm **-s/-es** khi chủ ngữ là He/She/It.',
         examples: [
           '✅ She **studies** English every day. (Cô ấy học tiếng Anh mỗi ngày)',
           '❌ She study English every day. → Sai vì thiếu -es cho ngôi thứ 3.',
@@ -83,7 +83,7 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Thì Quá khứ đơn (Past Simple) — Hành động đã xong',
-        explanation: 'Dùng khi nói về hành động đã XẢY RA VÀ KẾT THÚC trong quá khứ. Dấu hiệu nhận biết: *yesterday, last week, in 2020, ago*.\\n\\n💡 **Công thức:**\\n• Khẳng định: **S + V-ed** (quy tắc) hoặc **S + V2** (bất quy tắc).\\n• Phủ định: **S + did not + V nguyên mẫu**.\\n• Câu hỏi: **Did + S + V nguyên mẫu?**\\n\\n⚠️ **Bẫy lớn nhất:** Khi dùng **did/did not**, động từ chính phải trở về **NGUYÊN MẪU**: *Did you **went**?* → SAI! Phải là *Did you **go**?*',
+        explanation: 'Dùng khi nói về hành động đã XẢY RA VÀ KẾT THÚC trong quá khứ. Dấu hiệu nhận biết: *yesterday, last week, in 2020, ago*.\\n\\n📌 **Công thức:****\\n• Khẳng định: **S + V-ed** (quy tắc) hoặc **S + V2** (bất quy tắc).\\n• Phủ định: **S + did not + V nguyên mẫu**.\\n• Câu hỏi: **Did + S + V nguyên mẫu?**\\n\\n⚠️ **Bẫy lớn nhất:** Khi dùng **did/did not**, động từ chính phải trở về **NGUYÊN MẪU**: *Did you **went**?* → SAI! Phải là *Did you **go**?*',
         examples: [
           '✅ I **visited** my grandmother yesterday. (Tớ đã thăm bà hôm qua) — Quy tắc: visit + ed.',
           '✅ She **cooked** a delicious meal. (Bà ấy đã nấu bữa ăn ngon) — Quy tắc: cook + ed.',
@@ -93,7 +93,7 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Thì Tương lai đơn (Future Simple) & Hiện tại tiếp diễn (Present Continuous)',
-        explanation: '**Tương lai đơn:** Dùng **will + V nguyên mẫu** khi nói về kế hoạch, dự đoán, lời hứa.\\n• *I **will take** the IELTS exam next year.*\\n\\n**Hiện tại tiếp diễn:** Dùng **am/is/are + V-ing** khi nói về hành động đang xảy ra NGAY BÂY GIỜ.\\n• *I **am sitting** at my desk right now.*\\n\\n⚠️ **Cực kỳ quan trọng:** Một số động từ KHÔNG BAO GIỜ chia tiếp diễn (Stative Verbs): **know, believe, want, need, love, hate, like, understand**. Không nói *I am knowing* mà nói **I know**.',
+        explanation: '**Tương lai đơn:** Dùng **will + V nguyên mẫu** khi nói về kế hoạch, dự đoán, lời hứa.\\n• *I **will take** the IELTS exam next year.*\\n\\n**Hiện tại tiếp diễn:** Dùng **am/is/are + V-ing** khi nói về hành động đang xảy ra NGAY BÂY GIỜ.\\n• *I **am sitting** at my desk right now.*\\n\\n⚠️ **Rất quan trọng:** Một số động từ KHÔNG BAO GIỜ chia tiếp diễn (Stative Verbs): **know, believe, want, need, love, hate, like, understand**. Không nói *I am knowing* mà nói **I know**.',
         examples: [
           '✅ **Tương lai:** I **will study** harder. (Tớ sẽ học chăm hơn)',
           '✅ **Tiếp diễn:** My cat **is sleeping** on the sofa. (Con mèo đang ngủ)',
@@ -115,7 +115,7 @@ export const curriculumData: Lesson[] = [
       { id: "u0a-ex10", type: "translate", instruction: "Cấp độ 3: Dịch câu Quá khứ đơn + Tương lai.", question: "Hôm qua tớ đã học tiếng Anh. Ngày mai tớ sẽ học tiếp.", answer: "Yesterday I studied English. Tomorrow I will study more", hint: "Hôm qua = Yesterday → studied (V-ed). Ngày mai = Tomorrow → will study." }
     ],
     conversationPractice: {
-      situation: "Nàng đang kể cho tớ nghe về một ngày bình thường của Nàng. Hãy chú ý cách dùng thì nhé!",
+      situation: "cậu đang kể cho tớ nghe về một ngày bình thường của cậu. Hãy chú ý cách dùng thì nhé!",
       dialogue: [
         { speaker: "Gia sư", line: "What do you usually do in the morning?", lineVi: "Cậu thường làm gì vào buổi sáng?" },
         { speaker: "Ngọc Anh", line: "I usually wake up at 6:30 and drink warm water.", lineVi: "Tớ thường thức dậy lúc 6:30 và uống nước ấm." },
@@ -126,9 +126,9 @@ export const curriculumData: Lesson[] = [
       ]
     },
     tips: [
-      "💡 **Mẹo nhớ nhanh:** Hiện tại đơn = **Thói quen** (every day, always). Quá khứ đơn = **Đã xong** (yesterday, last week). Tương lai = **Sẽ** (will, tomorrow). Tiếp diễn = **Đang** (now, right now, look!).",
-      "💡 Nàng đừng cố học thuộc bảng chia động từ. Hãy đọc đi đọc lại bài Reading ở trên, não bộ sẽ tự động nhận ra pattern (mẫu) của từng thì.",
-      "💡 Lỗi sai mà 90% người Việt mắc phải: Quên thêm **-s/-es** cho ngôi thứ 3 (He/She/It). Tớ muốn Nàng ghi nhớ câu thần chú: **He/She/It → thêm S!**"
+      "💡 **Mẹo nhỏ:**nhớ nhanh:** Hiện tại đơn = **Thói quen** (every day, always). Quá khứ đơn = **Đã xong** (yesterday, last week). Tương lai = **Sẽ** (will, tomorrow). Tiếp diễn = **Đang** (now, right now, look!).",
+      "💡 cậu đừng cố học thuộc bảng chia động từ. Hãy đọc đi đọc lại bài Reading ở trên, não bộ sẽ tự động nhận ra pattern (mẫu) của từng thì.",
+      "💡 Lỗi sai mà 90% người Việt mắc phải: Quên thêm **-s/-es** cho ngôi thứ 3 (He/She/It). Tớ muốn cậu ghi nhớ câu thần chú: **He/She/It → thêm S!**"
     ]
   },
   {
@@ -136,28 +136,28 @@ export const curriculumData: Lesson[] = [
     unit: 0,
     title: "Pre-Academic: Verbs, Word Classes & Sentence Patterns",
     titleVi: "Bổ trợ Cơ bản: Chia Động từ, Từ loại & Mẫu câu",
-    objective: "Mục tiêu 45 Phút: Phân biệt Động từ Quy tắc vs Bất quy tắc, nắm vững 4 từ loại chính (Danh-Động-Tính-Trạng) và biết cách xây dựng câu phức. Đây là 'bộ công cụ' mà Nàng sẽ dùng suốt hành trình IELTS!",
+    objective: "Mục tiêu 45 Phút: Phân biệt Động từ Quy tắc vs Bất quy tắc, nắm vững 4 từ loại chính (Danh-Động-Tính-Trạng) và biết cách xây dựng câu phức. Đây là những kiến thức nền tảng quan trọng cho IELTS.",
     reading: {
       title: "How I Learned to Love English (Cách tớ học cách yêu tiếng Anh)",
       content: "When I was young, I found English extremely difficult. I could not understand anything. My teacher spoke quickly, and I felt confused. I wanted to give up.\\n\\nHowever, everything changed when I discovered music. I began listening to English songs carefully. I wrote down the lyrics and looked up every new word. Gradually, my vocabulary grew significantly. I also watched movies without subtitles, which greatly improved my listening skills.\\n\\nNow, I can read academic articles confidently. I speak fluently with my online tutor. Learning a language is a beautiful journey, not a race. If you practice patiently and consistently, you will definitely succeed.",
-      translation: "Khi tớ còn nhỏ, tớ thấy tiếng Anh cực kỳ khó. Tớ không thể hiểu bất cứ điều gì. Cô giáo nói nhanh, và tớ cảm thấy bối rối. Tớ muốn bỏ cuộc.\\n\\nTuy nhiên, mọi thứ thay đổi khi tớ khám phá ra âm nhạc. Tớ bắt đầu nghe nhạc tiếng Anh một cách cẩn thận. Tớ chép lại lời bài hát và tra cứu mọi từ mới. Dần dần, vốn từ vựng của tớ tăng lên đáng kể. Tớ cũng xem phim không phụ đề, điều này cải thiện rất nhiều kỹ năng nghe của tớ.\\n\\nBây giờ, tớ có thể đọc các bài báo học thuật một cách tự tin. Tớ nói trôi chảy với gia sư trực tuyến. Học một ngôn ngữ là một hành trình đẹp đẽ, không phải một cuộc đua. Nếu cậu luyện tập kiên nhẫn và đều đặn, cậu chắc chắn sẽ thành công."
+      translation: "Khi tớ còn nhỏ, tớ thấy tiếng Anh rất khó. Tớ không thể hiểu bất cứ điều gì. Cô giáo nói nhanh, và tớ cảm thấy bối rối. Tớ muốn bỏ cuộc.\\n\\nTuy nhiên, mọi thứ thay đổi khi tớ khám phá ra âm nhạc. Tớ bắt đầu nghe nhạc tiếng Anh một cách cẩn thận. Tớ chép lại lời bài hát và tra cứu mọi từ mới. Dần dần, vốn từ vựng của tớ tăng lên đáng kể. Tớ cũng xem phim không phụ đề, điều này cải thiện rất nhiều kỹ năng nghe của tớ.\\n\\nBây giờ, tớ có thể đọc các bài báo học thuật một cách tự tin. Tớ nói trôi chảy với gia sư trực tuyến. Học một ngôn ngữ là một hành trình đẹp đẽ, không phải một cuộc đua. Nếu cậu luyện tập kiên nhẫn và đều đặn, cậu chắc chắn sẽ thành công."
     },
     vocabulary: [
-      { word: 'Difficult', ipa: '/ˈdɪf.ɪ.kəlt/', meaning: '**Nghĩa:** Khó khăn. **(Tính từ - Adjective)**\\n\\n💡 **Gia sư bật mí:** Đây là **Tính từ** (Adjective) — bổ nghĩa cho Danh từ hoặc đứng sau To Be. *English is difficult.* ≠ *English is difficultly* (SAI!)\\n\\n🔗 **Word Family:** Difficult (Adj) → Difficulty (N - Sự khó khăn) → Difficultly (❌ không tồn tại!)', example: 'The exam was extremely difficult.' },
-      { word: 'Quickly', ipa: '/ˈkwɪk.li/', meaning: '**Nghĩa:** Một cách nhanh chóng. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Trạng từ (đuôi -ly) bổ nghĩa cho **Động từ**: She spoke **quickly**. Tính từ tương ứng là **quick**. Cậu nói *She is quick* (Adj) nhưng *She runs quickly* (Adv).', example: 'He answered the question quickly.' },
-      { word: 'Understand', ipa: '/ˌʌn.dəˈstænd/', meaning: '**Nghĩa:** Hiểu. **(Động từ BẤT QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Đây là động từ **bất quy tắc** kinh điển: **understand → understood → understood**. Không có dạng *understanded*!\\n\\n⚠️ Cũng là Stative Verb → Không chia tiếp diễn: *I am understanding* (❌)', example: 'I understood the lesson yesterday.' },
-      { word: 'Discover', ipa: '/dɪˈskʌv.ər/', meaning: '**Nghĩa:** Khám phá ra, phát hiện ra. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **discovered** (thêm -ed). Danh từ: **discovery** (sự khám phá). Nàng thấy chưa, thêm đuôi -y thì động từ biến thành danh từ!', example: 'Scientists discovered a new species.' },
-      { word: 'Gradually', ipa: '/ˈɡrædʒ.u.ə.li/', meaning: '**Nghĩa:** Dần dần, từ từ. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Trạng từ chỉ cách thức. Rất hay dùng trong IELTS Writing Task 1 để miêu tả biểu đồ: *The number **gradually** increased.*\\n\\n🔗 **Word Family:** Gradual (Adj) → Gradually (Adv).', example: 'Her English gradually improved over time.' },
-      { word: 'Confident', ipa: '/ˈkɒn.fɪ.dənt/', meaning: '**Nghĩa:** Tự tin. **(Tính từ - Adjective)**\\n\\n💡 **Gia sư bật mí:** Tính từ → đứng sau To Be hoặc trước Danh từ: *She is **confident**.* / *A **confident** student.*\\n\\n🔗 **Word Family:** Confident (Adj) → Confidently (Adv) → Confidence (N).', example: 'I feel confident about the exam.' },
-      { word: 'Fluently', ipa: '/ˈfluː.ənt.li/', meaning: '**Nghĩa:** Một cách trôi chảy. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Nàng nói *I speak English **fluently*** (Trạng từ bổ nghĩa cho Động từ speak). Nhưng nói *My English is **fluent*** (Tính từ sau to be).', example: 'She speaks three languages fluently.' },
-      { word: 'Improve', ipa: '/ɪmˈpruːv/', meaning: '**Nghĩa:** Cải thiện, tiến bộ. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **improved**. Danh từ: **improvement**. Đây là từ vựng IELTS cốt lõi!\\n\\n🔗 **Collocations:** significantly improve (cải thiện đáng kể), improve dramatically.', example: 'Practice will improve your speaking skills.' },
-      { word: 'Patiently', ipa: '/ˈpeɪ.ʃənt.li/', meaning: '**Nghĩa:** Một cách kiên nhẫn. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Patient (Adj - kiên nhẫn) → Patiently (Adv) → Patience (N - sự kiên nhẫn). Nàng nhớ *Patience* phát âm là /ˈpeɪ.ʃəns/ chứ không phải /pa-ti-ên/ nhé!', example: 'The teacher explained patiently until everyone understood.' },
-      { word: 'Succeed', ipa: '/səkˈsiːd/', meaning: '**Nghĩa:** Thành công. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **succeeded**. Đây là một bộ từ cực kỳ quan trọng:\\n\\n🔗 **Word Family:** Succeed (V) → Success (N) → Successful (Adj) → Successfully (Adv).', example: 'If you work hard, you will succeed.' }
+      { word: 'Difficult', ipa: '/ˈdɪf.ɪ.kəlt/', meaning: '**Nghĩa:** Khó khăn. **(Tính từ - Adjective)**\\n\\n💡 **Lưu ý:** Đây là **Tính từ** (Adjective) — bổ nghĩa cho Danh từ hoặc đứng sau To Be. *English is difficult.* ≠ *English is difficultly* (SAI!)\\n\\n🔗 **Word Family:** Difficult (Adj) → Difficulty (N - Sự khó khăn) → Difficultly (❌ không tồn tại!)', example: 'The exam was extremely difficult.' },
+      { word: 'Quickly', ipa: '/ˈkwɪk.li/', meaning: '**Nghĩa:** Một cách nhanh chóng. **(Trạng từ - Adverb)**\\n\\n💡 **Lưu ý:** Trạng từ (đuôi -ly) bổ nghĩa cho **Động từ**: She spoke **quickly**. Tính từ tương ứng là **quick**. Cậu nói *She is quick* (Adj) nhưng *She runs quickly* (Adv).', example: 'He answered the question quickly.' },
+      { word: 'Understand', ipa: '/ˌʌn.dəˈstænd/', meaning: '**Nghĩa:** Hiểu. **(Động từ BẤT QUY TẮC)**\\n\\n💡 **Lưu ý:** Đây là động từ **bất quy tắc** : **understand → understood → understood**. Không có dạng *understanded*!\\n\\n⚠️ Cũng là Stative Verb → Không chia tiếp diễn: *I am understanding* (❌)', example: 'I understood the lesson yesterday.' },
+      { word: 'Discover', ipa: '/dɪˈskʌv.ər/', meaning: '**Nghĩa:** Khám phá ra, phát hiện ra. **(Động từ QUY TẮC)**\\n\\n💡 **Lưu ý:** Quá khứ: **discovered** (thêm -ed). Danh từ: **discovery** (sự khám phá). cậu thấy chưa, thêm đuôi -y thì động từ biến thành danh từ!', example: 'Scientists discovered a new species.' },
+      { word: 'Gradually', ipa: '/ˈɡrædʒ.u.ə.li/', meaning: '**Nghĩa:** Dần dần, từ từ. **(Trạng từ - Adverb)**\\n\\n💡 **Lưu ý:** Trạng từ chỉ cách thức. Rất hay dùng trong IELTS Writing Task 1 để miêu tả biểu đồ: *The number **gradually** increased.*\\n\\n🔗 **Word Family:** Gradual (Adj) → Gradually (Adv).', example: 'Her English gradually improved over time.' },
+      { word: 'Confident', ipa: '/ˈkɒn.fɪ.dənt/', meaning: '**Nghĩa:** Tự tin. **(Tính từ - Adjective)**\\n\\n💡 **Lưu ý:** Tính từ → đứng sau To Be hoặc trước Danh từ: *She is **confident**.* / *A **confident** student.*\\n\\n🔗 **Word Family:** Confident (Adj) → Confidently (Adv) → Confidence (N).', example: 'I feel confident about the exam.' },
+      { word: 'Fluently', ipa: '/ˈfluː.ənt.li/', meaning: '**Nghĩa:** Một cách trôi chảy. **(Trạng từ - Adverb)**\\n\\n💡 **Lưu ý:** cậu nói *I speak English **fluently*** (Trạng từ bổ nghĩa cho Động từ speak). Nhưng nói *My English is **fluent*** (Tính từ sau to be).', example: 'She speaks three languages fluently.' },
+      { word: 'Improve', ipa: '/ɪmˈpruːv/', meaning: '**Nghĩa:** Cải thiện, tiến bộ. **(Động từ QUY TẮC)**\\n\\n💡 **Lưu ý:** Quá khứ: **improved**. Danh từ: **improvement**. Đây là từ vựng IELTS cốt lõi!\\n\\n🔗 **Collocations:** significantly improve (cải thiện đáng kể), improve dramatically.', example: 'Practice will improve your speaking skills.' },
+      { word: 'Patiently', ipa: '/ˈpeɪ.ʃənt.li/', meaning: '**Nghĩa:** Một cách kiên nhẫn. **(Trạng từ - Adverb)**\\n\\n💡 **Lưu ý:** Patient (Adj - kiên nhẫn) → Patiently (Adv) → Patience (N - sự kiên nhẫn). cậu nhớ *Patience* phát âm là /ˈpeɪ.ʃəns/ chứ không phải /pa-ti-ên/ nhé!', example: 'The teacher explained patiently until everyone understood.' },
+      { word: 'Succeed', ipa: '/səkˈsiːd/', meaning: '**Nghĩa:** Thành công. **(Động từ QUY TẮC)**\\n\\n💡 **Lưu ý:** Quá khứ: **succeeded**. Đây là một bộ từ rất quan trọng:\\n\\n🔗 **Word Family:** Succeed (V) → Success (N) → Successful (Adj) → Successfully (Adv).', example: 'If you work hard, you will succeed.' }
     ],
     grammar: [
       {
         rule: '4 Từ loại chính: Danh - Động - Tính - Trạng',
-        explanation: 'Tớ muốn Nàng khắc sâu 4 \"vai diễn\" chính trong mỗi câu tiếng Anh:\\n\\n📦 **Danh từ (Noun):** Tên gọi sự vật/người. Ví dụ: *student, music, confidence*.\\n🏃 **Động từ (Verb):** Hành động. Ví dụ: *study, improve, succeed*.\\n🎨 **Tính từ (Adjective):** Miêu tả đặc điểm. Đứng TRƯỚC Danh từ hoặc SAU To Be. Ví dụ: *difficult, confident*.\\n🔧 **Trạng từ (Adverb):** Bổ nghĩa cho Động từ (cách thức). Thường có đuôi **-ly**. Ví dụ: *quickly, gradually, fluently*.\\n\\n💡 **Mẹo nhận dạng nhanh:** Thấy đuôi -ly → Trạng từ. Thấy đuôi -tion/-ment/-ness → Danh từ. Thấy đuôi -ful/-ous/-ive → Tính từ.',
+        explanation: 'Tớ muốn cậu khắc sâu 4 \"vai diễn\" chính trong mỗi câu tiếng Anh:\\n\\n📦 **Danh từ (Noun):** Tên gọi sự vật/người. Ví dụ: *student, music, confidence*.\\n🏃 **Động từ (Verb):** Hành động. Ví dụ: *study, improve, succeed*.\\n🎨 **Tính từ (Adjective):** Miêu tả đặc điểm. Đứng TRƯỚC Danh từ hoặc SAU To Be. Ví dụ: *difficult, confident*.\\n🔧 **Trạng từ (Adverb):** Bổ nghĩa cho Động từ (cách thức). Thường có đuôi **-ly**. Ví dụ: *quickly, gradually, fluently*.\\n\\n💡 **Mẹo nhỏ:**nhận dạng nhanh:** Thấy đuôi -ly → Trạng từ. Thấy đuôi -tion/-ment/-ness → Danh từ. Thấy đuôi -ful/-ous/-ive → Tính từ.',
         examples: [
           '**She is a confident (Adj) student (N).** — Tính từ đứng TRƯỚC Danh từ.',
           '**She speaks (V) fluently (Adv).** — Trạng từ đứng SAU Động từ.',
@@ -167,7 +167,7 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Động từ Quy tắc vs Bất quy tắc (Regular vs Irregular Verbs)',
-        explanation: '**Quy tắc (Regular):** Thêm **-ed** để tạo quá khứ. Ví dụ: visit**ed**, cook**ed**, discover**ed**.\\n\\n**Bất quy tắc (Irregular):** Biến đổi hoàn toàn, phải HỌC THUỘC. Ví dụ: go → **went**, speak → **spoke**, understand → **understood**.\\n\\n💡 **Mẹo của tớ cho Nàng:** Đừng cố học thuộc bảng 200 động từ BQT một lúc. Hãy ghi nhớ 20 từ hay gặp nhất trước: go-went, come-came, take-took, make-made, see-saw, know-knew, think-thought, give-gave, find-found, tell-told, speak-spoke, write-wrote, read-read, run-ran, begin-began, feel-felt, leave-left, bring-brought, buy-bought, understand-understood.',
+        explanation: '**Quy tắc (Regular):** Thêm **-ed** để tạo quá khứ. Ví dụ: visit**ed**, cook**ed**, discover**ed**.\\n\\n**Bất quy tắc (Irregular):** Biến đổi hoàn toàn, phải HỌC THUỘC. Ví dụ: go → **went**, speak → **spoke**, understand → **understood**.\\n\\n💡 **Mẹo nhỏ:**** Đừng cố học thuộc bảng 200 động từ BQT một lúc. Hãy ghi nhớ 20 từ hay gặp nhất trước: go-went, come-came, take-took, make-made, see-saw, know-knew, think-thought, give-gave, find-found, tell-told, speak-spoke, write-wrote, read-read, run-ran, begin-began, feel-felt, leave-left, bring-brought, buy-bought, understand-understood.',
         examples: [
           '**Quy tắc:** I **visited** (visit+ed) the museum. She **cooked** (cook+ed) dinner.',
           '**Bất quy tắc:** I **went** (go) to school. She **spoke** (speak) quickly. We **understood** (understand) everything.',
@@ -176,12 +176,12 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Mẫu câu cơ bản mở rộng: S + V + O + Adverb',
-        explanation: 'Ở Unit Academic trước, Nàng đã biết khung S-V-O. Giờ tớ muốn Nàng thêm \"gia vị\" vào câu bằng cách gắn thêm **Trạng từ (Adverb)** hoặc **Cụm giới từ (Prepositional Phrase)**:\\n\\n**Công thức nâng cấp:** S + V + O + **Adverb/Prep Phrase**\\n\\n💡 Chỉ cần thêm 1 trạng từ, câu của Nàng lập tức \"lên đời\" từ Band 5 lên Band 6:',
+        explanation: 'Ở Unit Academic trước, cậu đã biết khung S-V-O. Giờ tớ muốn cậu thêm \"gia vị\" vào câu bằng cách gắn thêm **Trạng từ (Adverb)** hoặc **Cụm giới từ (Prepositional Phrase)**:\\n\\n**Công thức mở rộng:** S + V + O + **Adverb/Prep Phrase**\\n\\n💡 Chỉ cần thêm 1 trạng từ, câu của cậu lập tức \"lên đời\" từ Band 5 lên Band 6:',
         examples: [
           '**Band 5:** She improved her English. (Cô ấy cải thiện tiếng Anh)',
           '**Band 6:** She improved her English **significantly**. (Cô ấy cải thiện tiếng Anh **đáng kể**)',
           '**Band 6.5:** She **gradually** improved her English **by listening to music**. (Cô ấy **dần dần** cải thiện tiếng Anh **bằng cách nghe nhạc**)',
-          '💡 Nàng thấy không? Chỉ thêm 1-2 từ mà câu văn đã chuyên nghiệp hẳn lên!'
+          '💡 cậu thấy không? Chỉ thêm 1-2 từ mà câu văn đã chuyên nghiệp hẳn lên!'
         ]
       }
     ],
@@ -198,10 +198,10 @@ export const curriculumData: Lesson[] = [
       { id: "u0b-ex10", type: "translate", instruction: "Cấp độ 3: Thử thách — Dịch câu phức.", question: "Dần dần, kỹ năng nghe của tớ cải thiện đáng kể.", answer: "Gradually, my listening skills improved significantly", hint: "Dần dần = Gradually, Kỹ năng nghe = listening skills, Cải thiện = improved, Đáng kể = significantly." }
     ],
     conversationPractice: {
-      situation: "Nàng đang kể cho tớ nghe về hành trình học tiếng Anh của Nàng. Chú ý cách dùng Trạng từ và Động từ bất quy tắc nhé!",
+      situation: "cậu đang kể cho tớ nghe về hành trình học tiếng Anh của cậu. Chú ý cách dùng Trạng từ và Động từ bất quy tắc nhé!",
       dialogue: [
         { speaker: "Gia sư", line: "How was your English when you were young?", lineVi: "Tiếng Anh của cậu hồi nhỏ thế nào?" },
-        { speaker: "Ngọc Anh", line: "It was extremely difficult. I could not understand anything.", lineVi: "Nó cực kỳ khó. Tớ không thể hiểu bất cứ điều gì." },
+        { speaker: "Ngọc Anh", line: "It was extremely difficult. I could not understand anything.", lineVi: "Nó rất khó. Tớ không thể hiểu bất cứ điều gì." },
         { speaker: "Gia sư", line: "So what changed? How did you improve?", lineVi: "Vậy điều gì đã thay đổi? Cậu đã cải thiện như thế nào?" },
         { speaker: "Ngọc Anh", line: "I discovered English music! I listened carefully and wrote down the lyrics.", lineVi: "Tớ đã khám phá ra nhạc tiếng Anh! Tớ nghe cẩn thận và chép lại lời bài hát." },
         { speaker: "Gia sư", line: "That's wonderful! Can you speak fluently now?", lineVi: "Tuyệt vời! Cậu có thể nói trôi chảy bây giờ không?" },
@@ -209,9 +209,9 @@ export const curriculumData: Lesson[] = [
       ]
     },
     tips: [
-      "💡 **Mẹo siêu tốc để nhớ từ loại:** Danh từ = NGƯỜI/VẬT (student, music). Động từ = HÀNH ĐỘNG (study, improve). Tính từ = ĐẶC ĐIỂM (difficult, confident). Trạng từ = CÁCH THỨC, thường đuôi -ly (quickly, fluently).",
-      "💡 Mỗi lần học từ mới, Nàng hãy tra luôn cả **Word Family** (Họ từ) của nó. Ví dụ: succeed (V) → success (N) → successful (Adj) → successfully (Adv). Biết cả 4 dạng = ăn điểm gấp 4 lần!",
-      "💡 20 động từ BQT hay gặp nhất tớ đã liệt kê trong phần Ngữ pháp. Nàng hãy đọc lại 3 lần rồi tối nay trước khi ngủ đọc thêm 1 lần nữa. Não bộ sẽ tự động ghi nhớ khi ngủ đấy! 😴"
+      "💡 **Mẹo nhỏ:**để nhớ từ loại:** Danh từ = NGƯỜI/VẬT (student, music). Động từ = HÀNH ĐỘNG (study, improve). Tính từ = ĐẶC ĐIỂM (difficult, confident). Trạng từ = CÁCH THỨC, thường đuôi -ly (quickly, fluently).",
+      "💡 Mỗi lần học từ mới, cậu hãy tra luôn cả **Word Family** (Họ từ) của nó. Ví dụ: succeed (V) → success (N) → successful (Adj) → successfully (Adv). Biết cả 4 dạng = ăn điểm gấp 4 lần!",
+      "💡 20 động từ BQT hay gặp nhất tớ đã liệt kê trong phần Ngữ pháp. cậu hãy đọc lại 3 lần rồi tối nay trước khi ngủ đọc thêm 1 lần nữa. Não bộ sẽ tự động ghi nhớ khi ngủ đấy! 😴"
     ]
   },
   {
@@ -387,37 +387,37 @@ export const curriculumData: Lesson[] = [
     unit: 1,
     title: "Academic Foundation: The Sentence Builder",
     titleVi: "Nền tảng Học thuật: Xây dựng cấu trúc câu chuẩn",
-    objective: "Mục tiêu 45 Phút: Nắm vững cấu trúc câu cốt lõi trong tiếng Anh học thuật, làm chủ 10 từ vựng Academic tần suất cao nhất, và loại bỏ hoàn toàn thói quen dịch Word-by-Word. Đây là nền móng để xây ngôi nhà IELTS của cậu, Ngọc Anh tập trung nhé!",
+    objective: "Mục tiêu 45 Phút: Nắm vững cấu trúc câu cốt lõi trong tiếng Anh học thuật, làm chủ 10 từ vựng Academic tần suất cao nhất, và loại bỏ hoàn toàn thói quen dịch Word-by-Word. Đây là nền móng để xây ngôi nhà IELTS của cậu, cậu tập trung nhé!",
     reading: {
       title: "The Transformative Power of Education (Sức mạnh chuyển hóa của Giáo dục)",
       content: "In contemporary society, education is widely acknowledged as an essential pillar for both personal and economic growth. Firstly, it provides individuals with crucial cognitive skills and a broader perspective on global issues. Instead of merely memorizing facts, modern educational institutions emphasize critical thinking and problem-solving abilities.\n\nMoreover, universities and higher education establishments offer advanced knowledge that is highly demanded in today's competitive job market. As a result, students who pursue academic excellence often achieve remarkable success in their future careers. They are better equipped to adapt to technological advancements and industry shifts.\n\nUltimately, a robust educational foundation creates equitable opportunities for everyone, regardless of their socio-economic background. By investing in education, governments not only empower their citizens but also foster a more innovative and resilient society.",
       translation: "Trong xã hội đương đại, giáo dục được công nhận rộng rãi như một trụ cột thiết yếu cho sự phát triển cả về cá nhân lẫn kinh tế. Đầu tiên, nó cung cấp cho các cá nhân những kỹ năng nhận thức quan trọng và một góc nhìn rộng hơn về các vấn đề toàn cầu. Thay vì chỉ ghi nhớ các sự kiện, các cơ sở giáo dục hiện đại nhấn mạnh vào tư duy phản biện và khả năng giải quyết vấn đề.\n\nHơn nữa, các trường đại học và cơ sở giáo dục đại học cung cấp kiến thức nâng cao vốn được yêu cầu rất cao trong thị trường việc làm cạnh tranh ngày nay. Do đó, những sinh viên theo đuổi sự xuất sắc trong học thuật thường đạt được những thành công đáng chú ý trong sự nghiệp tương lai của họ. Họ được trang bị tốt hơn để thích ứng với những tiến bộ công nghệ và sự thay đổi của ngành.\n\nCuối cùng, một nền tảng giáo dục vững chắc tạo ra cơ hội bình đẳng cho tất cả mọi người, bất kể nền tảng kinh tế xã hội của họ. Bằng cách đầu tư vào giáo dục, các chính phủ không chỉ trao quyền cho công dân của họ mà còn thúc đẩy một xã hội đổi mới và kiên cường hơn."
     },
     vocabulary: [
-      { word: 'Contemporary', ipa: '/kənˈtem.pər.ər.i/', meaning: '**Nghĩa:** Đương đại, hiện đại.\n\n💡 **Gia sư bật mí:** Thay vì dùng *modern* (quá phổ thông), hãy dùng *contemporary* trong IELTS Writing Task 2. Ví dụ: *In contemporary society...* (Trong xã hội đương đại...).\n\n🔗 **Collocations:** contemporary art (nghệ thuật đương đại), contemporary issues (vấn đề đương đại).', example: 'In contemporary society, stress is a common issue.' },
-      { word: 'Acknowledge', ipa: '/əkˈnɒl.ɪdʒ/', meaning: '**Nghĩa:** Công nhận, thừa nhận.\n\n💡 **Gia sư bật mí:** Dùng từ này khi Nàng muốn thể hiện sự đồng tình với một quan điểm khách quan. Dạng bị động *is widely acknowledged as* (được công nhận rộng rãi là) cực kỳ ăn điểm.\n\n⚠️ **Lỗi sai thường gặp:** Đừng quên âm /dʒ/ (chờ) ở cuối từ nhé!', example: 'It is widely acknowledged that smoking causes cancer.' },
-      { word: 'Essential', ipa: '/ɪˈsen.ʃəl/', meaning: '**Nghĩa:** Thiết yếu, cực kỳ quan trọng.\n\n💡 **Gia sư bật mí:** Nó mạnh hơn chữ *important* rất nhiều. Nếu thiếu nó thì mọi thứ sẽ sụp đổ. \n\n🔗 **Từ đồng nghĩa:** Crucial, Vital, Indispensable.', example: 'Water is essential for the survival of all living creatures.' },
-      { word: 'Crucial', ipa: '/ˈkruː.ʃəl/', meaning: '**Nghĩa:** Quan trọng mang tính quyết định.\n\n💡 **Gia sư bật mí:** Từ này thường đi với giới từ *to* hoặc *for*. \n\n🔗 **Collocations:** play a crucial role in (đóng vai trò quyết định trong việc...).', example: 'Parents play a crucial role in a child’s development.' },
-      { word: 'Establishment', ipa: '/ɪˈstæb.lɪʃ.mənt/', meaning: '**Nghĩa:** Sự thành lập / Cơ sở, tổ chức.\n\n💡 **Gia sư bật mí:** Trong bài đọc vừa rồi, *educational establishments* chính là cách Paraphrase cực xịn cho *schools and universities*.\n\n🔗 **Word Family:** Establish (Động từ) -> Establishment (Danh từ).', example: 'Educational establishments need more funding from the government.' },
-      { word: 'Pursue', ipa: '/pəˈsjuː/', meaning: '**Nghĩa:** Theo đuổi (mục tiêu, sự nghiệp, đam mê).\n\n💡 **Gia sư bật mí:** Chữ *Pursue* mang sắc thái quyết tâm rất cao. Nàng nhớ đọc là /pəˈsjuː/ chứ không phải là /pơ-su/ nha.\n\n🔗 **Collocations:** pursue a career (theo đuổi sự nghiệp), pursue higher education (học lên cao).', example: 'Many students go abroad to pursue higher education.' },
-      { word: 'Achieve', ipa: '/əˈtʃiːv/', meaning: '**Nghĩa:** Đạt được (thường là thành tựu sau khi nỗ lực).\n\n💡 **Gia sư bật mí:** Đừng dùng *get* (lấy được) cho những thứ to tát nhé. Nàng hãy dùng *achieve*.\n\n🔗 **Danh từ:** Achievement (Thành tựu).', example: 'With hard work, you can achieve your wildest dreams.' },
-      { word: 'Remarkable', ipa: '/rɪˈmɑː.kə.bəl/', meaning: '**Nghĩa:** Đáng chú ý, xuất chúng.\n\n💡 **Gia sư bật mí:** Thay vì khen *very good* hay *great*, Nàng hãy dùng *remarkable*. Nó mang nghĩa "tốt đến mức ai cũng phải để ý".', example: 'She has made remarkable progress in her English studies.' },
-      { word: 'Equipped', ipa: '/ɪˈkwɪpt/', meaning: '**Nghĩa:** Được trang bị (kỹ năng, kiến thức, vũ khí).\n\n💡 **Gia sư bật mí:** Cấu trúc *be better equipped to V* (được trang bị tốt hơn để làm gì) là một cấu trúc "vàng" trong viết luận.\n\n🔗 **Từ gốc:** Equip (Động từ) -> Equipment (Trang thiết bị).', example: 'Graduates today are better equipped to face global challenges.' },
-      { word: 'Foster', ipa: '/ˈfɒs.tər/', meaning: '**Nghĩa:** Thúc đẩy, bồi dưỡng, nuôi dưỡng.\n\n💡 **Gia sư bật mí:** Từ này dùng để nói về việc nuôi dưỡng những thứ vô hình (tài năng, sự đổi mới, tinh thần). Rất hay gặp trong IELTS Reading!\n\n🔗 **Collocations:** foster innovation (thúc đẩy đổi mới), foster economic growth.', example: 'Reading aloud helps foster a child’s imagination.' }
+      { word: 'Contemporary', ipa: '/kənˈtem.pər.ər.i/', meaning: '**Nghĩa:** Đương đại, hiện đại.\n\n💡 **Lưu ý:** Thay vì dùng *modern* (quá phổ thông), hãy dùng *contemporary* trong IELTS Writing Task 2. Ví dụ: *In contemporary society...* (Trong xã hội đương đại...).\n\n🔗 **Collocations:** contemporary art (nghệ thuật đương đại), contemporary issues (vấn đề đương đại).', example: 'In contemporary society, stress is a common issue.' },
+      { word: 'Acknowledge', ipa: '/əkˈnɒl.ɪdʒ/', meaning: '**Nghĩa:** Công nhận, thừa nhận.\n\n💡 **Lưu ý:** Dùng từ này khi cậu muốn thể hiện sự đồng tình với một quan điểm khách quan. Dạng bị động *is widely acknowledged as* (được công nhận rộng rãi là) rất ăn điểm.\n\n⚠️ **Lỗi sai thường gặp:** Đừng quên âm /dʒ/ (chờ) ở cuối từ nhé!', example: 'It is widely acknowledged that smoking causes cancer.' },
+      { word: 'Essential', ipa: '/ɪˈsen.ʃəl/', meaning: '**Nghĩa:** Thiết yếu, rất quan trọng.\n\n💡 **Lưu ý:** Nó mạnh hơn chữ *important* rất nhiều. Nếu thiếu nó thì mọi thứ sẽ sụp đổ. \n\n🔗 **Từ đồng nghĩa:** Crucial, Vital, Indispensable.', example: 'Water is essential for the survival of all living creatures.' },
+      { word: 'Crucial', ipa: '/ˈkruː.ʃəl/', meaning: '**Nghĩa:** Quan trọng mang tính quyết định.\n\n💡 **Lưu ý:** Từ này thường đi với giới từ *to* hoặc *for*. \n\n🔗 **Collocations:** play a crucial role in (đóng vai trò quyết định trong việc...).', example: 'Parents play a crucial role in a child’s development.' },
+      { word: 'Establishment', ipa: '/ɪˈstæb.lɪʃ.mənt/', meaning: '**Nghĩa:** Sự thành lập / Cơ sở, tổ chức.\n\n💡 **Lưu ý:** Trong bài đọc vừa rồi, *educational establishments* chính là cách Paraphrase cực xịn cho *schools and universities*.\n\n🔗 **Word Family:** Establish (Động từ) -> Establishment (Danh từ).', example: 'Educational establishments need more funding from the government.' },
+      { word: 'Pursue', ipa: '/pəˈsjuː/', meaning: '**Nghĩa:** Theo đuổi (mục tiêu, sự nghiệp, đam mê).\n\n💡 **Lưu ý:** Chữ *Pursue* mang sắc thái quyết tâm rất cao. cậu nhớ đọc là /pəˈsjuː/ chứ không phải là /pơ-su/ nha.\n\n🔗 **Collocations:** pursue a career (theo đuổi sự nghiệp), pursue higher education (học lên cao).', example: 'Many students go abroad to pursue higher education.' },
+      { word: 'Achieve', ipa: '/əˈtʃiːv/', meaning: '**Nghĩa:** Đạt được (thường là thành tựu sau khi nỗ lực).\n\n💡 **Lưu ý:** Đừng dùng *get* (lấy được) cho những thứ to tát nhé. cậu hãy dùng *achieve*.\n\n🔗 **Danh từ:** Achievement (Thành tựu).', example: 'With hard work, you can achieve your wildest dreams.' },
+      { word: 'Remarkable', ipa: '/rɪˈmɑː.kə.bəl/', meaning: '**Nghĩa:** Đáng chú ý, xuất chúng.\n\n💡 **Lưu ý:** Thay vì khen *very good* hay *great*, cậu hãy dùng *remarkable*. Nó mang nghĩa "tốt đến mức ai cũng phải để ý".', example: 'She has made remarkable progress in her English studies.' },
+      { word: 'Equipped', ipa: '/ɪˈkwɪpt/', meaning: '**Nghĩa:** Được trang bị (kỹ năng, kiến thức, vũ khí).\n\n💡 **Lưu ý:** Cấu trúc *be better equipped to V* (được trang bị tốt hơn để làm gì) là một cấu trúc "vàng" trong viết luận.\n\n🔗 **Từ gốc:** Equip (Động từ) -> Equipment (Trang thiết bị).', example: 'Graduates today are better equipped to face global challenges.' },
+      { word: 'Foster', ipa: '/ˈfɒs.tər/', meaning: '**Nghĩa:** Thúc đẩy, bồi dưỡng, nuôi dưỡng.\n\n💡 **Lưu ý:** Từ này dùng để nói về việc nuôi dưỡng những thứ vô hình (tài năng, sự đổi mới, tinh thần). Rất hay gặp trong IELTS Reading!\n\n🔗 **Collocations:** foster innovation (thúc đẩy đổi mới), foster economic growth.', example: 'Reading aloud helps foster a child’s imagination.' }
     ],
     grammar: [
       {
         rule: 'Cấu trúc xương sống S-V-O (Subject - Verb - Object)',
-        explanation: 'Ngọc Anh biết không, điểm khác biệt lớn nhất giữa tiếng Việt và tiếng Anh học thuật là Tiếng Anh ĐÒI HỎI sự rõ ràng tuyệt đối. Một câu LUÔN LUÔN phải có Chủ ngữ (S) và Động từ (V).\n\n💡 **Mẹo của tớ:** Khi viết câu dài, hãy nhắm mắt lại và tự hỏi: "Đứa nào (S) làm cái hành động gì (V) lên ai/cái gì (O)?". Nếu tìm được đủ 3 thành phần này, câu của Nàng không bao giờ bị sai ngữ pháp nặng.',
+        explanation: 'Cậu biết không, điểm khác biệt lớn nhất giữa tiếng Việt và tiếng Anh học thuật là Tiếng Anh ĐÒI HỎI sự rõ ràng tuyệt đối. Một câu LUÔN LUÔN phải có Chủ ngữ (S) và Động từ (V).\n\n💡 **Mẹo nhỏ:**** Khi viết câu dài, hãy nhắm mắt lại và tự hỏi: "Đứa nào (S) làm cái hành động gì (V) lên ai/cái gì (O)?". Nếu tìm được đủ 3 thành phần này, câu của cậu không bao giờ bị sai ngữ pháp nặng.',
         examples: [
           '**S-V-O Cơ bản:** \nEducation (S) provides (V) skills (O).',
           '**S-V-O Nâng cao (có cụm từ mở rộng):** \nModern educational establishments (S) offer (V) advanced knowledge (O).',
-          '⚠️ **Lỗi sai kinh điển:** "In Vietnam is very hot." (Câu này thiếu S. Phải viết là "The weather in Vietnam (S) is (V) very hot.")'
+          '⚠️ **Lỗi sai :** "In Vietnam is very hot." (Câu này thiếu S. Phải viết là "The weather in Vietnam (S) is (V) very hot.")'
         ]
       },
       {
         rule: 'Phó từ chỉ mức độ kết hợp Động từ (Adverb + Verb)',
-        explanation: 'Để biến một câu 5.0 thành câu 7.0, Nàng đừng chỉ dùng Động từ trần trụi. Hãy đính kèm một Phó từ (đuôi -ly) ngay trước Động từ hoặc Quá khứ phân từ để câu văn "có da có thịt" hơn.',
+        explanation: 'Để biến một câu 5.0 thành câu 7.0, cậu đừng chỉ dùng Động từ trần trụi. Hãy đính kèm một Phó từ (đuôi -ly) ngay trước Động từ hoặc Quá khứ phân từ để câu văn "có da có thịt" hơn.',
         examples: [
           'Thay vì: "Education is acknowledged as..."',
           'Hãy viết: "Education is **widely** (rộng rãi) acknowledged as..."',
@@ -427,10 +427,10 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Từ nối học thuật (Transition Words) tạo mạch văn',
-        explanation: 'Đây là "chất keo" dính các câu lại với nhau. Giám khảo IELTS sẽ cho điểm tiêu chí Coherence & Cohesion rất cao nếu Nàng biết dùng các từ sau đứng ở ĐẦU CÂU (và phải có dấu phẩy đi theo sau nhé):',
+        explanation: 'Đây là "chất keo" dính các câu lại với nhau. Giám khảo IELTS sẽ cho điểm tiêu chí Coherence & Cohesion rất cao nếu cậu biết dùng các từ sau đứng ở ĐẦU CÂU (và phải có dấu phẩy đi theo sau nhé):',
         examples: [
           '**Firstly, / Secondly,**: Mở đầu một loạt các ý tưởng.',
-          '**Moreover, / Furthermore,**: Khi Nàng muốn bồi thêm một ý cùng chiều (khen thêm, hoặc chê thêm).',
+          '**Moreover, / Furthermore,**: Khi cậu muốn bồi thêm một ý cùng chiều (khen thêm, hoặc chê thêm).',
           '**As a result, / Consequently,**: Để chốt hạ hậu quả hay kết quả của câu đằng trước.',
           '**Ultimately,**: Cuối cùng thì, suy cho cùng thì...'
         ]
@@ -449,7 +449,7 @@ export const curriculumData: Lesson[] = [
       { id: "u1-ex10", type: "translate", instruction: "Cấp độ 3: Thử thách cuối cùng - Dịch câu ghép.", question: "Hơn nữa, các trường đại học cung cấp kiến thức nâng cao.", answer: "Moreover, universities provide advanced knowledge", hint: "Hơn nữa = Moreover, Trường đại học = universities, Cung cấp = provide (hoặc offer), Kiến thức nâng cao = advanced knowledge." }
     ],
     conversationPractice: {
-      situation: "Tưởng tượng Nàng đang thi IELTS Speaking Part 3, Giám khảo (Examiner) hỏi Nàng về chủ đề Giáo dục. Hãy bình tĩnh phân tích và đáp lại nhé!",
+      situation: "Tưởng tượng cậu đang thi IELTS Speaking Part 3, Giám khảo (Examiner) hỏi cậu về chủ đề Giáo dục. Hãy bình tĩnh phân tích và đáp lại nhé!",
       dialogue: [
         { speaker: "Examiner", line: "In your opinion, what is the most important function of a university?", lineVi: "Theo bạn, chức năng quan trọng nhất của một trường đại học là gì?" },
         { speaker: "Ngọc Anh", line: "Well, I believe the primary function is to foster critical thinking.", lineVi: "À, tôi tin rằng chức năng chính là thúc đẩy tư duy phản biện." },
@@ -460,9 +460,9 @@ export const curriculumData: Lesson[] = [
       ]
     },
     tips: [
-      "💡 Gia sư dặn dò 1: Khi học từ vựng, Nàng đừng chỉ học mỗi từ đó. Hãy đọc cả câu ví dụ tớ đã viết. Não bộ Nàng sẽ tự động ghi nhớ \"hoàn cảnh\" từ đó xuất hiện.",
-      "💡 Gia sư dặn dò 2: Trong bài thi IELTS Writing, việc Nàng dùng đúng 1 từ \"crucial\" đắt giá hơn rất nhiều so với việc viết 1 câu siêu dài nhưng dùng từ sai ngữ cảnh.",
-      "💡 Gia sư dặn dò 3: Cứ mỗi 15 phút học, Nàng hãy vươn vai một cái nhé. Uống một ngụm nước rồi ấn vào làm bài tập, đừng cố ép não bộ căng thẳng quá!"
+      "💡 Gia sư dặn dò 1: Khi học từ vựng, cậu đừng chỉ học mỗi từ đó. Hãy đọc cả câu ví dụ tớ đã viết. Não bộ cậu sẽ tự động ghi nhớ \"hoàn cảnh\" từ đó xuất hiện.",
+      "💡 Gia sư dặn dò 2: Trong bài thi IELTS Writing, việc cậu dùng đúng 1 từ \"crucial\" đắt giá hơn rất nhiều so với việc viết 1 câu siêu dài nhưng dùng từ sai ngữ cảnh.",
+      "💡 Gia sư dặn dò 3: Cứ mỗi 15 phút học, cậu hãy vươn vai một cái nhé. Uống một ngụm nước rồi ấn vào làm bài tập, đừng cố ép não bộ căng thẳng quá!"
     ]
   },
   {
@@ -470,28 +470,28 @@ export const curriculumData: Lesson[] = [
     unit: 2,
     title: "Reading Strategies: Skimming & Paraphrasing",
     titleVi: "Chiến thuật Đọc hiểu: Đọc lướt và Từ đồng nghĩa",
-    objective: "Mục tiêu 45 Phút: Nắm vững kỹ năng Skimming (Đọc lướt lấy ý chính), nhận diện Paraphrase (từ đồng nghĩa) và làm quen với 10 từ vựng chủ đề Giao Thông Đô Thị (Urban Transport). Đây là 2 vũ khí tối thượng giúp Nàng tiết kiệm 50% thời gian làm bài IELTS Reading.",
+    objective: "Mục tiêu 45 Phút: Nắm vững kỹ năng Skimming (Đọc lướt lấy ý chính), nhận diện Paraphrase (từ đồng nghĩa) và làm quen với 10 từ vựng chủ đề Giao Thông Đô Thị (Urban Transport). Đây là 2 vũ khí tối thượng giúp cậu tiết kiệm 50% thời gian làm bài IELTS Reading.",
     reading: {
       title: "The Evolution of Urban Transport (Sự tiến hóa của Giao thông Đô thị)",
       content: "In recent decades, city transportation has changed significantly due to rapid urbanization and population growth. In the past, citizens relied heavily on private vehicles, which inevitably led to severe environmental degradation and daily gridlocks. Consequently, the quality of urban life deteriorated.\n\nHowever, modern metropolises are actively shifting towards sustainable public transit systems to mitigate these pressing issues. For instance, underground subways, light rail networks, and eco-friendly electric buses have become increasingly prevalent. This crucial transition not only helps alleviate traffic congestion but also substantially reduces carbon footprints.\n\nLooking ahead, urban planners are integrating smart technologies to revolutionize how people commute. Initiatives such as car-pooling apps and dedicated cycling lanes are being implemented globally. Ultimately, a well-structured transport infrastructure is indispensable for fostering a resilient and livable city.",
       translation: "Trong những thập kỷ gần đây, giao thông thành phố đã thay đổi đáng kể do đô thị hóa nhanh chóng và gia tăng dân số. Trong quá khứ, người dân phụ thuộc nặng nề vào phương tiện cá nhân, điều này tất yếu dẫn đến suy thoái môi trường nghiêm trọng và kẹt xe hàng ngày. Hậu quả là, chất lượng cuộc sống đô thị ngày càng giảm sút.\n\nTuy nhiên, các siêu đô thị hiện đại đang tích cực chuyển hướng sang các hệ thống giao thông công cộng bền vững để giảm nhẹ những vấn đề cấp bách này. Ví dụ, tàu điện ngầm, mạng lưới đường sắt nhẹ và xe buýt điện thân thiện với môi trường ngày càng trở nên thịnh hành. Sự chuyển đổi mang tính quyết định này không chỉ giúp làm giảm bớt ùn tắc giao thông mà còn giảm thiểu đáng kể lượng khí thải carbon.\n\nNhìn về tương lai, các nhà quy hoạch đô thị đang tích hợp các công nghệ thông minh để cách mạng hóa cách mọi người đi lại. Các sáng kiến như ứng dụng đi chung xe và làn đường dành riêng cho xe đạp đang được triển khai trên toàn cầu. Rốt cuộc, một cơ sở hạ tầng giao thông được cấu trúc tốt là điều không thể thiếu để nuôi dưỡng một thành phố kiên cường và đáng sống."
     },
     vocabulary: [
-      { word: 'Significantly', ipa: '/sɪɡˈnɪf.ɪ.kənt.li/', meaning: '**Nghĩa:** Đáng kể, to lớn.\n\n💡 **Gia sư bật mí:** Từ này sinh ra là để miêu tả sự thay đổi trong IELTS Writing Task 1. Thay vì nói *changed a lot*, hãy nói *changed significantly*.\n\n🔗 **Từ đồng nghĩa:** Considerably, Substantially.', example: 'The cost of living in big cities has increased significantly.' },
-      { word: 'Rely on', ipa: '/rɪˈlaɪ ɒn/', meaning: '**Nghĩa:** Phụ thuộc vào, dựa dẫm vào.\n\n💡 **Gia sư bật mí:** Trong IELTS, từ này rất hay được dùng với phó từ *heavily* (Rely heavily on = Phụ thuộc nặng nề vào).\n\n🔗 **Từ đồng nghĩa:** Depend on.', example: 'Many businesses rely heavily on social media marketing.' },
-      { word: 'Degradation', ipa: '/ˌdeɡ.rəˈdeɪ.ʃən/', meaning: '**Nghĩa:** Sự suy thoái, sự giảm sút chất lượng.\n\n💡 **Gia sư bật mí:** Đây là từ vựng Band 7.5+ cực xịn cho chủ đề Môi trường. Nàng hãy học thuộc cụm *environmental degradation* nhé.\n\n🔗 **Word Family:** Degrade (Động từ).', example: 'Air pollution is a major cause of environmental degradation.' },
-      { word: 'Mitigate', ipa: '/ˈmɪt.ɪ.ɡeɪt/', meaning: '**Nghĩa:** Làm giảm nhẹ, làm dịu bớt (hậu quả, vấn đề).\n\n💡 **Gia sư bật mí:** Giám khảo IELTS cực kỳ thích từ này ở phần kết bài khi Nàng đề xuất giải pháp. *To mitigate the problem, governments should...*\n\n🔗 **Từ đồng nghĩa:** Alleviate, Ease.', example: 'Planting more trees can mitigate the effects of global warming.' },
-      { word: 'Prevalent', ipa: '/ˈprev.əl.ənt/', meaning: '**Nghĩa:** Thịnh hành, phổ biến.\n\n💡 **Gia sư bật mí:** Nó sang hơn *common* hay *popular* rất nhiều. Dùng để nói về một xu hướng đang lan rộng.\n\n🔗 **Collocations:** highly prevalent (rất phổ biến).', example: 'Electric cars are becoming increasingly prevalent nowadays.' },
-      { word: 'Alleviate', ipa: '/əˈliː.vi.eɪt/', meaning: '**Nghĩa:** Làm giảm bớt (sự đau đớn, nghèo đói, kẹt xe).\n\n💡 **Gia sư bật mí:** Thường đi liền với *pain* (nỗi đau), *poverty* (nghèo đói) hoặc *congestion* (kẹt xe).\n\n🔗 **Từ đồng nghĩa:** Relieve, Mitigate.', example: 'The new bridge will help alleviate traffic congestion.' },
-      { word: 'Congestion', ipa: '/kənˈdʒes.tʃən/', meaning: '**Nghĩa:** Sự tắc nghẽn (giao thông).\n\n💡 **Gia sư bật mí:** Paraphrase thần thánh cho *traffic jam*. Nàng hãy viết *traffic congestion* để ẵm điểm từ vựng nhé.\n\n🔗 **Word Family:** Congested (Tính từ - Bị tắc nghẽn).', example: 'Traffic congestion is a daily nightmare in Hanoi.' },
-      { word: 'Infrastructure', ipa: '/ˈɪn.frəˌstrʌk.tʃər/', meaning: '**Nghĩa:** Cơ sở hạ tầng (đường xá, cầu cống, trường trạm).\n\n💡 **Gia sư bật mí:** Một từ không thể thiếu khi viết luận về sự phát triển của một quốc gia.\n\n🔗 **Collocations:** improve infrastructure (cải thiện cơ sở hạ tầng).', example: 'The government needs to invest more in public infrastructure.' },
-      { word: 'Indispensable', ipa: '/ˌɪn.dɪˈspen.sə.bəl/', meaning: '**Nghĩa:** Không thể thiếu được, hoàn toàn cần thiết.\n\n💡 **Gia sư bật mí:** Từ này tương đương với *absolutely essential*. Dùng để chốt lại tầm quan trọng của một thứ gì đó.\n\n🔗 **Từ đồng nghĩa:** Crucial, Vital.', example: 'Smartphones have become an indispensable part of our lives.' },
-      { word: 'Commute', ipa: '/kəˈmjuːt/', meaning: '**Nghĩa:** Đi lại thường xuyên (từ nhà đến chỗ làm/trường học).\n\n💡 **Gia sư bật mí:** Không dùng *go to work*, hãy dùng *commute*. Nàng có thể dùng nó như Danh từ (*the daily commute*).\n\n🔗 **Danh từ chỉ người:** Commuter (Người đi làm xa).', example: 'I have a long daily commute to the office.' }
+      { word: 'Significantly', ipa: '/sɪɡˈnɪf.ɪ.kənt.li/', meaning: '**Nghĩa:** Đáng kể, to lớn.\n\n💡 **Lưu ý:** Từ này sinh ra là để miêu tả sự thay đổi trong IELTS Writing Task 1. Thay vì nói *changed a lot*, hãy nói *changed significantly*.\n\n🔗 **Từ đồng nghĩa:** Considerably, Substantially.', example: 'The cost of living in big cities has increased significantly.' },
+      { word: 'Rely on', ipa: '/rɪˈlaɪ ɒn/', meaning: '**Nghĩa:** Phụ thuộc vào, dựa dẫm vào.\n\n💡 **Lưu ý:** Trong IELTS, từ này rất hay được dùng với phó từ *heavily* (Rely heavily on = Phụ thuộc nặng nề vào).\n\n🔗 **Từ đồng nghĩa:** Depend on.', example: 'Many businesses rely heavily on social media marketing.' },
+      { word: 'Degradation', ipa: '/ˌdeɡ.rəˈdeɪ.ʃən/', meaning: '**Nghĩa:** Sự suy thoái, sự giảm sút chất lượng.\n\n💡 **Lưu ý:** Đây là từ vựng Band 7.5+ cực xịn cho chủ đề Môi trường. cậu hãy học thuộc cụm *environmental degradation* nhé.\n\n🔗 **Word Family:** Degrade (Động từ).', example: 'Air pollution is a major cause of environmental degradation.' },
+      { word: 'Mitigate', ipa: '/ˈmɪt.ɪ.ɡeɪt/', meaning: '**Nghĩa:** Làm giảm nhẹ, làm dịu bớt (hậu quả, vấn đề).\n\n💡 **Lưu ý:** Giám khảo IELTS rất thích từ này ở phần kết bài khi cậu đề xuất giải pháp. *To mitigate the problem, governments should...*\n\n🔗 **Từ đồng nghĩa:** Alleviate, Ease.', example: 'Planting more trees can mitigate the effects of global warming.' },
+      { word: 'Prevalent', ipa: '/ˈprev.əl.ənt/', meaning: '**Nghĩa:** Thịnh hành, phổ biến.\n\n💡 **Lưu ý:** Nó sang hơn *common* hay *popular* rất nhiều. Dùng để nói về một xu hướng đang lan rộng.\n\n🔗 **Collocations:** highly prevalent (rất phổ biến).', example: 'Electric cars are becoming increasingly prevalent nowadays.' },
+      { word: 'Alleviate', ipa: '/əˈliː.vi.eɪt/', meaning: '**Nghĩa:** Làm giảm bớt (sự đau đớn, nghèo đói, kẹt xe).\n\n💡 **Lưu ý:** Thường đi liền với *pain* (nỗi đau), *poverty* (nghèo đói) hoặc *congestion* (kẹt xe).\n\n🔗 **Từ đồng nghĩa:** Relieve, Mitigate.', example: 'The new bridge will help alleviate traffic congestion.' },
+      { word: 'Congestion', ipa: '/kənˈdʒes.tʃən/', meaning: '**Nghĩa:** Sự tắc nghẽn (giao thông).\n\n💡 **Lưu ý:** Paraphrase  cho *traffic jam*. cậu hãy viết *traffic congestion* để ẵm điểm từ vựng nhé.\n\n🔗 **Word Family:** Congested (Tính từ - Bị tắc nghẽn).', example: 'Traffic congestion is a daily nightmare in Hanoi.' },
+      { word: 'Infrastructure', ipa: '/ˈɪn.frəˌstrʌk.tʃər/', meaning: '**Nghĩa:** Cơ sở hạ tầng (đường xá, cầu cống, trường trạm).\n\n💡 **Lưu ý:** Một từ không thể thiếu khi viết luận về sự phát triển của một quốc gia.\n\n🔗 **Collocations:** improve infrastructure (cải thiện cơ sở hạ tầng).', example: 'The government needs to invest more in public infrastructure.' },
+      { word: 'Indispensable', ipa: '/ˌɪn.dɪˈspen.sə.bəl/', meaning: '**Nghĩa:** Không thể thiếu được, hoàn toàn cần thiết.\n\n💡 **Lưu ý:** Từ này tương đương với *absolutely essential*. Dùng để chốt lại tầm quan trọng của một thứ gì đó.\n\n🔗 **Từ đồng nghĩa:** Crucial, Vital.', example: 'Smartphones have become an indispensable part of our lives.' },
+      { word: 'Commute', ipa: '/kəˈmjuːt/', meaning: '**Nghĩa:** Đi lại thường xuyên (từ nhà đến chỗ làm/trường học).\n\n💡 **Lưu ý:** Không dùng *go to work*, hãy dùng *commute*. cậu có thể dùng nó như Danh từ (*the daily commute*).\n\n🔗 **Danh từ chỉ người:** Commuter (Người đi làm xa).', example: 'I have a long daily commute to the office.' }
     ],
     grammar: [
       {
         rule: 'Thì Hiện tại Hoàn thành (Present Perfect) diễn tả sự thay đổi',
-        explanation: 'Ngọc Anh lưu ý nhé, thì Hiện tại Hoàn thành (Have/Has + V3) là "đặc sản" của văn học thuật. Người ta KHÔNG dùng nó để kể lể quá khứ, mà dùng nó để NẾN MẠNH MỘT SỰ THAY ĐỔI kéo dài từ quá khứ và VẪN CÒN ĐÚNG ở hiện tại.\n\n💡 **Mẹo của tớ:** Trong Task 1, nếu có mốc thời gian "In recent years" hoặc "Over the last decade", cậu NHẤT ĐỊNH phải dùng thì này!',
+        explanation: 'Cậu lưu ý nhé, thì Hiện tại Hoàn thành (Have/Has + V3) là "đặc sản" của văn học thuật. Người ta KHÔNG dùng nó để kể lể quá khứ, mà dùng nó để NẾN MẠNH MỘT SỰ THAY ĐỔI kéo dài từ quá khứ và VẪN CÒN ĐÚNG ở hiện tại.\n\n💡 **Mẹo nhỏ:**** Trong Task 1, nếu có mốc thời gian "In recent years" hoặc "Over the last decade", cậu NHẤT ĐỊNH phải dùng thì này!',
         examples: [
           '**Miêu tả sự thay đổi:** City transportation **has changed** significantly. (Giao thông đã thay đổi đáng kể và bây giờ vẫn đang thay đổi).',
           '**Miêu tả xu hướng:** Eco-friendly buses **have become** prevalent. (Xe buýt điện đã trở nên thịnh hành).',
@@ -509,7 +509,7 @@ export const curriculumData: Lesson[] = [
       },
       {
         rule: 'Mệnh đề Quan hệ chỉ Nguyên nhân (Which inevitably led to...)',
-        explanation: 'Thay vì dùng "And it caused..." (nghe rất chán), Nàng hãy dùng phẩy + **Which** để tóm gọn cả một sự việc phía trước và chỉ ra hậu quả của nó. Đây là cấu trúc câu Phức (Complex Sentence) giúp nâng band điểm ngữ pháp.',
+        explanation: 'Thay vì dùng "And it caused..." (nghe rất chán), cậu hãy dùng phẩy + **Which** để tóm gọn cả một sự việc phía trước và chỉ ra hậu quả của nó. Đây là cấu trúc câu Phức (Complex Sentence) giúp nâng band điểm ngữ pháp.',
         examples: [
           '**Cách viết 5.0:** People relied on private vehicles. And it led to gridlocks.',
           '**Cách viết 7.0:** People relied on private vehicles**, which inevitably led to** gridlocks. (Người dân phụ thuộc phương tiện cá nhân, điều mà tất yếu dẫn đến kẹt xe).'
@@ -529,7 +529,7 @@ export const curriculumData: Lesson[] = [
       { id: "u2-ex10", type: "translate", instruction: "Cấp độ 3: Thử thách cuối cùng - Dịch câu có phó từ.", question: "Chất lượng không khí đã thay đổi đáng kể.", answer: "Air quality has changed significantly", hint: "Chất lượng không khí = Air quality, Đã thay đổi = has changed, Đáng kể = significantly." }
     ],
     conversationPractice: {
-      situation: "Chủ đề IELTS Speaking Part 3: Giao thông Đô thị. Giám khảo (Examiner) đang hỏi Nàng về giải pháp cho nạn kẹt xe. Tự tin lên nhé!",
+      situation: "Chủ đề IELTS Speaking Part 3: Giao thông Đô thị. Giám khảo (Examiner) đang hỏi cậu về giải pháp cho nạn kẹt xe. Tự tin lên nhé!",
       dialogue: [
         { speaker: "Examiner", line: "In your view, what is the biggest problem with city transportation nowadays?", lineVi: "Theo bạn, vấn đề lớn nhất với giao thông thành phố hiện nay là gì?" },
         { speaker: "Ngọc Anh", line: "Without a doubt, it's traffic congestion. People rely heavily on private vehicles, which inevitably leads to daily gridlocks.", lineVi: "Không nghi ngờ gì nữa, đó là sự ùn tắc giao thông. Mọi người phụ thuộc nặng nề vào phương tiện cá nhân, điều tất yếu dẫn đến kẹt xe hàng ngày." },
@@ -540,9 +540,9 @@ export const curriculumData: Lesson[] = [
       ]
     },
     tips: [
-      "💡 Gia sư bật mí Skimming: Nàng đừng đọc từng chữ! Hãy lướt nhanh để tìm các danh từ chính (Nouns) và động từ chính (Verbs). Đọc thật kỹ câu ĐẦU TIÊN của mỗi đoạn vì nó chứa ý chính của cả đoạn đó (Topic Sentence).",
-      "💡 Gia sư dặn dò: Khi học từ vựng mới, Ngọc Anh nhớ luôn học theo CỤM (Collocations). Đừng học 'alleviate' không, hãy học 'alleviate congestion'. Nó sẽ giúp Nàng phản xạ nhanh gấp đôi khi nói và viết.",
-      "💡 Nếu thấy bài học hơi dài, Nàng có thể dừng lại 5 phút ngắm trời mây rồi học tiếp. Học ngoại ngữ là một hành trình lãng mạn, không phải một cuộc chạy đua đâu! 🥰"
+      "💡 Lưu ý Skimming: cậu đừng đọc từng chữ! Hãy lướt nhanh để tìm các danh từ chính (Nouns) và động từ chính (Verbs). Đọc thật kỹ câu ĐẦU TIÊN của mỗi đoạn vì nó chứa ý chính của cả đoạn đó (Topic Sentence).",
+      "💡 Gia sư dặn dò: Khi học từ vựng mới, Ngọc Anh nhớ luôn học theo CỤM (Collocations). Đừng học 'alleviate' không, hãy học 'alleviate congestion'. Nó sẽ giúp cậu phản xạ nhanh gấp đôi khi nói và viết.",
+      "💡 Nếu thấy bài học hơi dài, cậu có thể dừng lại 5 phút ngắm trời mây rồi học tiếp. Học ngoại ngữ là một hành trình lãng mạn, không phải một cuộc chạy đua đâu! 🥰"
     ]
   },
   {
@@ -550,7 +550,7 @@ export const curriculumData: Lesson[] = [
     unit: 3,
     title: "Academic Writing: Describing Trends",
     titleVi: "Viết Học thuật: Mô tả Xu hướng (IELTS Task 1)",
-    objective: "Nắm vững các động từ và trạng từ học thuật để miêu tả sự tăng, giảm, biến động của dữ liệu. Cực kỳ quan trọng cho IELTS Writing Task 1.",
+    objective: "Nắm vững các động từ và trạng từ học thuật để miêu tả sự tăng, giảm, biến động của dữ liệu. Rất quan trọng cho IELTS Writing Task 1.",
     reading: {
       title: "Global Smartphone Sales (2010 - 2020)",
       content: "The chart illustrates the global sales of smartphones between 2010 and 2020. Overall, it is clear that smartphone sales experienced a dramatic upward trend. In 2010, the figure stood at just 300 million units. However, it surged significantly to reach a peak of 1.5 billion units in 2018. Following this, the sales witnessed a slight decline to 1.4 billion in 2020.",
@@ -621,7 +621,7 @@ export const curriculumData: Lesson[] = [
       ]
     },
     tips: [
-      "💡 Gia sư bật mí: Đừng bao giờ chép lại nguyên văn câu hỏi đề bài vào câu mở bài của cậu. Luôn dùng từ đồng nghĩa! (Ví dụ đề dùng 'show', cậu dùng 'illustrate').",
+      "💡 Lưu ý: Đừng bao giờ chép lại nguyên văn câu hỏi đề bài vào câu mở bài của cậu. Luôn dùng từ đồng nghĩa! (Ví dụ đề dùng 'show', cậu dùng 'illustrate').",
       "💡 Để làm bài Task 1 điểm cao, Ngọc Anh nhớ phải có một câu 'Overall' (Nhìn chung) miêu tả xu hướng bao quát nhất của toàn bộ biểu đồ nhé!"
     ]
   }
