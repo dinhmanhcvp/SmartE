@@ -46,6 +46,174 @@ export type Lesson = {
 };
 
 export const curriculumData: Lesson[] = [
+  // ===== PHẦN BỔ TRỢ CƠ BẢN (Pre-Academic Foundation) =====
+  {
+    id: "unit-0a-basic-tenses",
+    unit: 0,
+    title: "Pre-Academic: Master the Tenses",
+    titleVi: "Bổ trợ Cơ bản: Làm Chủ Các Thì",
+    objective: "Mục tiêu 45 Phút: Hiểu bản chất và phân biệt 4 thì nền tảng trong tiếng Anh (Hiện tại đơn, Quá khứ đơn, Tương lai đơn, Hiện tại tiếp diễn). Đây là bước KHÔNG THỂ BỎ QUA trước khi bước vào phần Academic. Nàng yên tâm, tớ sẽ giải thích cực kỳ dễ hiểu!",
+    reading: {
+      title: "A Day in My Life (Một ngày trong cuộc sống của tớ)",
+      content: "Every morning, I wake up at 6:30 and drink a glass of warm water. I usually study English for one hour before school. Today, I am sitting at my desk and writing this essay. Right now, my cat is sleeping on the sofa.\\n\\nYesterday, I visited my grandmother. She cooked a delicious meal for the whole family. We talked about my future plans. I told her that I wanted to study abroad.\\n\\nNext year, I will take the IELTS exam. I will study harder every day. My teacher said that I will achieve a good score if I practice consistently. I believe that my dream will come true.",
+      translation: "Mỗi buổi sáng, tớ thức dậy lúc 6:30 và uống một cốc nước ấm. Tớ thường học tiếng Anh một tiếng trước khi đến trường. Hôm nay, tớ đang ngồi ở bàn và viết bài luận này. Ngay lúc này, con mèo của tớ đang ngủ trên sofa.\\n\\nHôm qua, tớ đã đến thăm bà ngoại. Bà đã nấu một bữa ăn ngon cho cả gia đình. Chúng tớ đã nói về kế hoạch tương lai của tớ. Tớ nói với bà rằng tớ muốn đi du học.\\n\\nNăm tới, tớ sẽ thi IELTS. Tớ sẽ học chăm hơn mỗi ngày. Cô giáo nói rằng tớ sẽ đạt điểm tốt nếu tớ luyện tập đều đặn. Tớ tin rằng giấc mơ của tớ sẽ trở thành hiện thực."
+    },
+    vocabulary: [
+      { word: 'Wake up', ipa: '/weɪk ʌp/', meaning: '**Nghĩa:** Thức dậy.\\n\\n💡 **Gia sư bật mí:** Đây là Phrasal Verb (Cụm động từ). Quá khứ của nó là **woke up** (BẤT QUY TẮC nhé, không phải *waked up*).\\n\\n🔗 **Ví dụ:** I usually wake up early. / Yesterday I woke up late.', example: 'I wake up at 7 AM every day.' },
+      { word: 'Usually', ipa: '/ˈjuː.ʒu.ə.li/', meaning: '**Nghĩa:** Thường xuyên (khoảng 80% thời gian).\\n\\n💡 **Gia sư bật mí:** Đây là trạng từ chỉ tần suất - dấu hiệu nhận biết thì **Hiện tại đơn**! Các trạng từ khác cùng nhóm: *always, often, sometimes, rarely, never*.\\n\\n⚠️ **Vị trí:** Đứng TRƯỚC động từ thường, SAU động từ to be.', example: 'She usually drinks coffee in the morning.' },
+      { word: 'Visit', ipa: '/ˈvɪz.ɪt/', meaning: '**Nghĩa:** Thăm, ghé thăm.\\n\\n💡 **Gia sư bật mí:** Đây là động từ QUY TẮC (Regular Verb). Quá khứ chỉ cần thêm **-ed**: visited. Phát âm là /ˈvɪz.ɪ.tɪd/ (thêm âm /ɪd/ vì tận cùng bằng chữ t).', example: 'I visited the museum last weekend.' },
+      { word: 'Cook', ipa: '/kʊk/', meaning: '**Nghĩa:** Nấu ăn (Động từ) / Đầu bếp (Danh từ).\\n\\n💡 **Gia sư bật mí:** Quá khứ: **cooked** /kʊkt/. Lưu ý phát âm đuôi -ed là /t/ vì chữ k là âm vô thanh.\\n\\n🔗 **Word Family:** Cook (V/N) → Cooker (Bếp nấu) → Cooking (Việc nấu ăn).', example: 'My mom cooked dinner yesterday.' },
+      { word: 'Achieve', ipa: '/əˈtʃiːv/', meaning: '**Nghĩa:** Đạt được (sau nỗ lực).\\n\\n💡 **Gia sư bật mí:** Động từ QUY TẮC. Quá khứ: **achieved**. Tương lai: **will achieve**. Nàng sẽ gặp lại từ này rất nhiều ở phần Academic nhé!', example: 'She will achieve her goals next year.' },
+      { word: 'Practice', ipa: '/ˈpræk.tɪs/', meaning: '**Nghĩa:** Luyện tập, thực hành.\\n\\n💡 **Gia sư bật mí:** Trong tiếng Anh Mỹ, *practice* vừa là Danh từ vừa là Động từ. Trong tiếng Anh Anh, Động từ viết là *practise* (s). IELTS chấp nhận cả hai.', example: 'I practice speaking English every evening.' },
+      { word: 'Believe', ipa: '/bɪˈliːv/', meaning: '**Nghĩa:** Tin tưởng, tin rằng.\\n\\n💡 **Gia sư bật mí:** Đây là Stative Verb (Động từ trạng thái) - KHÔNG ĐƯỢC chia ở thì tiếp diễn! Không nói *I am believing* mà nói **I believe**.\\n\\n⚠️ **Các từ tương tự:** know, want, need, love, hate.', example: 'I believe that dreams can come true.' },
+      { word: 'Consistently', ipa: '/kənˈsɪs.tənt.li/', meaning: '**Nghĩa:** Một cách đều đặn, nhất quán.\\n\\n💡 **Gia sư bật mí:** Trạng từ này rất hay dùng trong IELTS. *Practice consistently* = Luyện tập đều đặn.\\n\\n🔗 **Word Family:** Consistent (Tính từ) → Consistently (Trạng từ) → Consistency (Danh từ).', example: 'If you study consistently, you will improve.' },
+      { word: 'Delicious', ipa: '/dɪˈlɪʃ.əs/', meaning: '**Nghĩa:** Ngon, thơm ngon.\\n\\n💡 **Gia sư bật mí:** Nâng cấp hơn *very good* khi miêu tả đồ ăn. Nàng có thể nói *absolutely delicious* (ngon tuyệt cú mèo).\\n\\n⚠️ **Lỗi sai:** Không nói *very delicious* vì delicious đã mang nghĩa rất ngon rồi.', example: 'The cake was absolutely delicious!' },
+      { word: 'Abroad', ipa: '/əˈbrɔːd/', meaning: '**Nghĩa:** Ở nước ngoài, ra nước ngoài.\\n\\n💡 **Gia sư bật mí:** KHÔNG CÓ giới từ *to* đằng trước! Nói **go abroad** chứ KHÔNG nói *go to abroad*. Đây là lỗi sai kinh điển của người Việt.\\n\\n🔗 **Collocations:** study abroad (du học), travel abroad (đi du lịch nước ngoài).', example: 'I want to study abroad next year.' }
+    ],
+    grammar: [
+      {
+        rule: 'Thì Hiện tại đơn (Present Simple) — Thói quen & Sự thật',
+        explanation: 'Nàng dùng thì này khi nói về:\\n• Thói quen hàng ngày: *I wake up at 6:30.*\\n• Sự thật hiển nhiên: *Water boils at 100°C.*\\n\\n💡 **Công thức thần thánh:**\\n• Khẳng định: **S + V(s/es)** → She study → ⚠️ SAI! Phải là **She studies** (thêm -es vì chủ ngữ ngôi 3 số ít).\\n• Phủ định: **S + do/does + not + V** → I **do not** (don\\'t) like fish.\\n• Câu hỏi: **Do/Does + S + V?** → **Does** she speak English?\\n\\n⚠️ **Lỗi sai #1 của người Việt:** Quên thêm **-s/-es** khi chủ ngữ là He/She/It.',
+        examples: [
+          '✅ She **studies** English every day. (Cô ấy học tiếng Anh mỗi ngày)',
+          '❌ She study English every day. → Sai vì thiếu -es cho ngôi thứ 3.',
+          '✅ I **do not** eat meat. = I **don\\'t** eat meat. (Tớ không ăn thịt)',
+          '✅ **Does** he **like** coffee? — Yes, he **does**. (Anh ấy có thích cà phê không?)'
+        ]
+      },
+      {
+        rule: 'Thì Quá khứ đơn (Past Simple) — Hành động đã xong',
+        explanation: 'Dùng khi nói về hành động đã XẢY RA VÀ KẾT THÚC trong quá khứ. Dấu hiệu nhận biết: *yesterday, last week, in 2020, ago*.\\n\\n💡 **Công thức:**\\n• Khẳng định: **S + V-ed** (quy tắc) hoặc **S + V2** (bất quy tắc).\\n• Phủ định: **S + did not (didn\\'t) + V nguyên mẫu**.\\n• Câu hỏi: **Did + S + V nguyên mẫu?**\\n\\n⚠️ **Bẫy lớn nhất:** Khi dùng **did/didn\\'t**, động từ chính phải trở về **NGUYÊN MẪU**: *Did you **went**?* → SAI! Phải là *Did you **go**?*',
+        examples: [
+          '✅ I **visited** my grandmother yesterday. (Tớ đã thăm bà hôm qua) — Quy tắc: visit + ed.',
+          '✅ She **cooked** a delicious meal. (Bà ấy đã nấu bữa ăn ngon) — Quy tắc: cook + ed.',
+          '✅ We **talked** about future plans. (Chúng tớ đã nói về kế hoạch tương lai)',
+          '❌ Did you **went** there? → Sai! ✅ Did you **go** there?'
+        ]
+      },
+      {
+        rule: 'Thì Tương lai đơn (Future Simple) & Hiện tại tiếp diễn (Present Continuous)',
+        explanation: '**Tương lai đơn:** Dùng **will + V nguyên mẫu** khi nói về kế hoạch, dự đoán, lời hứa.\\n• *I **will take** the IELTS exam next year.*\\n\\n**Hiện tại tiếp diễn:** Dùng **am/is/are + V-ing** khi nói về hành động đang xảy ra NGAY BÂY GIỜ.\\n• *I **am sitting** at my desk right now.*\\n\\n⚠️ **Cực kỳ quan trọng:** Một số động từ KHÔNG BAO GIỜ chia tiếp diễn (Stative Verbs): **know, believe, want, need, love, hate, like, understand**. Không nói *I am knowing* mà nói **I know**.',
+        examples: [
+          '✅ **Tương lai:** I **will study** harder. (Tớ sẽ học chăm hơn)',
+          '✅ **Tiếp diễn:** My cat **is sleeping** on the sofa. (Con mèo đang ngủ)',
+          '✅ **Tiếp diễn:** What **are** you **doing** right now? (Cậu đang làm gì?)',
+          '❌ I **am believing** you. → Sai! ✅ I **believe** you. (believe là Stative Verb)'
+        ]
+      }
+    ],
+    exercises: [
+      { id: "u0a-ex1", type: "choose", instruction: "Cấp độ 1: Nhận biết thì — Câu này ở thì gì?", question: "She drinks coffee every morning.", options: ["Hiện tại đơn", "Quá khứ đơn", "Tương lai đơn"], answer: "Hiện tại đơn", hint: "'Every morning' = thói quen → Hiện tại đơn." },
+      { id: "u0a-ex2", type: "choose", instruction: "Cấp độ 1: Nhận biết thì — Câu này ở thì gì?", question: "I visited my grandma last Sunday.", options: ["Hiện tại đơn", "Quá khứ đơn", "Hiện tại tiếp diễn"], answer: "Quá khứ đơn", hint: "'Last Sunday' = thời điểm trong quá khứ." },
+      { id: "u0a-ex3", type: "fill-in", instruction: "Cấp độ 2: Chia động từ Hiện tại đơn — Chú ý ngôi thứ 3!", question: "He _____ (study) English every day.", answer: "studies", hint: "He = ngôi 3 số ít → study bỏ y thêm -ies." },
+      { id: "u0a-ex4", type: "fill-in", instruction: "Cấp độ 2: Chia động từ Quá khứ đơn.", question: "They _____ (visit) the museum yesterday.", answer: "visited", hint: "Yesterday → Quá khứ đơn. Visit + ed = visited." },
+      { id: "u0a-ex5", type: "choose", instruction: "Cấp độ 2: Phủ định Quá khứ đơn.", question: "She _____ go to school yesterday.", options: ["doesn't", "didn't", "isn't"], answer: "didn't", hint: "Yesterday = quá khứ → dùng did not = didn't." },
+      { id: "u0a-ex6", type: "fill-in", instruction: "Cấp độ 2: Hiện tại tiếp diễn — Điền dạng đúng.", question: "Look! The baby _____ (sleep) on the sofa.", answer: "is sleeping", hint: "Look! = đang xảy ra ngay bây giờ → am/is/are + V-ing. The baby = It → is." },
+      { id: "u0a-ex7", type: "choose", instruction: "Cấp độ 2: Stative Verb — Câu nào ĐÚNG?", question: "Chọn câu đúng ngữ pháp:", options: ["I am knowing the answer.", "I know the answer.", "I knowing the answer."], answer: "I know the answer.", hint: "Know là Stative Verb → không chia tiếp diễn." },
+      { id: "u0a-ex8", type: "reorder", instruction: "Cấp độ 3: Sắp xếp câu Tương lai đơn.", question: "will / I / the / take / exam / IELTS / next year", answer: "I will take the IELTS exam next year", hint: "S (I) + will + V (take) + O (the IELTS exam) + Thời gian." },
+      { id: "u0a-ex9", type: "translate", instruction: "Cấp độ 3: Dịch câu Hiện tại đơn.", question: "Tớ thường thức dậy lúc 6 giờ sáng.", answer: "I usually wake up at 6 AM", hint: "Tớ = I, Thường = usually, Thức dậy = wake up." },
+      { id: "u0a-ex10", type: "translate", instruction: "Cấp độ 3: Dịch câu Quá khứ đơn + Tương lai.", question: "Hôm qua tớ đã học tiếng Anh. Ngày mai tớ sẽ học tiếp.", answer: "Yesterday I studied English. Tomorrow I will study more", hint: "Hôm qua = Yesterday → studied (V-ed). Ngày mai = Tomorrow → will study." }
+    ],
+    conversationPractice: {
+      situation: "Nàng đang kể cho tớ nghe về một ngày bình thường của Nàng. Hãy chú ý cách dùng thì nhé!",
+      dialogue: [
+        { speaker: "Gia sư", line: "What do you usually do in the morning?", lineVi: "Cậu thường làm gì vào buổi sáng?" },
+        { speaker: "Ngọc Anh", line: "I usually wake up at 6:30 and drink warm water.", lineVi: "Tớ thường thức dậy lúc 6:30 và uống nước ấm." },
+        { speaker: "Gia sư", line: "That's great! And what did you do yesterday evening?", lineVi: "Tuyệt! Và tối hôm qua cậu đã làm gì?" },
+        { speaker: "Ngọc Anh", line: "I visited my grandmother. She cooked a really delicious dinner.", lineVi: "Tớ đã đến thăm bà ngoại. Bà đã nấu một bữa tối thực sự ngon." },
+        { speaker: "Gia sư", line: "Lovely! What are you doing right now?", lineVi: "Đáng yêu quá! Ngay bây giờ cậu đang làm gì?" },
+        { speaker: "Ngọc Anh", line: "I am studying English with you! And I will practice more tonight.", lineVi: "Tớ đang học tiếng Anh cùng cậu! Và tớ sẽ luyện tập thêm tối nay." }
+      ]
+    },
+    tips: [
+      "💡 **Mẹo nhớ nhanh:** Hiện tại đơn = **Thói quen** (every day, always). Quá khứ đơn = **Đã xong** (yesterday, last week). Tương lai = **Sẽ** (will, tomorrow). Tiếp diễn = **Đang** (now, right now, look!).",
+      "💡 Nàng đừng cố học thuộc bảng chia động từ. Hãy đọc đi đọc lại bài Reading ở trên, não bộ sẽ tự động nhận ra pattern (mẫu) của từng thì.",
+      "💡 Lỗi sai mà 90% người Việt mắc phải: Quên thêm **-s/-es** cho ngôi thứ 3 (He/She/It). Tớ muốn Nàng ghi nhớ câu thần chú: **He/She/It → thêm S!**"
+    ]
+  },
+  {
+    id: "unit-0b-verb-conjugation",
+    unit: 0,
+    title: "Pre-Academic: Verbs, Word Classes & Sentence Patterns",
+    titleVi: "Bổ trợ Cơ bản: Chia Động từ, Từ loại & Mẫu câu",
+    objective: "Mục tiêu 45 Phút: Phân biệt Động từ Quy tắc vs Bất quy tắc, nắm vững 4 từ loại chính (Danh-Động-Tính-Trạng) và biết cách xây dựng câu phức. Đây là 'bộ công cụ' mà Nàng sẽ dùng suốt hành trình IELTS!",
+    reading: {
+      title: "How I Learned to Love English (Cách tớ học cách yêu tiếng Anh)",
+      content: "When I was young, I found English extremely difficult. I could not understand anything. My teacher spoke quickly, and I felt confused. I wanted to give up.\\n\\nHowever, everything changed when I discovered music. I began listening to English songs carefully. I wrote down the lyrics and looked up every new word. Gradually, my vocabulary grew significantly. I also watched movies without subtitles, which greatly improved my listening skills.\\n\\nNow, I can read academic articles confidently. I speak fluently with my online tutor. Learning a language is a beautiful journey, not a race. If you practice patiently and consistently, you will definitely succeed.",
+      translation: "Khi tớ còn nhỏ, tớ thấy tiếng Anh cực kỳ khó. Tớ không thể hiểu bất cứ điều gì. Cô giáo nói nhanh, và tớ cảm thấy bối rối. Tớ muốn bỏ cuộc.\\n\\nTuy nhiên, mọi thứ thay đổi khi tớ khám phá ra âm nhạc. Tớ bắt đầu nghe nhạc tiếng Anh một cách cẩn thận. Tớ chép lại lời bài hát và tra cứu mọi từ mới. Dần dần, vốn từ vựng của tớ tăng lên đáng kể. Tớ cũng xem phim không phụ đề, điều này cải thiện rất nhiều kỹ năng nghe của tớ.\\n\\nBây giờ, tớ có thể đọc các bài báo học thuật một cách tự tin. Tớ nói trôi chảy với gia sư trực tuyến. Học một ngôn ngữ là một hành trình đẹp đẽ, không phải một cuộc đua. Nếu cậu luyện tập kiên nhẫn và đều đặn, cậu chắc chắn sẽ thành công."
+    },
+    vocabulary: [
+      { word: 'Difficult', ipa: '/ˈdɪf.ɪ.kəlt/', meaning: '**Nghĩa:** Khó khăn. **(Tính từ - Adjective)**\\n\\n💡 **Gia sư bật mí:** Đây là **Tính từ** (Adjective) — bổ nghĩa cho Danh từ hoặc đứng sau To Be. *English is difficult.* ≠ *English is difficultly* (SAI!)\\n\\n🔗 **Word Family:** Difficult (Adj) → Difficulty (N - Sự khó khăn) → Difficultly (❌ không tồn tại!)', example: 'The exam was extremely difficult.' },
+      { word: 'Quickly', ipa: '/ˈkwɪk.li/', meaning: '**Nghĩa:** Một cách nhanh chóng. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Trạng từ (đuôi -ly) bổ nghĩa cho **Động từ**: She spoke **quickly**. Tính từ tương ứng là **quick**. Cậu nói *She is quick* (Adj) nhưng *She runs quickly* (Adv).', example: 'He answered the question quickly.' },
+      { word: 'Understand', ipa: '/ˌʌn.dəˈstænd/', meaning: '**Nghĩa:** Hiểu. **(Động từ BẤT QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Đây là động từ **bất quy tắc** kinh điển: **understand → understood → understood**. Không có dạng *understanded*!\\n\\n⚠️ Cũng là Stative Verb → Không chia tiếp diễn: *I am understanding* (❌)', example: 'I understood the lesson yesterday.' },
+      { word: 'Discover', ipa: '/dɪˈskʌv.ər/', meaning: '**Nghĩa:** Khám phá ra, phát hiện ra. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **discovered** (thêm -ed). Danh từ: **discovery** (sự khám phá). Nàng thấy chưa, thêm đuôi -y thì động từ biến thành danh từ!', example: 'Scientists discovered a new species.' },
+      { word: 'Gradually', ipa: '/ˈɡrædʒ.u.ə.li/', meaning: '**Nghĩa:** Dần dần, từ từ. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Trạng từ chỉ cách thức. Rất hay dùng trong IELTS Writing Task 1 để miêu tả biểu đồ: *The number **gradually** increased.*\\n\\n🔗 **Word Family:** Gradual (Adj) → Gradually (Adv).', example: 'Her English gradually improved over time.' },
+      { word: 'Confident', ipa: '/ˈkɒn.fɪ.dənt/', meaning: '**Nghĩa:** Tự tin. **(Tính từ - Adjective)**\\n\\n💡 **Gia sư bật mí:** Tính từ → đứng sau To Be hoặc trước Danh từ: *She is **confident**.* / *A **confident** student.*\\n\\n🔗 **Word Family:** Confident (Adj) → Confidently (Adv) → Confidence (N).', example: 'I feel confident about the exam.' },
+      { word: 'Fluently', ipa: '/ˈfluː.ənt.li/', meaning: '**Nghĩa:** Một cách trôi chảy. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Nàng nói *I speak English **fluently*** (Trạng từ bổ nghĩa cho Động từ speak). Nhưng nói *My English is **fluent*** (Tính từ sau to be).', example: 'She speaks three languages fluently.' },
+      { word: 'Improve', ipa: '/ɪmˈpruːv/', meaning: '**Nghĩa:** Cải thiện, tiến bộ. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **improved**. Danh từ: **improvement**. Đây là từ vựng IELTS cốt lõi!\\n\\n🔗 **Collocations:** significantly improve (cải thiện đáng kể), improve dramatically.', example: 'Practice will improve your speaking skills.' },
+      { word: 'Patiently', ipa: '/ˈpeɪ.ʃənt.li/', meaning: '**Nghĩa:** Một cách kiên nhẫn. **(Trạng từ - Adverb)**\\n\\n💡 **Gia sư bật mí:** Patient (Adj - kiên nhẫn) → Patiently (Adv) → Patience (N - sự kiên nhẫn). Nàng nhớ *Patience* phát âm là /ˈpeɪ.ʃəns/ chứ không phải /pa-ti-ên/ nhé!', example: 'The teacher explained patiently until everyone understood.' },
+      { word: 'Succeed', ipa: '/səkˈsiːd/', meaning: '**Nghĩa:** Thành công. **(Động từ QUY TẮC)**\\n\\n💡 **Gia sư bật mí:** Quá khứ: **succeeded**. Đây là một bộ từ cực kỳ quan trọng:\\n\\n🔗 **Word Family:** Succeed (V) → Success (N) → Successful (Adj) → Successfully (Adv).', example: 'If you work hard, you will succeed.' }
+    ],
+    grammar: [
+      {
+        rule: '4 Từ loại chính: Danh - Động - Tính - Trạng',
+        explanation: 'Tớ muốn Nàng khắc sâu 4 \"vai diễn\" chính trong mỗi câu tiếng Anh:\\n\\n📦 **Danh từ (Noun):** Tên gọi sự vật/người. Ví dụ: *student, music, confidence*.\\n🏃 **Động từ (Verb):** Hành động. Ví dụ: *study, improve, succeed*.\\n🎨 **Tính từ (Adjective):** Miêu tả đặc điểm. Đứng TRƯỚC Danh từ hoặc SAU To Be. Ví dụ: *difficult, confident*.\\n🔧 **Trạng từ (Adverb):** Bổ nghĩa cho Động từ (cách thức). Thường có đuôi **-ly**. Ví dụ: *quickly, gradually, fluently*.\\n\\n💡 **Mẹo nhận dạng nhanh:** Thấy đuôi -ly → Trạng từ. Thấy đuôi -tion/-ment/-ness → Danh từ. Thấy đuôi -ful/-ous/-ive → Tính từ.',
+        examples: [
+          '**She is a confident (Adj) student (N).** — Tính từ đứng TRƯỚC Danh từ.',
+          '**She speaks (V) fluently (Adv).** — Trạng từ đứng SAU Động từ.',
+          '**Her confidence (N) grew (V) gradually (Adv).** — Danh từ làm Chủ ngữ.',
+          '⚠️ **Lỗi sai:** She speaks English *fluent*. → SAI! Phải là *fluently* (Adv bổ nghĩa cho V).'
+        ]
+      },
+      {
+        rule: 'Động từ Quy tắc vs Bất quy tắc (Regular vs Irregular Verbs)',
+        explanation: '**Quy tắc (Regular):** Thêm **-ed** để tạo quá khứ. Ví dụ: visit**ed**, cook**ed**, discover**ed**.\\n\\n**Bất quy tắc (Irregular):** Biến đổi hoàn toàn, phải HỌC THUỘC. Ví dụ: go → **went**, speak → **spoke**, understand → **understood**.\\n\\n💡 **Mẹo của tớ cho Nàng:** Đừng cố học thuộc bảng 200 động từ BQT một lúc. Hãy ghi nhớ 20 từ hay gặp nhất trước: go-went, come-came, take-took, make-made, see-saw, know-knew, think-thought, give-gave, find-found, tell-told, speak-spoke, write-wrote, read-read, run-ran, begin-began, feel-felt, leave-left, bring-brought, buy-bought, understand-understood.',
+        examples: [
+          '**Quy tắc:** I **visited** (visit+ed) the museum. She **cooked** (cook+ed) dinner.',
+          '**Bất quy tắc:** I **went** (go) to school. She **spoke** (speak) quickly. We **understood** (understand) everything.',
+          '⚠️ **Bẫy Quá khứ:** Khi dùng **did/didn\\'t**, động từ về nguyên mẫu: *She **didn\\'t go*** (không phải *didn\\'t went*).'
+        ]
+      },
+      {
+        rule: 'Mẫu câu cơ bản mở rộng: S + V + O + Adverb',
+        explanation: 'Ở Unit Academic trước, Nàng đã biết khung S-V-O. Giờ tớ muốn Nàng thêm \"gia vị\" vào câu bằng cách gắn thêm **Trạng từ (Adverb)** hoặc **Cụm giới từ (Prepositional Phrase)**:\\n\\n**Công thức nâng cấp:** S + V + O + **Adverb/Prep Phrase**\\n\\n💡 Chỉ cần thêm 1 trạng từ, câu của Nàng lập tức \"lên đời\" từ Band 5 lên Band 6:',
+        examples: [
+          '**Band 5:** She improved her English. (Cô ấy cải thiện tiếng Anh)',
+          '**Band 6:** She improved her English **significantly**. (Cô ấy cải thiện tiếng Anh **đáng kể**)',
+          '**Band 6.5:** She **gradually** improved her English **by listening to music**. (Cô ấy **dần dần** cải thiện tiếng Anh **bằng cách nghe nhạc**)',
+          '💡 Nàng thấy không? Chỉ thêm 1-2 từ mà câu văn đã chuyên nghiệp hẳn lên!'
+        ]
+      }
+    ],
+    exercises: [
+      { id: "u0b-ex1", type: "choose", instruction: "Cấp độ 1: Từ loại — 'quickly' thuộc từ loại gì?", question: "The word 'quickly' is a/an _____.", options: ["Noun (Danh từ)", "Adjective (Tính từ)", "Adverb (Trạng từ)"], answer: "Adverb (Trạng từ)", hint: "Đuôi -ly → Trạng từ (Adverb)." },
+      { id: "u0b-ex2", type: "choose", instruction: "Cấp độ 1: Từ loại — Chọn Tính từ.", question: "Từ nào là Tính từ (Adjective)?", options: ["confidence", "confident", "confidently"], answer: "confident", hint: "Tính từ miêu tả đặc điểm. 'confidence' là Danh từ, 'confidently' là Trạng từ." },
+      { id: "u0b-ex3", type: "fill-in", instruction: "Cấp độ 2: Chia Quá khứ BẤT QUY TẮC.", question: "Yesterday, I _____ (go) to the library.", answer: "went", hint: "Go → went → gone. Bất quy tắc!" },
+      { id: "u0b-ex4", type: "fill-in", instruction: "Cấp độ 2: Chia Quá khứ BẤT QUY TẮC.", question: "She _____ (speak) English very well at the interview.", answer: "spoke", hint: "Speak → spoke → spoken." },
+      { id: "u0b-ex5", type: "choose", instruction: "Cấp độ 2: Chọn từ đúng — Tính từ hay Trạng từ?", question: "She solved the problem _____.", options: ["quick", "quickly", "quickness"], answer: "quickly", hint: "Bổ nghĩa cho động từ 'solved' → cần Trạng từ (đuôi -ly)." },
+      { id: "u0b-ex6", type: "fill-in", instruction: "Cấp độ 2: Word Family — Điền dạng Danh từ.", question: "Her _____ (confident) grew after months of practice.", answer: "confidence", hint: "Confident (Adj) → Confidence (N). Cần Danh từ vì đứng sau 'Her' (tính từ sở hữu)." },
+      { id: "u0b-ex7", type: "choose", instruction: "Cấp độ 2: Quá khứ — Câu nào ĐÚNG?", question: "Chọn câu đúng ngữ pháp:", options: ["She didn't understood.", "She didn't understand.", "She didn't understands."], answer: "She didn't understand.", hint: "Sau didn't → động từ NGUYÊN MẪU." },
+      { id: "u0b-ex8", type: "reorder", instruction: "Cấp độ 3: Sắp xếp câu có Trạng từ.", question: "improved / she / her / English / significantly", answer: "she improved her English significantly", hint: "S (she) + V (improved) + O (her English) + Adv (significantly)." },
+      { id: "u0b-ex9", type: "translate", instruction: "Cấp độ 3: Dịch câu (Dùng từ loại đúng).", question: "Cô ấy nói tiếng Anh một cách trôi chảy.", answer: "She speaks English fluently", hint: "Trôi chảy bổ nghĩa cho 'nói' (V) → dùng Trạng từ: fluently." },
+      { id: "u0b-ex10", type: "translate", instruction: "Cấp độ 3: Thử thách — Dịch câu phức.", question: "Dần dần, kỹ năng nghe của tớ cải thiện đáng kể.", answer: "Gradually, my listening skills improved significantly", hint: "Dần dần = Gradually, Kỹ năng nghe = listening skills, Cải thiện = improved, Đáng kể = significantly." }
+    ],
+    conversationPractice: {
+      situation: "Nàng đang kể cho tớ nghe về hành trình học tiếng Anh của Nàng. Chú ý cách dùng Trạng từ và Động từ bất quy tắc nhé!",
+      dialogue: [
+        { speaker: "Gia sư", line: "How was your English when you were young?", lineVi: "Tiếng Anh của cậu hồi nhỏ thế nào?" },
+        { speaker: "Ngọc Anh", line: "It was extremely difficult. I could not understand anything.", lineVi: "Nó cực kỳ khó. Tớ không thể hiểu bất cứ điều gì." },
+        { speaker: "Gia sư", line: "So what changed? How did you improve?", lineVi: "Vậy điều gì đã thay đổi? Cậu đã cải thiện như thế nào?" },
+        { speaker: "Ngọc Anh", line: "I discovered English music! I listened carefully and wrote down the lyrics.", lineVi: "Tớ đã khám phá ra nhạc tiếng Anh! Tớ nghe cẩn thận và chép lại lời bài hát." },
+        { speaker: "Gia sư", line: "That's wonderful! Can you speak fluently now?", lineVi: "Tuyệt vời! Cậu có thể nói trôi chảy bây giờ không?" },
+        { speaker: "Ngọc Anh", line: "Yes! My vocabulary grew significantly. Now I speak more confidently.", lineVi: "Có! Vốn từ vựng của tớ tăng lên đáng kể. Giờ tớ nói tự tin hơn nhiều." }
+      ]
+    },
+    tips: [
+      "💡 **Mẹo siêu tốc để nhớ từ loại:** Danh từ = NGƯỜI/VẬT (student, music). Động từ = HÀNH ĐỘNG (study, improve). Tính từ = ĐẶC ĐIỂM (difficult, confident). Trạng từ = CÁCH THỨC, thường đuôi -ly (quickly, fluently).",
+      "💡 Mỗi lần học từ mới, Nàng hãy tra luôn cả **Word Family** (Họ từ) của nó. Ví dụ: succeed (V) → success (N) → successful (Adj) → successfully (Adv). Biết cả 4 dạng = ăn điểm gấp 4 lần!",
+      "💡 20 động từ BQT hay gặp nhất tớ đã liệt kê trong phần Ngữ pháp. Nàng hãy đọc lại 3 lần rồi tối nay trước khi ngủ đọc thêm 1 lần nữa. Não bộ sẽ tự động ghi nhớ khi ngủ đấy! 😴"
+    ]
+  },
   {
     id: "unit-1-academic-foundation",
     unit: 1,
