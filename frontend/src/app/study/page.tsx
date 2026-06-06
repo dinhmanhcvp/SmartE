@@ -128,19 +128,29 @@ export default function StudyPage() {
       return;
     }
     
-    // Ở giai đoạn này, ta có thể gửi input lên AI Backend để chấm điểm. Tạm thời trả về Mock UI.
-    setTimeout(() => {
-      setMessages(prev => [...prev, { 
-        role: 'ai', 
-        content: 'Bạn viết khá ổn, nhưng cấu trúc chưa được tự nhiên lắm. Mình sửa lại như sau nhé:',
-        correction: {
-          original: input,
-          corrected: "The beautiful girl is reading a book quietly in the cafe.",
-          explanation: "Hãy phân tích câu này qua góc nhìn Sương mù nhận thức để thấy rõ nòng cốt câu nhé."
-        }
-      }]);
-      triggerSuccessFeedback();
-    }, 1500);
+    // Call AI Backend
+    const processAI = async () => {
+      try {
+        const aiResponse = await apiClient.checkSentence(input);
+        setMessages(prev => [...prev, { 
+          role: 'ai', 
+          content: aiResponse.response,
+          correction: (!aiResponse.is_correct && aiResponse.corrected) ? {
+            original: aiResponse.original || input,
+            corrected: aiResponse.corrected,
+            explanation: aiResponse.explanation || ""
+          } : undefined
+        }]);
+        triggerSuccessFeedback();
+      } catch (e) {
+        setMessages(prev => [...prev, { 
+          role: 'ai', 
+          content: 'Xin lỗi, tớ đang buồn ngủ nên không chấm điểm được câu này. Cậu thông cảm nha! 🥺' 
+        }]);
+      }
+    };
+    
+    processAI();
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {

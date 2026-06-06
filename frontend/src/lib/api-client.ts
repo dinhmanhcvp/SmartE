@@ -80,5 +80,22 @@ export const apiClient = {
       console.error("Chat failed:", error);
       throw error;
     }
+  },
+
+  async checkSentence(sentence: string) {
+    try {
+      const response = await fetch(`${BASE_URL}/ai/check-sentence`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ sentence }),
+      });
+      if (!response.ok) throw new Error('Check Sentence API Error');
+      return await response.json();
+    } catch (error) {
+      console.error("Check sentence failed:", error);
+      throw error;
+    }
   }
 };

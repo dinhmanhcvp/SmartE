@@ -5,7 +5,7 @@ import sys
 
 # Đảm bảo có thể import module từ thư mục cha
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from services.llm_gateway import generate_atomic_lesson, chat_with_tutor
+from services.llm_gateway import generate_atomic_lesson, chat_with_tutor, check_sentence_tutor
 
 router = APIRouter()
 
@@ -25,4 +25,12 @@ class ChatRequest(BaseModel):
 @router.post("/chat")
 async def chat(request: ChatRequest):
     result = await chat_with_tutor(request.question, request.context)
+    return result.model_dump()
+
+class CheckSentenceRequest(BaseModel):
+    sentence: str
+
+@router.post("/check-sentence")
+async def check_sentence(request: CheckSentenceRequest):
+    result = await check_sentence_tutor(request.sentence)
     return result.model_dump()
